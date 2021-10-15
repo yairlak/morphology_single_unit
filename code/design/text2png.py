@@ -14,16 +14,28 @@ path2stimuli = '../../stimuli/single_letters.txt'
 path2images = '../../stimuli/images/single_letters/'
 os.makedirs(path2images, exist_ok=True)
 
-# FONTS AND TEXT sIZE
+# FONTS AND TEXT SIZE
 fonts = ['LiberationMono-Regular.ttf', 'AlexBrush-Regular.ttf']
 sizes = [50, 50]
 positions = ['left', 'right'] # left/right/center
-dx = 150 # number of pixels used to shift text from center
+dx = 100 # number of pixels used to shift text from center
 
 # LOAD STIMULI
 with open(path2stimuli, 'r') as f:
     letters = f.readlines()
 letters = [l.strip('\n') for l in letters]
+
+# SCALE FONT
+def get_scale_factor_for_font(font):
+    if font == 'AlexBrush-Regular.ttf':
+        scale_factor = 2
+    elif font == 'LiberationMono-Regular.ttf':
+        scale_factor = 1.2
+    else:
+        scale_factor = None
+        raise(f'Unkwnown font name {font}')
+    return scale_factor
+
 
 # GENERATE FIGURES
 W, H = (600, 600)
@@ -32,25 +44,25 @@ for l in letters:
         for upper in [False, True]:
             if upper:
                 l = l.upper()
+                size_corrected = size
             else:
                 l = l.lower()
-                size = int(2*size)
-            print(f'{l}, {font}')
+                # scale up lower case letters
+                scale_factor = get_scale_factor_for_font(font)
+                size_corrected = int(scale_factor*size) 
             for position in positions:
                 image_font = ImageFont.truetype(font=font, size=size)
                 img = Image.new('RGB', (W, H), color='black')
                 d = ImageDraw.Draw(img)
-                image_font = ImageFont.truetype(font=font, size=size)
                 w, h = d.textsize(l)
-                
-                x = (W-w)/2
-                y = (H-h)/2
+                print(f'{l}, {upper}, {font}, {size}, {w}, {h}')    
+                y = H/2-h#/2
                 if position == 'left':
-                    x -= dx
+                    x = W/2 - dx
                 elif position == 'right':
-                    x += dx
+                    x = W/2 + dx - w
                 elif position == 'center':
-                    x = x
+                    x = W/2 - w/2
                 else:
                     raise(f'Unknown position label: {position}')
         
