@@ -26,7 +26,7 @@ with open(path2stimuli, 'r') as f:
 letters = [l.strip('\n') for l in letters]
 
 # GENERATE FIGURES
-W, H = (500, 500)
+W, H = (600, 600)
 for l in letters:
     for font, size in zip(fonts, sizes):
         for upper in [False, True]:
