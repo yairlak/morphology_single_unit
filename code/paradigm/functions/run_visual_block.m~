@@ -32,14 +32,16 @@ for trial=1:length(stimuli)
   end
   % POSITION ON THE SCREEN
   n_blanks = 5;
-%   switch position
-%       case 'left'
-%           stimulus = [stimulus, blanks(n_blanks)];
-%       case 'right'
-%           stimulus = [blanks(n_blanks), stimulus];
-%       otherwise
-%           stimulus = stimulus; % TODO: complete for other cases
-%   end
+  switch position
+      case 'left'
+          stimulus = [stimulus, blanks(n_blanks)];
+          f = 0.47;
+      case 'right'
+          stimulus = [blanks(n_blanks), stimulus];
+          f = 0.53;
+      otherwise
+          stimulus = stimulus; % TODO: complete for other cases
+  end
   
   [~, ~, keyCode] = KbCheck;
   if keyCode('ESCAPE')
@@ -52,6 +54,7 @@ for trial=1:length(stimuli)
 
 
   % %%%%%%% DRAW FIXATION BEFORE SENTENCE (duration: params.fixation_duration)
+  Screen('TextFont',handles.win, params.font_name{1}); % Fixation with standrad font
   DrawFormattedText(handles.win, '+', 'center', 'center', handles.white);
   fixation_onset = Screen('Flip', handles.win);
   if triggers
@@ -74,23 +77,16 @@ for trial=1:length(stimuli)
   % %%%%%%% START RSVP for current sentence
 
   % TEXT ON
-  
-  Screen('TextFont',handles.win, font);
-  winRect = get(0, 'ScreenSize');
-  x_left = winRect(1); y_top = winRect(2); 
-  x_right=winRect(3); y_bottom=winRect(4);
-  x_left_small = x_left + (x_right-x_left) * 0.45;
-  x_right_small = x_left + (x_right-x_left) * 0.55;
-  y_top_small = y_top + (y_bottom-y_top) * 0.4;
-  y_top_small = y_bottom + (y_bottom-y_top) * 0.6;
-  rect = [x_left_small, y_top_small, x_right_small, y_bottom_small];
-  DrawFormattedText2(stimulus, ...
-                     'win', handles.win, ...
-                     'winRect', rect, ...
-                     'xalign', position, ...
-                     'yalign', 'center', ...                     
-                     'baseColor', handles.white);
+%   Screen('TextFont',handles.win, font);
+%   rect = get(0, 'ScreenSize');
+%   DrawFormattedText(handles.win, stimulus, 'center', 'center', handles.white);
+%   text_onset = Screen('Flip', handles.win); % Word ON
+%   text_image = imread(fullfile(params.path2stimuli, 'visual', 'images', 'single_letters', 'a_left_AlexBrush-Regular.ttf_lower.png'));
+  our_texture = Screen('MakeTexture', handles.win, image);
+  Screen('DrawTexture', handles.win, our_texture, [], []);
   text_onset = Screen('Flip', handles.win); % Word ON
+  
+  
   if triggers
       send_trigger(triggers, handles, params, events, 'StartVisualWord', 0)
   end

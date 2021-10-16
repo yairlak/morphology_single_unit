@@ -1,0 +1,22 @@
+Event	Block	Trial	Stimulus	Position	Font	Time
+GrandStart					---	1634376135.3858	
+BlockStart	1	0	0		-	1634376135.3969	
+Fix	1	1	0		+	1634376135.4326
+StimVisualOn	1	1	     a	right	Courier New	1634376136.0993
+StimVisualOff	1	1				1634376136.2243
+Fix	1	2	0		+	1634376136.3493
+StimVisualOn	1	2	     d	right	Courier New	1634376137.016
+StimVisualOff	1	2				1634376137.141
+Fix	1	3	0		+	1634376137.266
+StimVisualOn	1	3	     0	right	Courier New	1634376137.9118
+StimVisualOff	1	3				1634376138.0368
+Fix	1	4	0		+	1634376138.1618
+StimVisualOn	1	4	E     	left	abuget	1634376138.8077
+StimVisualOff	1	4				1634376138.9327
+Fix	1	5	0		+	1634376139.0577
+StimVisualOn	1	5	D     	left	Courier New	1634376139.7035
+StimVisualOff	1	5				1634376139.8285
+Fix	1	6	0		+	1634376139.9535
+StimVisualOn	1	6	     1	right	abuget	1634376140.5994
+StimVisualOff	1	6				1634376140.7244
+Fix	1	7	0		+	1634376140.8494

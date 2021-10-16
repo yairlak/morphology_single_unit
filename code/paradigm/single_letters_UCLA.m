@@ -2,7 +2,7 @@
 % This is the main script for the experiment
 % ------------------------------------------------
 clear all; close all; clc
-debug_mode = 1; 
+debug_mode = 0; 
 
 %% INITIALIZATION
 addpath('functions')
@@ -58,36 +58,35 @@ if triggers
     end
 end
 fid_log=createLogFileUCLAParadigm(params); % OPEN LOG
-stimuli = load_stimuli(params); % LOAD STIMULI
 
 %% EXTEND STIMULI (ADD REPETITIONS, CASE, NUMBERS)
-stimuli = extend_stimuli(stimuli, ...
-                         params.repetitions_letters, ...
-                         params.repetitions_numbers, params);
-% %%%%%%% RANDOMIZE TRIAL LIST
-stimuli=stimuli(randperm(size(stimuli, 1)), :);
- 
+stimuli = load_stimuli(params); % LOAD STIMULI
+stimuli = extend_letters(stimuli, params); % ADD CASE, FONT, POSITION
+stimuli = stimuli(randperm(length(stimuli)), :);
+stimuli = combine_with_numbers(stimuli, params); % ADD NUMBERS RANDOMLY
+stimuli_blocks = split_to_blocks(stimuli, params.n_blocks);
 
+fn = ['../../stimuli/visual/images/fixation.png'];
+image_fixation = imread(fn);
+
+%% PTB
 %stimDur = cellfun(@(x) size(x, 1), stimuli_wavs, 'UniformOutput', false);  %in samples
 handles = Initialize_PTB_devices(params, handles, debug_mode);
 warning off; HideCursor
   
-
+ 
 %% START EXPERIMENT
-try
+try 
     if ~debug_mode
         present_intro_slide(params, handles);
         KbStrokeWait;
     end
     KbQueueStart;
     cumTrial=0;
-    % PRESENT LONG FIXATION ONLY AT THE BEGINING
-    DrawFormattedText(handles.win, '+', 'center', 'center', handles.white);
-    Screen('Flip', handles.win);
-    WaitSecs(1.5); %Wait before experiment start
-    % START LOOP OVER BLOCKS
-    for block = 1:1
-        if block == 1
+      
+    % START LOOP  OVER BLOCKS
+    for i_block = 1:params.n_blocks 
+        if  i_block == 1
             % %%%%%%% WRITE TO LOG
               fprintf(fid_log,['GrandStart\t' ...
               '\t' ...
@@ -99,9 +98,14 @@ try
               '' '\r\n' ...
               ]); % write to log file
         end
-  
+        % %%%%%% WAIT FOR KEY PRESS
+        DrawFormattedText(handles.win, 'Press any key...', 'center', 'center', handles.white);
+        Screen('Flip',handles.win);
+        wait_for_key_press()   
+         
         % %%%%%% LOOP OVER STIMULI
-        run_visual_block(handles, block, stimuli, ...
+        run_visual_block(handles, i_block, stimuli_blocks{i_block}, ...
+                         image_fixation, ...
                          fid_log, triggers, cumTrial, params, events)
         
     end

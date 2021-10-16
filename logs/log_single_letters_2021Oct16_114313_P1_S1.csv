@@ -1,0 +1,712 @@
+Event	Block	Trial	Stimulus	Position	Font	Time
+GrandStart					---	1634377397.9606	
+BlockStart	1	0	0		-	1634377397.9682	
+Fix	1	1	0		+	1634377397.9953
+StimVisualOn	1	1	     a	right	Courier New	1634377398.662
+StimVisualOff	1	1				1634377398.787
+Fix	1	2	0		+	1634377398.912
+StimVisualOn	1	2	     d	right	Courier New	1634377399.5786
+StimVisualOff	1	2				1634377399.7036
+Fix	1	3	0		+	1634377399.8286
+StimVisualOn	1	3	     0	right	Courier New	1634377400.4953
+StimVisualOff	1	3				1634377400.6203
+Fix	1	4	0		+	1634377400.7662
+StimVisualOn	1	4	E     	left	abuget	1634377401.4328
+StimVisualOff	1	4				1634377401.5578
+Fix	1	5	0		+	1634377401.6828
+StimVisualOn	1	5	D     	left	Courier New	1634377402.3495
+StimVisualOff	1	5				1634377402.4745
+Fix	1	6	0		+	1634377402.5995
+StimVisualOn	1	6	     1	right	abuget	1634377403.2454
+StimVisualOff	1	6				1634377403.3704
+Fix	1	7	0		+	1634377403.4954
+StimVisualOn	1	7	B     	left	Courier New	1634377404.162
+StimVisualOff	1	7				1634377404.2871
+Fix	1	8	0		+	1634377404.4121
+StimVisualOn	1	8	     1	right	Courier New	1634377405.0787
+StimVisualOff	1	8				1634377405.2037
+Fix	1	9	0		+	1634377405.3287
+StimVisualOn	1	9	     E	right	Courier New	1634377405.9954
+StimVisualOff	1	9				1634377406.1204
+Fix	1	10	0		+	1634377406.2454
+StimVisualOn	1	10	1     	left	abuget	1634377406.9121
+StimVisualOff	1	10				1634377407.0371
+Fix	1	11	0		+	1634377407.1621
+StimVisualOn	1	11	C     	left	abuget	1634377407.8288
+StimVisualOff	1	11				1634377407.9538
+Fix	1	12	0		+	1634377408.0788
+StimVisualOn	1	12	     1	right	Courier New	1634377408.7455
+StimVisualOff	1	12				1634377408.8705
+Fix	1	13	0		+	1634377408.9955
+StimVisualOn	1	13	b     	left	Courier New	1634377409.6621
+StimVisualOff	1	13				1634377409.7871
+Fix	1	14	0		+	1634377409.9122
+StimVisualOn	1	14	1     	left	Courier New	1634377410.5788
+StimVisualOff	1	14				1634377410.7038
+Fix	1	15	0		+	1634377410.8288
+StimVisualOn	1	15	     1	right	abuget	1634377411.4955
+StimVisualOff	1	15				1634377411.6205
+Fix	1	16	0		+	1634377411.7455
+StimVisualOn	1	16	b     	left	abuget	1634377412.3914
+StimVisualOff	1	16				1634377412.5164
+Fix	1	17	0		+	1634377412.6414
+StimVisualOn	1	17	     B	right	Courier New	1634377413.308
+StimVisualOff	1	17				1634377413.433
+Fix	1	18	0		+	1634377413.558
+StimVisualOn	1	18	     b	right	Courier New	1634377414.2039
+StimVisualOff	1	18				1634377414.3289
+Fix	1	19	0		+	1634377414.4539
+StimVisualOn	1	19	     1	right	Arial	1634377415.1206
+StimVisualOff	1	19				1634377415.2247
+Fix	1	20	0		+	1634377415.3497
+StimVisualOn	1	20	     d	right	abuget	1634377416.0164
+StimVisualOff	1	20				1634377416.1414
+Fix	1	21	0		+	1634377416.2664
+StimVisualOn	1	21	e     	left	Courier New	1634377416.9123
+StimVisualOff	1	21				1634377417.0373
+Fix	1	22	0		+	1634377417.1623
+StimVisualOn	1	22	b     	left	Courier New	1634377417.8081
+StimVisualOff	1	22				1634377417.9331
+Fix	1	23	0		+	1634377418.0581
+StimVisualOn	1	23	     1	right	abuget	1634377418.704
+StimVisualOff	1	23				1634377418.829
+Fix	1	24	0		+	1634377418.954
+StimVisualOn	1	24	     C	right	Courier New	1634377419.6207
+StimVisualOff	1	24				1634377419.7456
+Fix	1	25	0		+	1634377419.8707
+StimVisualOn	1	25	     D	right	Courier New	1634377420.5373
+StimVisualOff	1	25				1634377420.6623
+Fix	1	26	0		+	1634377420.7873
+StimVisualOn	1	26	     C	right	abuget	1634377421.4332
+StimVisualOff	1	26				1634377421.5582
+Fix	1	27	0		+	1634377421.6832
+StimVisualOn	1	27	     a	right	Courier New	1634377422.3499
+StimVisualOff	1	27				1634377422.4749
+Fix	1	28	0		+	1634377422.5999
+StimVisualOn	1	28	     b	right	Courier New	1634377423.2457
+StimVisualOff	1	28				1634377423.3707
+Fix	1	29	0		+	1634377423.4957
+StimVisualOn	1	29	     B	right	abuget	1634377424.1624
+StimVisualOff	1	29				1634377424.2874
+Fix	1	30	0		+	1634377424.4124
+StimVisualOn	1	30	     B	right	abuget	1634377425.0582
+StimVisualOff	1	30				1634377425.1832
+Fix	1	31	0		+	1634377425.3082
+StimVisualOn	1	31	     1	right	Courier New	1634377425.9749
+StimVisualOff	1	31				1634377426.0999
+Fix	1	32	0		+	1634377426.2249
+StimVisualOn	1	32	     E	right	Courier New	1634377426.8708
+StimVisualOff	1	32				1634377426.9958
+Fix	1	33	0		+	1634377427.1208
+StimVisualOn	1	33	c     	left	abuget	1634377427.7666
+StimVisualOff	1	33				1634377427.8916
+Fix	1	34	0		+	1634377428.0166
+StimVisualOn	1	34	     d	right	Courier New	1634377428.6833
+StimVisualOff	1	34				1634377428.8083
+Fix	1	35	0		+	1634377428.9333
+StimVisualOn	1	35	A     	left	abuget	1634377429.6
+StimVisualOff	1	35				1634377429.725
+Fix	1	36	0		+	1634377429.85
+StimVisualOn	1	36	     D	right	Courier New	1634377430.5167
+StimVisualOff	1	36				1634377430.6417
+Fix	1	37	0		+	1634377430.7667
+StimVisualOn	1	37	1     	left	Arial	1634377431.4125
+StimVisualOff	1	37				1634377431.5375
+Fix	1	38	0		+	1634377431.6625
+StimVisualOn	1	38	     0	right	abuget	1634377432.3292
+StimVisualOff	1	38				1634377432.4542
+Fix	1	39	0		+	1634377432.5792
+StimVisualOn	1	39	A     	left	Courier New	1634377433.225
+StimVisualOff	1	39				1634377433.3501
+Fix	1	40	0		+	1634377433.4751
+StimVisualOn	1	40	0     	left	Courier New	1634377434.1209
+StimVisualOff	1	40				1634377434.2459
+Fix	1	41	0		+	1634377434.3709
+StimVisualOn	1	41	e     	left	abuget	1634377435.0376
+StimVisualOff	1	41				1634377435.1626
+Fix	1	42	0		+	1634377435.2876
+StimVisualOn	1	42	e     	left	abuget	1634377435.9543
+StimVisualOff	1	42				1634377436.0793
+Fix	1	43	0		+	1634377436.2043
+StimVisualOn	1	43	     e	right	Courier New	1634377436.8709
+StimVisualOff	1	43				1634377436.9959
+Fix	1	44	0		+	1634377437.1209
+StimVisualOn	1	44	     D	right	abuget	1634377437.7876
+StimVisualOff	1	44				1634377437.9126
+Fix	1	45	0		+	1634377438.0376
+StimVisualOn	1	45	c     	left	Courier New	1634377438.7043
+StimVisualOff	1	45				1634377438.8293
+Fix	1	46	0		+	1634377438.9543
+StimVisualOn	1	46	     A	right	abuget	1634377439.6002
+StimVisualOff	1	46				1634377439.7252
+Fix	1	47	0		+	1634377439.8502
+StimVisualOn	1	47	0     	left	abuget	1634377440.5168
+StimVisualOff	1	47				1634377440.6418
+Fix	1	48	0		+	1634377440.7668
+StimVisualOn	1	48	1     	left	abuget	1634377441.4335
+StimVisualOff	1	48				1634377441.5585
+Fix	1	49	0		+	1634377441.6835
+StimVisualOn	1	49	     1	right	Courier New	1634377442.3502
+StimVisualOff	1	49				1634377442.4752
+Fix	1	50	0		+	1634377442.6002
+StimVisualOn	1	50	     0	right	Courier New	1634377443.2669
+StimVisualOff	1	50				1634377443.3919
+Fix	1	51	0		+	1634377443.5169
+StimVisualOn	1	51	D     	left	abuget	1634377444.1836
+StimVisualOff	1	51				1634377444.3086
+Fix	1	52	0		+	1634377444.4336
+StimVisualOn	1	52	     1	right	abuget	1634377445.1003
+StimVisualOff	1	52				1634377445.2253
+Fix	1	53	0		+	1634377445.3503
+StimVisualOn	1	53	     B	right	abuget	1634377446.0169
+StimVisualOff	1	53				1634377446.1419
+Fix	1	54	0		+	1634377446.2669
+StimVisualOn	1	54	c     	left	Courier New	1634377446.9128
+StimVisualOff	1	54				1634377447.0378
+Fix	1	55	0		+	1634377447.1628
+StimVisualOn	1	55	     c	right	Courier New	1634377447.8086
+StimVisualOff	1	55				1634377447.9336
+Fix	1	56	0		+	1634377448.0586
+StimVisualOn	1	56	     1	right	Courier New	1634377448.7045
+StimVisualOff	1	56				1634377448.8295
+Fix	1	57	0		+	1634377448.9545
+StimVisualOn	1	57	a     	left	abuget	1634377449.6212
+StimVisualOff	1	57				1634377449.7462
+Fix	1	58	0		+	1634377449.8712
+StimVisualOn	1	58	A     	left	Courier New	1634377450.517
+StimVisualOff	1	58				1634377450.642
+Fix	1	59	0		+	1634377450.767
+StimVisualOn	1	59	     0	right	Courier New	1634377451.4129
+StimVisualOff	1	59				1634377451.5379
+Fix	1	60	0		+	1634377451.6629
+StimVisualOn	1	60	1     	left	Courier New	1634377452.3295
+StimVisualOff	1	60				1634377452.4545
+Fix	1	61	0		+	1634377452.5796
+StimVisualOn	1	61	d     	left	Courier New	1634377453.2254
+StimVisualOff	1	61				1634377453.3504
+Fix	1	62	0		+	1634377453.4754
+StimVisualOn	1	62	     c	right	abuget	1634377454.1421
+StimVisualOff	1	62				1634377454.2671
+Fix	1	63	0		+	1634377454.3921
+StimVisualOn	1	63	D     	left	Courier New	1634377455.0588
+StimVisualOff	1	63				1634377455.1838
+Fix	1	64	0		+	1634377455.3088
+StimVisualOn	1	64	     1	right	Courier New	1634377455.9754
+StimVisualOff	1	64				1634377456.1004
+Fix	1	65	0		+	1634377456.2254
+StimVisualOn	1	65	0     	left	Courier New	1634377456.8921
+StimVisualOff	1	65				1634377457.0171
+Fix	1	66	0		+	1634377457.1421
+StimVisualOn	1	66	1     	left	Courier New	1634377457.788
+StimVisualOff	1	66				1634377457.913
+Fix	1	67	0		+	1634377458.038
+StimVisualOn	1	67	     c	right	abuget	1634377458.7047
+StimVisualOff	1	67				1634377458.8297
+Fix	1	68	0		+	1634377458.9547
+StimVisualOn	1	68	     c	right	abuget	1634377459.6213
+StimVisualOff	1	68				1634377459.7463
+Fix	1	69	0		+	1634377459.8713
+StimVisualOn	1	69	     A	right	Courier New	1634377460.538
+StimVisualOff	1	69				1634377460.663
+Fix	1	70	0		+	1634377460.788
+StimVisualOn	1	70	     e	right	Courier New	1634377461.4547
+StimVisualOff	1	70				1634377461.5797
+Fix	1	71	0		+	1634377461.7047
+StimVisualOn	1	71	     c	right	Courier New	1634377462.3506
+StimVisualOff	1	71				1634377462.4756
+Fix	1	72	0		+	1634377462.6005
+StimVisualOn	1	72	0     	left	Courier New	1634377463.2672
+StimVisualOff	1	72				1634377463.3922
+Fix	1	73	0		+	1634377463.5172
+StimVisualOn	1	73	     c	right	abuget	1634377464.1839
+StimVisualOff	1	73				1634377464.3089
+Fix	1	74	0		+	1634377464.4339
+StimVisualOn	1	74	1     	left	Courier New	1634377465.1006
+StimVisualOff	1	74				1634377465.2256
+Fix	1	75	0		+	1634377465.3506
+StimVisualOn	1	75	0     	left	abuget	1634377465.9964
+StimVisualOff	1	75				1634377466.1214
+Fix	1	76	0		+	1634377466.2464
+StimVisualOn	1	76	B     	left	Courier New	1634377466.8923
+StimVisualOff	1	76				1634377467.0173
+Fix	1	77	0		+	1634377467.1423
+StimVisualOn	1	77	E     	left	abuget	1634377467.7881
+StimVisualOff	1	77				1634377467.9131
+Fix	1	78	0		+	1634377468.0381
+StimVisualOn	1	78	B     	left	abuget	1634377468.684
+StimVisualOff	1	78				1634377468.809
+Fix	1	79	0		+	1634377468.934
+StimVisualOn	1	79	1     	left	Courier New	1634377469.5798
+StimVisualOff	1	79				1634377469.7048
+Fix	1	80	0		+	1634377469.8298
+StimVisualOn	1	80	1     	left	Courier New	1634377470.4757
+StimVisualOff	1	80				1634377470.6007
+Fix	1	81	0		+	1634377470.7257
+StimVisualOn	1	81	     d	right	abuget	1634377471.3924
+StimVisualOff	1	81				1634377471.5174
+Fix	1	82	0		+	1634377471.6424
+StimVisualOn	1	82	     e	right	Courier New	1634377472.2882
+StimVisualOff	1	82				1634377472.4132
+Fix	1	83	0		+	1634377472.5382
+StimVisualOn	1	83	     C	right	abuget	1634377473.2049
+StimVisualOff	1	83				1634377473.3299
+Fix	1	84	0		+	1634377473.4549
+StimVisualOn	1	84	     0	right	Courier New	1634377474.1216
+StimVisualOff	1	84				1634377474.2466
+Fix	1	85	0		+	1634377474.3716
+StimVisualOn	1	85	D     	left	abuget	1634377475.0174
+StimVisualOff	1	85				1634377475.1424
+Fix	1	86	0		+	1634377475.2674
+StimVisualOn	1	86	     E	right	abuget	1634377475.9341
+StimVisualOff	1	86				1634377476.0591
+Fix	1	87	0		+	1634377476.1841
+StimVisualOn	1	87	1     	left	Courier New	1634377476.8508
+StimVisualOff	1	87				1634377476.9758
+Fix	1	88	0		+	1634377477.1008
+StimVisualOn	1	88	     b	right	abuget	1634377477.7466
+StimVisualOff	1	88				1634377477.8716
+Fix	1	89	0		+	1634377477.9967
+StimVisualOn	1	89	     E	right	Courier New	1634377478.6633
+StimVisualOff	1	89				1634377478.7883
+Fix	1	90	0		+	1634377478.9133
+StimVisualOn	1	90	     0	right	Courier New	1634377479.58
+StimVisualOff	1	90				1634377479.705
+Fix	1	91	0		+	1634377479.83
+StimVisualOn	1	91	A     	left	Courier New	1634377480.4759
+StimVisualOff	1	91				1634377480.6009
+Fix	1	92	0		+	1634377480.7259
+StimVisualOn	1	92	     1	right	Arial	1634377481.3925
+StimVisualOff	1	92				1634377481.5175
+Fix	1	93	0		+	1634377481.6425
+StimVisualOn	1	93	e     	left	Courier New	1634377482.3092
+StimVisualOff	1	93				1634377482.4342
+Fix	1	94	0		+	1634377482.5592
+StimVisualOn	1	94	1     	left	Arial	1634377483.2259
+StimVisualOff	1	94				1634377483.3509
+Fix	1	95	0		+	1634377483.4759
+StimVisualOn	1	95	c     	left	Courier New	1634377484.1009
+StimVisualOff	1	95				1634377484.2051
+Fix	1	96	0		+	1634377484.3301
+StimVisualOn	1	96	     C	right	Courier New	1634377484.9759
+StimVisualOff	1	96				1634377485.1009
+Fix	1	97	0		+	1634377485.2259
+StimVisualOn	1	97	b     	left	abuget	1634377485.8926
+StimVisualOff	1	97				1634377486.0176
+Fix	1	98	0		+	1634377486.1426
+StimVisualOn	1	98	1     	left	abuget	1634377486.8093
+StimVisualOff	1	98				1634377486.9343
+Fix	1	99	0		+	1634377487.0593
+StimVisualOn	1	99	D     	left	Courier New	1634377487.726
+StimVisualOff	1	99				1634377487.851
+Fix	1	100	0		+	1634377487.976
+StimVisualOn	1	100	     a	right	abuget	1634377488.6427
+StimVisualOff	1	100				1634377488.7677
+Fix	1	101	0		+	1634377488.8927
+StimVisualOn	1	101	c     	left	abuget	1634377489.5385
+StimVisualOff	1	101				1634377489.6635
+Fix	1	102	0		+	1634377489.7885
+StimVisualOn	1	102	     0	right	Courier New	1634377490.4344
+StimVisualOff	1	102				1634377490.5594
+Fix	1	103	0		+	1634377490.6844
+StimVisualOn	1	103	     e	right	Courier New	1634377491.351
+StimVisualOff	1	103				1634377491.476
+Fix	1	104	0		+	1634377491.6011
+StimVisualOn	1	104	b     	left	abuget	1634377492.2469
+StimVisualOff	1	104				1634377492.3719
+Fix	1	105	0		+	1634377492.4969
+StimVisualOn	1	105	1     	left	Courier New	1634377493.1427
+StimVisualOff	1	105				1634377493.2677
+Fix	1	106	0		+	1634377493.3928
+StimVisualOn	1	106	     0	right	abuget	1634377494.0594
+StimVisualOff	1	106				1634377494.1844
+Fix	1	107	0		+	1634377494.3094
+StimVisualOn	1	107	     a	right	abuget	1634377494.9553
+StimVisualOff	1	107				1634377495.0803
+Fix	1	108	0		+	1634377495.2053
+StimVisualOn	1	108	D     	left	abuget	1634377495.872
+StimVisualOff	1	108				1634377495.997
+Fix	1	109	0		+	1634377496.122
+StimVisualOn	1	109	     C	right	Courier New	1634377496.7886
+StimVisualOff	1	109				1634377496.9136
+Fix	1	110	0		+	1634377497.0386
+StimVisualOn	1	110	c     	left	Courier New	1634377497.7053
+StimVisualOff	1	110				1634377497.8303
+Fix	1	111	0		+	1634377497.9553
+StimVisualOn	1	111	     e	right	abuget	1634377498.6012
+StimVisualOff	1	111				1634377498.7262
+Fix	1	112	0		+	1634377498.8512
+StimVisualOn	1	112	     a	right	Courier New	1634377499.497
+StimVisualOff	1	112				1634377499.622
+Fix	1	113	0		+	1634377499.747
+StimVisualOn	1	113	     0	right	abuget	1634377500.3929
+StimVisualOff	1	113				1634377500.5179
+Fix	1	114	0		+	1634377500.6429
+StimVisualOn	1	114	0     	left	abuget	1634377501.3096
+StimVisualOff	1	114				1634377501.4346
+Fix	1	115	0		+	1634377501.5596
+StimVisualOn	1	115	1     	left	Arial	1634377502.2054
+StimVisualOff	1	115				1634377502.3304
+Fix	1	116	0		+	1634377502.4554
+StimVisualOn	1	116	0     	left	Courier New	1634377503.1221
+StimVisualOff	1	116				1634377503.2471
+Fix	1	117	0		+	1634377503.3721
+StimVisualOn	1	117	1     	left	abuget	1634377504.0388
+StimVisualOff	1	117				1634377504.1638
+Fix	1	118	0		+	1634377504.2888
+StimVisualOn	1	118	     B	right	Courier New	1634377504.9554
+StimVisualOff	1	118				1634377505.0804
+Fix	1	119	0		+	1634377505.2055
+StimVisualOn	1	119	     1	right	Courier New	1634377505.8721
+StimVisualOff	1	119				1634377505.9971
+Fix	1	120	0		+	1634377506.1221
+StimVisualOn	1	120	a     	left	Courier New	1634377506.7888
+StimVisualOff	1	120				1634377506.9138
+Fix	1	121	0		+	1634377507.0388
+StimVisualOn	1	121	     d	right	Courier New	1634377507.6847
+StimVisualOff	1	121				1634377507.8097
+Fix	1	122	0		+	1634377507.9347
+StimVisualOn	1	122	     2	right	Arial	1634377508.6013
+StimVisualOff	1	122				1634377508.7263
+Fix	1	123	0		+	1634377508.8513
+StimVisualOn	1	123	     A	right	abuget	1634377509.518
+StimVisualOff	1	123				1634377509.643
+Fix	1	124	0		+	1634377509.768
+StimVisualOn	1	124	C     	left	abuget	1634377510.4347
+StimVisualOff	1	124				1634377510.5597
+Fix	1	125	0		+	1634377510.6847
+StimVisualOn	1	125	     d	right	abuget	1634377511.3514
+StimVisualOff	1	125				1634377511.4764
+Fix	1	126	0		+	1634377511.6014
+StimVisualOn	1	126	     0	right	abuget	1634377512.2681
+StimVisualOff	1	126				1634377512.3931
+Fix	1	127	0		+	1634377512.5181
+StimVisualOn	1	127	     b	right	abuget	1634377513.1848
+StimVisualOff	1	127				1634377513.3098
+Fix	1	128	0		+	1634377513.4348
+StimVisualOn	1	128	D     	left	Courier New	1634377514.1014
+StimVisualOff	1	128				1634377514.2264
+Fix	1	129	0		+	1634377514.3514
+StimVisualOn	1	129	c     	left	Courier New	1634377514.9973
+StimVisualOff	1	129				1634377515.1223
+Fix	1	130	0		+	1634377515.2473
+StimVisualOn	1	130	A     	left	abuget	1634377515.914
+StimVisualOff	1	130				1634377516.039
+Fix	1	131	0		+	1634377516.164
+StimVisualOn	1	131	0     	left	Courier New	1634377516.8306
+StimVisualOff	1	131				1634377516.9557
+Fix	1	132	0		+	1634377517.0807
+StimVisualOn	1	132	d     	left	abuget	1634377517.7473
+StimVisualOff	1	132				1634377517.8723
+Fix	1	133	0		+	1634377517.9973
+StimVisualOn	1	133	E     	left	Courier New	1634377518.664
+StimVisualOff	1	133				1634377518.789
+Fix	1	134	0		+	1634377518.914
+StimVisualOn	1	134	     0	right	Courier New	1634377519.5807
+StimVisualOff	1	134				1634377519.7057
+Fix	1	135	0		+	1634377519.8307
+StimVisualOn	1	135	b     	left	Courier New	1634377520.4765
+StimVisualOff	1	135				1634377520.6016
+Fix	1	136	0		+	1634377520.7265
+StimVisualOn	1	136	     c	right	Courier New	1634377521.3932
+StimVisualOff	1	136				1634377521.5182
+Fix	1	137	0		+	1634377521.6432
+StimVisualOn	1	137	     0	right	Courier New	1634377522.3099
+StimVisualOff	1	137				1634377522.4349
+Fix	1	138	0		+	1634377522.5599
+StimVisualOn	1	138	     E	right	Courier New	1634377523.2266
+StimVisualOff	1	138				1634377523.3516
+Fix	1	139	0		+	1634377523.4766
+StimVisualOn	1	139	0     	left	abuget	1634377524.1433
+StimVisualOff	1	139				1634377524.2683
+Fix	1	140	0		+	1634377524.3933
+StimVisualOn	1	140	A     	left	abuget	1634377525.06
+StimVisualOff	1	140				1634377525.185
+Fix	1	141	0		+	1634377525.31
+StimVisualOn	1	141	     A	right	abuget	1634377525.9766
+StimVisualOff	1	141				1634377526.1016
+Fix	1	142	0		+	1634377526.2267
+StimVisualOn	1	142	0     	left	Courier New	1634377526.8725
+StimVisualOff	1	142				1634377526.9975
+Fix	1	143	0		+	1634377527.1225
+StimVisualOn	1	143	a     	left	Courier New	1634377527.7683
+StimVisualOff	1	143				1634377527.8933
+Fix	1	144	0		+	1634377528.0183
+StimVisualOn	1	144	c     	left	Courier New	1634377528.6642
+StimVisualOff	1	144				1634377528.7892
+Fix	1	145	0		+	1634377528.9142
+StimVisualOn	1	145	     b	right	Courier New	1634377529.5809
+StimVisualOff	1	145				1634377529.7059
+Fix	1	146	0		+	1634377529.8309
+StimVisualOn	1	146	     C	right	abuget	1634377530.4976
+StimVisualOff	1	146				1634377530.6226
+Fix	1	147	0		+	1634377530.7476
+StimVisualOn	1	147	     D	right	abuget	1634377531.4142
+StimVisualOff	1	147				1634377531.5392
+Fix	1	148	0		+	1634377531.6642
+StimVisualOn	1	148	1     	left	abuget	1634377532.3309
+StimVisualOff	1	148				1634377532.4559
+Fix	1	149	0		+	1634377532.5809
+StimVisualOn	1	149	     D	right	Courier New	1634377533.2268
+StimVisualOff	1	149				1634377533.3518
+Fix	1	150	0		+	1634377533.4768
+StimVisualOn	1	150	1     	left	abuget	1634377534.1226
+StimVisualOff	1	150				1634377534.2476
+Fix	1	151	0		+	1634377534.3726
+StimVisualOn	1	151	     B	right	Courier New	1634377535.0393
+StimVisualOff	1	151				1634377535.1643
+Fix	1	152	0		+	1634377535.2893
+StimVisualOn	1	152	     1	right	Arial	1634377535.956
+StimVisualOff	1	152				1634377536.081
+Fix	1	153	0		+	1634377536.206
+StimVisualOn	1	153	0     	left	abuget	1634377536.8727
+StimVisualOff	1	153				1634377536.9977
+Fix	1	154	0		+	1634377537.1227
+StimVisualOn	1	154	E     	left	Courier New	1634377537.7685
+StimVisualOff	1	154				1634377537.8935
+Fix	1	155	0		+	1634377538.0185
+StimVisualOn	1	155	     0	right	abuget	1634377538.6852
+StimVisualOff	1	155				1634377538.8102
+Fix	1	156	0		+	1634377538.9352
+StimVisualOn	1	156	     A	right	Courier New	1634377539.6019
+StimVisualOff	1	156				1634377539.7269
+Fix	1	157	0		+	1634377539.8519
+StimVisualOn	1	157	B     	left	abuget	1634377540.5186
+StimVisualOff	1	157				1634377540.6227
+Fix	1	158	0		+	1634377540.7477
+StimVisualOn	1	158	d     	left	abuget	1634377541.4144
+StimVisualOff	1	158				1634377541.5394
+Fix	1	159	0		+	1634377541.6644
+StimVisualOn	1	159	0     	left	abuget	1634377542.3311
+StimVisualOff	1	159				1634377542.4561
+Fix	1	160	0		+	1634377542.5811
+StimVisualOn	1	160	E     	left	abuget	1634377543.2478
+StimVisualOff	1	160				1634377543.3728
+Fix	1	161	0		+	1634377543.4978
+StimVisualOn	1	161	     1	right	abuget	1634377544.1436
+StimVisualOff	1	161				1634377544.2686
+Fix	1	162	0		+	1634377544.3936
+StimVisualOn	1	162	     b	right	Courier New	1634377545.0603
+StimVisualOff	1	162				1634377545.1853
+Fix	1	163	0		+	1634377545.3103
+StimVisualOn	1	163	     1	right	Courier New	1634377545.9562
+StimVisualOff	1	163				1634377546.0812
+Fix	1	164	0		+	1634377546.2062
+StimVisualOn	1	164	1     	left	abuget	1634377546.8728
+StimVisualOff	1	164				1634377546.9978
+Fix	1	165	0		+	1634377547.1228
+StimVisualOn	1	165	     e	right	abuget	1634377547.7895
+StimVisualOff	1	165				1634377547.9145
+Fix	1	166	0		+	1634377548.0395
+StimVisualOn	1	166	     0	right	abuget	1634377548.7062
+StimVisualOff	1	166				1634377548.8312
+Fix	1	167	0		+	1634377548.9562
+StimVisualOn	1	167	     b	right	abuget	1634377549.6229
+StimVisualOff	1	167				1634377549.7479
+Fix	1	168	0		+	1634377549.8729
+StimVisualOn	1	168	0     	left	Courier New	1634377550.5187
+StimVisualOff	1	168				1634377550.6437
+Fix	1	169	0		+	1634377550.7687
+StimVisualOn	1	169	     b	right	Courier New	1634377551.4354
+StimVisualOff	1	169				1634377551.5604
+Fix	1	170	0		+	1634377551.6854
+StimVisualOn	1	170	1     	left	abuget	1634377552.3313
+StimVisualOff	1	170				1634377552.4563
+Fix	1	171	0		+	1634377552.5813
+StimVisualOn	1	171	C     	left	Courier New	1634377553.2271
+StimVisualOff	1	171				1634377553.3521
+Fix	1	172	0		+	1634377553.4771
+StimVisualOn	1	172	0     	left	abuget	1634377554.123
+StimVisualOff	1	172				1634377554.248
+Fix	1	173	0		+	1634377554.373
+StimVisualOn	1	173	     A	right	Courier New	1634377555.0188
+StimVisualOff	1	173				1634377555.1438
+Fix	1	174	0		+	1634377555.2688
+StimVisualOn	1	174	e     	left	abuget	1634377555.9355
+StimVisualOff	1	174				1634377556.0605
+Fix	1	175	0		+	1634377556.1855
+StimVisualOn	1	175	b     	left	abuget	1634377556.8105
+StimVisualOff	1	175				1634377556.9355
+Fix	1	176	0		+	1634377557.0605
+StimVisualOn	1	176	     2	right	Arial	1634377557.7064
+StimVisualOff	1	176				1634377557.8314
+Fix	1	177	0		+	1634377557.9564
+StimVisualOn	1	177	b     	left	abuget	1634377558.623
+StimVisualOff	1	177				1634377558.748
+Fix	1	178	0		+	1634377558.873
+StimVisualOn	1	178	B     	left	abuget	1634377559.5189
+StimVisualOff	1	178				1634377559.6439
+Fix	1	179	0		+	1634377559.7689
+StimVisualOn	1	179	1     	left	Courier New	1634377560.4356
+StimVisualOff	1	179				1634377560.5606
+Fix	1	180	0		+	1634377560.6856
+StimVisualOn	1	180	     A	right	abuget	1634377561.3314
+StimVisualOff	1	180				1634377561.4564
+Fix	1	181	0		+	1634377561.5814
+StimVisualOn	1	181	     E	right	abuget	1634377562.2273
+StimVisualOff	1	181				1634377562.3523
+Fix	1	182	0		+	1634377562.4773
+StimVisualOn	1	182	     A	right	Courier New	1634377563.1439
+StimVisualOff	1	182				1634377563.2689
+Fix	1	183	0		+	1634377563.394
+StimVisualOn	1	183	     B	right	Courier New	1634377564.0606
+StimVisualOff	1	183				1634377564.1856
+Fix	1	184	0		+	1634377564.3106
+StimVisualOn	1	184	D     	left	Courier New	1634377564.9773
+StimVisualOff	1	184				1634377565.1023
+Fix	1	185	0		+	1634377565.2273
+StimVisualOn	1	185	e     	left	abuget	1634377565.894
+StimVisualOff	1	185				1634377566.019
+Fix	1	186	0		+	1634377566.144
+StimVisualOn	1	186	c     	left	abuget	1634377566.8107
+StimVisualOff	1	186				1634377566.9357
+Fix	1	187	0		+	1634377567.0607
+StimVisualOn	1	187	E     	left	Courier New	1634377567.7274
+StimVisualOff	1	187				1634377567.8524
+Fix	1	188	0		+	1634377567.9774
+StimVisualOn	1	188	C     	left	Courier New	1634377568.644
+StimVisualOff	1	188				1634377568.769
+Fix	1	189	0		+	1634377568.894
+StimVisualOn	1	189	0     	left	Courier New	1634377569.5607
+StimVisualOff	1	189				1634377569.6857
+Fix	1	190	0		+	1634377569.8107
+StimVisualOn	1	190	a     	left	abuget	1634377570.4566
+StimVisualOff	1	190				1634377570.5816
+Fix	1	191	0		+	1634377570.7066
+StimVisualOn	1	191	B     	left	Courier New	1634377571.3733
+StimVisualOff	1	191				1634377571.4983
+Fix	1	192	0		+	1634377571.6233
+StimVisualOn	1	192	     C	right	abuget	1634377572.2691
+StimVisualOff	1	192				1634377572.3941
+Fix	1	193	0		+	1634377572.5191
+StimVisualOn	1	193	b     	left	Courier New	1634377573.1858
+StimVisualOff	1	193				1634377573.3108
+Fix	1	194	0		+	1634377573.4358
+StimVisualOn	1	194	0     	left	abuget	1634377574.1025
+StimVisualOff	1	194				1634377574.2275
+Fix	1	195	0		+	1634377574.3525
+StimVisualOn	1	195	a     	left	Courier New	1634377575.0191
+StimVisualOff	1	195				1634377575.1442
+Fix	1	196	0		+	1634377575.2692
+StimVisualOn	1	196	e     	left	Courier New	1634377575.9358
+StimVisualOff	1	196				1634377576.0608
+Fix	1	197	0		+	1634377576.1858
+StimVisualOn	1	197	     c	right	Courier New	1634377576.8317
+StimVisualOff	1	197				1634377576.9567
+Fix	1	198	0		+	1634377577.0817
+StimVisualOn	1	198	E     	left	abuget	1634377577.7484
+StimVisualOff	1	198				1634377577.8734
+Fix	1	199	0		+	1634377577.9984
+StimVisualOn	1	199	A     	left	Courier New	1634377578.6442
+StimVisualOff	1	199				1634377578.7692
+Fix	1	200	0		+	1634377578.8942
+StimVisualOn	1	200	0     	left	abuget	1634377579.5401
+StimVisualOff	1	200				1634377579.6651
+Fix	1	201	0		+	1634377579.7901
+StimVisualOn	1	201	     a	right	Courier New	1634377580.4567
+StimVisualOff	1	201				1634377580.5818
+Fix	1	202	0		+	1634377580.7068
+StimVisualOn	1	202	     c	right	Courier New	1634377581.3734
+StimVisualOff	1	202				1634377581.4984
+Fix	1	203	0		+	1634377581.6234
+StimVisualOn	1	203	B     	left	abuget	1634377582.2901
+StimVisualOff	1	203				1634377582.4151
+Fix	1	204	0		+	1634377582.5401
+StimVisualOn	1	204	     e	right	abuget	1634377583.2068
+StimVisualOff	1	204				1634377583.3318
+Fix	1	205	0		+	1634377583.4568
+StimVisualOn	1	205	     a	right	Courier New	1634377584.1235
+StimVisualOff	1	205				1634377584.2485
+Fix	1	206	0		+	1634377584.3735
+StimVisualOn	1	206	D     	left	Courier New	1634377585.0193
+StimVisualOff	1	206				1634377585.1443
+Fix	1	207	0		+	1634377585.2693
+StimVisualOn	1	207	B     	left	abuget	1634377585.936
+StimVisualOff	1	207				1634377586.061
+Fix	1	208	0		+	1634377586.186
+StimVisualOn	1	208	     b	right	abuget	1634377586.8527
+StimVisualOff	1	208				1634377586.9777
+Fix	1	209	0		+	1634377587.1027
+StimVisualOn	1	209	     E	right	Courier New	1634377587.7485
+StimVisualOff	1	209				1634377587.8735
+Fix	1	210	0		+	1634377587.9985
+StimVisualOn	1	210	     D	right	Courier New	1634377588.6652
+StimVisualOff	1	210				1634377588.7902
+Fix	1	211	0		+	1634377588.9152
+StimVisualOn	1	211	a     	left	Courier New	1634377589.5611
+StimVisualOff	1	211				1634377589.6861
+Fix	1	212	0		+	1634377589.8111
+StimVisualOn	1	212	     2	right	Arial	1634377590.4569
+StimVisualOff	1	212				1634377590.5819
+Fix	1	213	0		+	1634377590.7069
+StimVisualOn	1	213	C     	left	abuget	1634377591.3736
+StimVisualOff	1	213				1634377591.4986
+Fix	1	214	0		+	1634377591.6236
+StimVisualOn	1	214	0     	left	abuget	1634377592.2903
+StimVisualOff	1	214				1634377592.4153
+Fix	1	215	0		+	1634377592.5403
+StimVisualOn	1	215	     D	right	Courier New	1634377593.207
+StimVisualOff	1	215				1634377593.332
+Fix	1	216	0		+	1634377593.457
+StimVisualOn	1	216	     0	right	abuget	1634377594.1236
+StimVisualOff	1	216				1634377594.2487
+Fix	1	217	0		+	1634377594.3737
+StimVisualOn	1	217	     1	right	Courier New	1634377595.0195
+StimVisualOff	1	217				1634377595.1445
+Fix	1	218	0		+	1634377595.2695
+StimVisualOn	1	218	e     	left	abuget	1634377595.9362
+StimVisualOff	1	218				1634377596.0612
+Fix	1	219	0		+	1634377596.1862
+StimVisualOn	1	219	     0	right	abuget	1634377596.8529
+StimVisualOff	1	219				1634377596.9779
+Fix	1	220	0		+	1634377597.1029
+StimVisualOn	1	220	1     	left	Courier New	1634377597.7695
+StimVisualOff	1	220				1634377597.8945
+Fix	1	221	0		+	1634377598.0196
+StimVisualOn	1	221	1     	left	abuget	1634377598.6862
+StimVisualOff	1	221				1634377598.8112
+Fix	1	222	0		+	1634377598.9362
+StimVisualOn	1	222	d     	left	abuget	1634377599.5821
+StimVisualOff	1	222				1634377599.7071
+Fix	1	223	0		+	1634377599.8321
+StimVisualOn	1	223	e     	left	abuget	1634377600.4988
+StimVisualOff	1	223				1634377600.6238
+Fix	1	224	0		+	1634377600.7488
+StimVisualOn	1	224	B     	left	Courier New	1634377601.4154
+StimVisualOff	1	224				1634377601.5404
+Fix	1	225	0		+	1634377601.6654
+StimVisualOn	1	225	2     	left	Arial	1634377602.3321
+StimVisualOff	1	225				1634377602.4571
+Fix	1	226	0		+	1634377602.5821
+StimVisualOn	1	226	     c	right	abuget	1634377603.2488
+StimVisualOff	1	226				1634377603.3738
+Fix	1	227	0		+	1634377603.4988
+StimVisualOn	1	227	     e	right	abuget	1634377604.1446
+StimVisualOff	1	227				1634377604.2697
+Fix	1	228	0		+	1634377604.3947
+StimVisualOn	1	228	     1	right	Arial	1634377605.0405
+StimVisualOff	1	228				1634377605.1655
+Fix	1	229	0		+	1634377605.2905
+StimVisualOn	1	229	1     	left	abuget	1634377605.9572
+StimVisualOff	1	229				1634377606.0822
+Fix	1	230	0		+	1634377606.2072
+StimVisualOn	1	230	     a	right	Courier New	1634377606.853
+StimVisualOff	1	230				1634377606.978
+Fix	1	231	0		+	1634377607.103
+StimVisualOn	1	231	e     	left	Courier New	1634377607.7697
+StimVisualOff	1	231				1634377607.8947
+Fix	1	232	0		+	1634377608.0197
+StimVisualOn	1	232	     b	right	Courier New	1634377608.6864
+StimVisualOff	1	232				1634377608.8114
+Fix	1	233	0		+	1634377608.9364
+StimVisualOn	1	233	b     	left	Courier New	1634377609.6031
+StimVisualOff	1	233				1634377609.7281
+Fix	1	234	0		+	1634377609.8531
+StimVisualOn	1	234	     B	right	abuget	1634377610.5198
+StimVisualOff	1	234				1634377610.6448
+Fix	1	235	0		+	1634377610.7698
+StimVisualOn	1	235	     0	right	Courier New	1634377611.4364
+StimVisualOff	1	235				1634377611.5614
+Fix	1	236	0		+	1634377611.6865
+StimVisualOn	1	236	     1	right	abuget	1634377612.3323
+StimVisualOff	1	236				1634377612.4573
+Fix	1	237	0		+	1634377612.6031

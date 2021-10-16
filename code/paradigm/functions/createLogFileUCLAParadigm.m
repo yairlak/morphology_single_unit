@@ -1,7 +1,7 @@
 function fid=createLogFileUCLAParadigm(params)
 timestamp=gettimestamp();
 subses=['P' num2str(params.subject) '_S' num2str(params.session)];
-fid=fopen(fullfile('..', 'logs', ['log_single_letters_' timestamp '_' subses '.csv']) ,'w');
+fid=fopen(fullfile(params.path2logs, ['log_single_letters_' timestamp '_' subses '.csv']) ,'w');
 fprintf(fid,['Event\t'...
     'Block\t'...
     'Trial\t'...
@@ -11,6 +11,6 @@ fprintf(fid,['Event\t'...
     'Time\r\n']);
 
 % copy code used for running to the log folder
-copyfile(fullfile('functions', 'getParamsUCLAParadigm.m'), fullfile('..', 'logs', sprintf('params_single_letters_%s_%s.m',timestamp,subses)))
+copyfile(fullfile('functions', 'getParamsUCLAParadigm.m'), fullfile(params.path2logs, sprintf('params_single_letters_%s_%s.m',timestamp,subses)))
 
 end

@@ -1,0 +1,64 @@
+Event	Block	Trial	Stimulus	Position	Font	Time
+GrandStart					---	1634419811.8966	
+BlockStart	1	0	0		-	1634419813.1258	
+Fix	1	0	0		+	1634419813.162
+StimVisualOn	1	1	A	center	LiberationMono-Regular.ttf	1634419814.7246
+StimVisualOff	1	1				1634419814.8496
+StimVisualOn	1	2	K	center	LiberationMono-Regular.ttf	1634419814.9954
+StimVisualOff	1	2				1634419815.1204
+StimVisualOn	1	3	Y	center	LiberationMono-Regular.ttf	1634419815.2662
+StimVisualOff	1	3				1634419815.3704
+StimVisualOn	1	4	G	center	AlexBrush-Regular.ttf	1634419815.4954
+StimVisualOff	1	4				1634419815.5996
+StimVisualOn	1	5	m	center	AlexBrush-Regular.ttf	1634419815.7454
+StimVisualOff	1	5				1634419815.8704
+StimVisualOn	1	6	R	center	AlexBrush-Regular.ttf	1634419816.0162
+StimVisualOff	1	6				1634419816.1204
+StimVisualOn	1	7	g	center	AlexBrush-Regular.ttf	1634419816.2454
+StimVisualOff	1	7				1634419816.3496
+StimVisualOn	1	8	g	center	AlexBrush-Regular.ttf	1634419816.4746
+StimVisualOff	1	8				1634419816.5996
+StimVisualOn	1	9	l	center	AlexBrush-Regular.ttf	1634419816.7454
+StimVisualOff	1	9				1634419816.8704
+StimVisualOn	1	10	K	center	AlexBrush-Regular.ttf	1634419816.9954
+StimVisualOff	1	10				1634419817.1204
+StimVisualOn	1	11	E	center	LiberationMono-Regular.ttf	1634419817.2663
+StimVisualOff	1	11				1634419817.3913
+StimVisualOn	1	12	x	center	LiberationMono-Regular.ttf	1634419817.5371
+StimVisualOff	1	12				1634419817.6413
+StimVisualOn	1	13	C	center	AlexBrush-Regular.ttf	1634419817.7663
+StimVisualOff	1	13				1634419817.8913
+StimVisualOn	1	14	h	center	LiberationMono-Regular.ttf	1634419818.0371
+StimVisualOff	1	14				1634419818.1621
+StimVisualOn	1	15	A	center	LiberationMono-Regular.ttf	1634419818.2871
+StimVisualOff	1	15				1634419818.4121
+StimVisualOn	1	16	J	center	LiberationMono-Regular.ttf	1634419818.558
+StimVisualOff	1	16				1634419818.6621
+StimVisualOn	1	17	B	center	LiberationMono-Regular.ttf	1634419818.7871
+StimVisualOff	1	17				1634419818.8913
+StimVisualOn	1	18	p	center	AlexBrush-Regular.ttf	1634419819.0163
+StimVisualOff	1	18				1634419819.1413
+StimVisualOn	1	19	h	center	AlexBrush-Regular.ttf	1634419819.2871
+StimVisualOff	1	19				1634419819.4121
+StimVisualOn	1	20	M	center	LiberationMono-Regular.ttf	1634419819.558
+StimVisualOff	1	20				1634419819.6621
+StimVisualOn	1	21	e	center	LiberationMono-Regular.ttf	1634419819.7872
+StimVisualOff	1	21				1634419819.8913
+StimVisualOn	1	22	c	center	LiberationMono-Regular.ttf	1634419820.0163
+StimVisualOff	1	22				1634419820.1413
+StimVisualOn	1	23	F	center	AlexBrush-Regular.ttf	1634419820.2663
+StimVisualOff	1	23				1634419820.3913
+StimVisualOn	1	24	k	center	LiberationMono-Regular.ttf	1634419820.5163
+StimVisualOff	1	24				1634419820.6413
+StimVisualOn	1	25	e	center	AlexBrush-Regular.ttf	1634419820.7872
+StimVisualOff	1	25				1634419820.9122
+StimVisualOn	1	26	O	center	AlexBrush-Regular.ttf	1634419821.058
+StimVisualOff	1	26				1634419821.183
+StimVisualOn	1	27	T	center	LiberationMono-Regular.ttf	1634419821.3288
+StimVisualOff	1	27				1634419821.4538
+StimVisualOn	1	28	P	center	LiberationMono-Regular.ttf	1634419821.5997
+StimVisualOff	1	28				1634419821.7038
+StimVisualOn	1	29	D	center	LiberationMono-Regular.ttf	1634419821.8497
+StimVisualOff	1	29				1634419821.9538
+StimVisualOn	1	30	u	center	AlexBrush-Regular.ttf	1634419822.0789
+StimVisualOff	1	30				1634419822.183
