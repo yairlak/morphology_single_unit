@@ -7,7 +7,7 @@ Created on Sun Oct 17 12:08:05 2021
 """
 import os
 
-path2stimuli = '../../stimuli/visual/'
+path2stimuli = '../../stimuli/'
 n_repetitions = 6
 
 with open(os.path.join(path2stimuli, 'pseudowords.csv'), 'r') as f:

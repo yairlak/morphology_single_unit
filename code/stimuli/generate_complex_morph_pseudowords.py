@@ -8,7 +8,7 @@ Created on Sun Oct 17 12:08:05 2021
 import os
 import itertools
 
-path2stimuli = '../../stimuli/visual/'
+path2stimuli = '../../stimuli/'
 
 elements = {}
 elements['prefixes'] = ['re', 'un', 'dis']

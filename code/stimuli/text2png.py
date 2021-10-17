@@ -10,9 +10,9 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 
 # PATHs
-ngram = 'unigrams'
-path2stimuli = f'../../stimuli/visual/{ngram}.csv'
-path2images = f'../../stimuli/visual/images/{ngram}/'
+ngram = 'ngrams'
+path2stimuli = f'../../stimuli/{ngram}.csv'
+path2images = f'../../stimuli/visual/{ngram}/'
 os.makedirs(path2images, exist_ok=True)
 
 # FONTS AND TEXT SIZE
