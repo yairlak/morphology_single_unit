@@ -120,8 +120,8 @@ d = ImageDraw.Draw(img)
 w, h = d.textsize(l)
 w, h = get_text_dimensions(l, image_font)
                 
-y = H/2 - w/2
-x = W/2 - h/2
+y = H/2
+x = W/2
 
 d.text((x, y),
        '+',
