@@ -4,7 +4,7 @@
 clear all; close all; clc
 debug_mode = 0; 
 
-%% INITIALIZA             TION
+%% INITIALIZATION
 addpath('functions')
 KbName('UnifyKeyNames')
 [params, events] = getParamsUCLAParadigm(debug_mode);
@@ -78,7 +78,7 @@ warning off; HideCursor
 %% START EXPERIMENT
 try 
     if ~debug_mode
-        present_intro_slide(params, handles);
+                              present_intro_slide(params, handles);
         KbStrokeWait;
     end
     KbQueueStart;

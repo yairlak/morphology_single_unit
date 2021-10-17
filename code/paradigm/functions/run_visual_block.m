@@ -43,12 +43,6 @@ for trial=1:length(stimuli)
       stimulus = upper(stimulus);
   end
   
-  [~, ~, keyCode] = KbCheck;
-  if keyCode('ESCAPE')
-    DisableKeysForKbCheck([]);
-    Screen('CloseAll');
-    return
-  end
   cumTrial=cumTrial+1;
   fprintf('Block %i, trial %i\n', block, trial)
 
@@ -61,7 +55,7 @@ for trial=1:length(stimuli)
   
   % Collect keyboard events since KbQueueStart was invoked
   [pressed, firstPress]=KbQueueCheck; 
-  
+
   
   if triggers
       send_trigger(triggers, handles, params, events, 'StartVisualWord', 0)
@@ -81,18 +75,18 @@ for trial=1:length(stimuli)
   
   if pressed
         if firstPress(KbName('space'))
-
-            fprintf(fid_log,['KeyPress\t' ...
+              fprintf(fid_log,['KeyPress\t' ...
               num2str(block) '\t' ...
               num2str(trial) '\t' ...
-              stimulus '\t' ...  %
-              position '\t' ...
-              font '\t' ...
-              num2str(firstPress(KbName('l'))) '\t' ...
+              '\t' ...  %
+              '\t' ...
+              '\t' ...
+              num2str(firstPress(KbName('space'))) '\t' ...
               '\r\n' ...
               ]); % write to log file
         end
         if firstPress(KbName('escape'))
+            KbName('space')
             error('Escape key was pressed')
         end
   end

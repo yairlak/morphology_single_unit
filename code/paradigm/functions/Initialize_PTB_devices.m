@@ -20,9 +20,9 @@ Screen('TextStyle', handles.win, 1);   % 0=normal text style. 1=bold. 2=italic.
 
 %% KEYBOARD
 handles.escapeKey = KbName('ESCAPE');
-handles.LKey = KbName('L');
+% handles.LKey = KbName('L');
 keysOfInterest=zeros(1,256);
-keysOfInterest(KbName({'l', 'L', 'ESCAPE'}))=1;
+keysOfInterest(KbName({'space', 'ESCAPE'}))=1;
 KbQueueCreate(-1, keysOfInterest);
 
 
