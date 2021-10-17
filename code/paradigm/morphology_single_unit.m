@@ -1,13 +1,23 @@
 %% 
 % This is the main script for the experiment
 % ------------------------------------------------
-clear all; close all; clc
 debug_mode = 0; 
 
 %% INITIALIZATION
 addpath('functions')
 KbName('UnifyKeyNames')
-[params, events] = getParamsUCLAParadigm(debug_mode);
+[params, events] = getParamsUCLAParadigm(stimulus_type);
+params.text_filename = [stimulus_type, '.csv'];
+params.stimulus_type = stimulus_type;
+params.repetitions = repetitions;
+params.fonts = fonts;
+params.letter_cases = letter_cases;
+params.positions = positions;
+params.n_blocks = n_blocks;
+params.stimulus_ontime = stimulus_ontime; % Duration of each word
+params.stimulus_offtime = params.stimulus_ontime; % Duration of black between stimuli
+params.SOA_visual = params.stimulus_ontime + params.stimulus_offtime;
+
 
 %% SUBJECT AND SESSION NUMBERS
 if debug_mode
@@ -61,12 +71,15 @@ fid_log=createLogFileUCLAParadigm(params); % OPEN LOG
 
 %% EXTEND STIMULI (ADD REPETITIONS, CASE, NUMBERS)
 stimuli = load_stimuli(params); % LOAD STIMULI
-stimuli = extend_letters(stimuli, params); % ADD CASE, FONT, POSITION
+stimuli = extend_stimuli(stimuli, params); % ADD CASE, FONT, POSITION
 stimuli = stimuli(randperm(length(stimuli)), :);
 stimuli = combine_with_numbers(stimuli, params); % ADD NUMBERS RANDOMLY
+if debug_mode
+    stimuli = stimuli(1:100, :);
+end
 stimuli_blocks = split_to_blocks(stimuli, params.n_blocks);
-
-fn = ['../../stimuli/visual/images/fixation.png'];
+   
+fn = ['../../stimuli/visual/fixation.png'];
 image_fixation = imread(fn);
 
 %% PTB
@@ -78,7 +91,7 @@ warning off; HideCursor
 %% START EXPERIMENT
 try 
     if ~debug_mode
-                              present_intro_slide(params, handles);
+        present_intro_slide(params, handles);
         KbStrokeWait;
     end
     KbQueueStart;

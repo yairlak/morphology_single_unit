@@ -2,12 +2,13 @@ function stimuli_extended = combine_with_numbers(stimuli, params)
     
     %%
     numbers = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
-    letters = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', ...
-               'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', ...
-               'w', 'x', 'y', 'z'};
-    letter_cases = {'lower', 'upper'};
-    positions = {'center'};
-    fonts = params.font_names;
+    stimulus_set = union(stimuli(:, 1), stimuli(:, 1));
+%     letters = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', ...
+%                'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', ...
+%                'w', 'x', 'y', 'z'};
+    letter_cases = params.letter_cases;
+    positions = params.positions;
+    fonts = params.fonts;
     %%
     SOA = params.stimulus_ontime + params.stimulus_offtime; % [sec]
     step = params.mean_delay_between_numbers; % [sec]
@@ -31,21 +32,19 @@ function stimuli_extended = combine_with_numbers(stimuli, params)
             i_extended = i_extended + 1; 
         end
         % INSERT A NUMBER
-        random_char = sample_character(stimuli_extended, ...
-                                           numbers, ...
+        random_stimulus = sample_character(numbers, ...
                                            letter_cases, ...
                                            positions, ...
-                                           {fonts{1}});
-        stimuli_extended = [stimuli_extended; random_char];
+                                           {fonts{1}}, params);
+        stimuli_extended = [stimuli_extended; random_stimulus];
         i_extended = i_extended + 1;
         % for i_sham=1:ceil(blink_duration/SOA)
-        for i_sham=1:2  % ADD TWO SHAM TRIALS
-            random_char = sample_character(stimuli_extended, ...
-                                               letters, ...
+        for i_sham=1:2  % ADD TWO SHAM TRIALS DUE TO ATTENTIONAL BLINK
+            random_stimulus = sample_character(stimulus_set, ...
                                                letter_cases, ...
                                                positions, ...
-                                               fonts);
-            stimuli_extended = [stimuli_extended; random_char];
+                                               fonts, params);
+            stimuli_extended = [stimuli_extended; random_stimulus];
             i_extended = i_extended + 1;
         end
     end

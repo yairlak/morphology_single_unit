@@ -1,4 +1,4 @@
-function [params, events] = getParamsUCLAParadigm(ngram_type)
+function [params, events] = getParamsUCLAParadigm(debug_mode)
 %function params = getParams
 %This function makes the struct that holds the parameters for the presentation of the stimuli and such.
 
@@ -6,7 +6,6 @@ function [params, events] = getParamsUCLAParadigm(ngram_type)
 params.path2intro_slide = '../../stimuli/instructions_single_letters.png';
 if ismac || isunix %comp == 'h'
     params.default_path = '~/Projects/Yair/morphology_single_unit/code';
-    params.path2images = fullfile('..', '..', 'stimuli', 'visual', ngram_type);
     params.path2stimuli = fullfile('..', '..', 'stimuli');
     params.path2logs = fullfile('..', '..', 'logs');
     params.sio = '/dev/tty.usbserial';
@@ -17,16 +16,27 @@ elseif ispc % strcmp(comp,'l')
 end
 
 %% %%%%%%% Text info and params
+if debug_mode
+    params.text_filename = 'characters.txt';
+else
+    params.text_filename = 'characters.txt';
+end
 params.font_size = 50; % Fontsize for words presented at the screen center
+params.font_names = {'LiberationMono-Regular.ttf', 'AlexBrush-Regular.ttf'}; % First standard, second cursif
 % params.font_color = 'ffffff';
 
+params.repetitions_letters = 6;
 params.mean_delay_between_numbers = 6; % [sec]
 params.error_delay_between_numbers = 2; % [sec]
 %params.repetitions_numbers = 6;
 
 %% %%%%%%% TIMING params
+params.n_blocks = 1;
 % VISUAL BLOCK
 params.fixation_duration_visual_block = 1.5; %
+params.stimulus_ontime = 0.15; % Duration of each word
+params.stimulus_offtime = 0.15; % Duration of black between stimuli
+params.SOA_visual = params.stimulus_ontime + params.stimulus_offtime;
 params.ISI_visual = 0; % from end of last trial to beginning of first trial
 
 %% EVENTS NUMBERS (TRIGGERS)

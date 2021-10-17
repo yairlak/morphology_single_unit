@@ -27,6 +27,9 @@ params.error_delay_between_numbers = 2; % [sec]
 %% %%%%%%% TIMING params
 % VISUAL BLOCK
 params.fixation_duration_visual_block = 1.5; %
+params.stimulus_ontime = 0.15; % Duration of each word
+params.stimulus_offtime = 0.15; % Duration of black between stimuli
+params.SOA_visual = params.stimulus_ontime + params.stimulus_offtime;
 params.ISI_visual = 0; % from end of last trial to beginning of first trial
 
 %% EVENTS NUMBERS (TRIGGERS)

@@ -1,0 +1,1446 @@
+Event	Block	Trial	Stimulus	Position	Font	Time
+GrandStart					---	1634431893.5743	
+BlockStart	1	0	0		-	1634431895.3467	
+Fix	1	0	0		+	1634431895.3894
+KeyPress	1	1				1634431895.3435	
+StimVisualOn	1	1	A	center	LiberationMono-Regular.ttf	1634431896.9311
+StimVisualOff	1	1				1634431897.0978
+StimVisualOn	1	2	K	center	LiberationMono-Regular.ttf	1634431897.2853
+StimVisualOff	1	2				1634431897.452
+StimVisualOn	1	3	Y	center	LiberationMono-Regular.ttf	1634431897.6395
+StimVisualOff	1	3				1634431897.8061
+StimVisualOn	1	4	G	center	AlexBrush-Regular.ttf	1634431897.9936
+StimVisualOff	1	4				1634431898.1603
+StimVisualOn	1	5	m	center	AlexBrush-Regular.ttf	1634431898.3478
+StimVisualOff	1	5				1634431898.5353
+StimVisualOn	1	6	R	center	AlexBrush-Regular.ttf	1634431898.7228
+StimVisualOff	1	6				1634431898.8895
+StimVisualOn	1	7	g	center	AlexBrush-Regular.ttf	1634431899.077
+StimVisualOff	1	7				1634431899.2436
+StimVisualOn	1	8	g	center	AlexBrush-Regular.ttf	1634431899.4312
+StimVisualOff	1	8				1634431899.5978
+StimVisualOn	1	9	l	center	AlexBrush-Regular.ttf	1634431899.7853
+StimVisualOff	1	9				1634431899.952
+StimVisualOn	1	10	K	center	AlexBrush-Regular.ttf	1634431900.1395
+StimVisualOff	1	10				1634431900.3062
+StimVisualOn	1	11	E	center	LiberationMono-Regular.ttf	1634431900.4937
+StimVisualOff	1	11				1634431900.6603
+StimVisualOn	1	12	x	center	LiberationMono-Regular.ttf	1634431900.8478
+StimVisualOff	1	12				1634431901.0145
+StimVisualOn	1	13	C	center	AlexBrush-Regular.ttf	1634431901.202
+StimVisualOff	1	13				1634431901.3687
+StimVisualOn	1	14	h	center	LiberationMono-Regular.ttf	1634431901.5562
+StimVisualOff	1	14				1634431901.7229
+StimVisualOn	1	15	A	center	LiberationMono-Regular.ttf	1634431901.9312
+StimVisualOff	1	15				1634431902.0979
+StimVisualOn	1	16	J	center	LiberationMono-Regular.ttf	1634431902.2854
+StimVisualOff	1	16				1634431902.452
+StimVisualOn	1	17	B	center	LiberationMono-Regular.ttf	1634431902.6395
+StimVisualOff	1	17				1634431902.8062
+StimVisualOn	1	18	p	center	AlexBrush-Regular.ttf	1634431902.9937
+StimVisualOff	1	18				1634431903.1604
+StimVisualOn	1	19	h	center	AlexBrush-Regular.ttf	1634431903.3479
+StimVisualOff	1	19				1634431903.5146
+StimVisualOn	1	20	M	center	LiberationMono-Regular.ttf	1634431903.7021
+StimVisualOff	1	20				1634431903.8687
+StimVisualOn	1	21	e	center	LiberationMono-Regular.ttf	1634431904.0562
+StimVisualOff	1	21				1634431904.2229
+StimVisualOn	1	22	c	center	LiberationMono-Regular.ttf	1634431904.4104
+StimVisualOff	1	22				1634431904.5771
+StimVisualOn	1	23	F	center	AlexBrush-Regular.ttf	1634431904.7646
+StimVisualOff	1	23				1634431904.9312
+StimVisualOn	1	24	k	center	LiberationMono-Regular.ttf	1634431905.1187
+StimVisualOff	1	24				1634431905.2854
+StimVisualOn	1	25	2	center	LiberationMono-Regular.ttf	1634431905.4729
+StimVisualOff	1	25				1634431905.6396
+StimVisualOn	1	26	p	center	AlexBrush-Regular.ttf	1634431905.8271
+StimVisualOff	1	26				1634431905.9938
+StimVisualOn	1	27	L	center	AlexBrush-Regular.ttf	1634431906.1813
+StimVisualOff	1	27				1634431906.3479
+StimVisualOn	1	28	e	center	AlexBrush-Regular.ttf	1634431906.5354
+StimVisualOff	1	28				1634431906.7021
+StimVisualOn	1	29	O	center	AlexBrush-Regular.ttf	1634431906.8896
+StimVisualOff	1	29				1634431907.0563
+StimVisualOn	1	30	T	center	LiberationMono-Regular.ttf	1634431907.2438
+StimVisualOff	1	30				1634431907.4105
+StimVisualOn	1	31	P	center	LiberationMono-Regular.ttf	1634431907.598
+StimVisualOff	1	31				1634431907.7646
+StimVisualOn	1	32	D	center	LiberationMono-Regular.ttf	1634431907.9521
+StimVisualOff	1	32				1634431908.1188
+StimVisualOn	1	33	u	center	AlexBrush-Regular.ttf	1634431908.3063
+StimVisualOff	1	33				1634431908.473
+StimVisualOn	1	34	C	center	LiberationMono-Regular.ttf	1634431908.6605
+StimVisualOff	1	34				1634431908.8271
+StimVisualOn	1	35	E	center	LiberationMono-Regular.ttf	1634431909.0147
+StimVisualOff	1	35				1634431909.1813
+StimVisualOn	1	36	P	center	LiberationMono-Regular.ttf	1634431909.3688
+StimVisualOff	1	36				1634431909.5355
+StimVisualOn	1	37	O	center	AlexBrush-Regular.ttf	1634431909.723
+StimVisualOff	1	37				1634431909.8897
+StimVisualOn	1	38	W	center	LiberationMono-Regular.ttf	1634431910.0772
+StimVisualOff	1	38				1634431910.2438
+StimVisualOn	1	39	b	center	AlexBrush-Regular.ttf	1634431910.4313
+StimVisualOff	1	39				1634431910.598
+StimVisualOn	1	40	j	center	AlexBrush-Regular.ttf	1634431910.7855
+StimVisualOff	1	40				1634431910.9522
+StimVisualOn	1	41	f	center	AlexBrush-Regular.ttf	1634431911.1397
+StimVisualOff	1	41				1634431911.3064
+StimVisualOn	1	42	G	center	AlexBrush-Regular.ttf	1634431911.4939
+StimVisualOff	1	42				1634431911.6605
+StimVisualOn	1	43	4	center	LiberationMono-Regular.ttf	1634431911.848
+StimVisualOff	1	43				1634431912.0147
+StimVisualOn	1	44	J	center	LiberationMono-Regular.ttf	1634431912.2022
+StimVisualOff	1	44				1634431912.3689
+StimVisualOn	1	45	f	center	LiberationMono-Regular.ttf	1634431912.5564
+StimVisualOff	1	45				1634431912.723
+StimVisualOn	1	46	k	center	LiberationMono-Regular.ttf	1634431912.9106
+StimVisualOff	1	46				1634431913.0772
+StimVisualOn	1	47	q	center	LiberationMono-Regular.ttf	1634431913.2647
+StimVisualOff	1	47				1634431913.4314
+StimVisualOn	1	48	N	center	AlexBrush-Regular.ttf	1634431913.6189
+StimVisualOff	1	48				1634431913.7856
+StimVisualOn	1	49	J	center	LiberationMono-Regular.ttf	1634431913.9731
+StimVisualOff	1	49				1634431914.1397
+KeyPress	1	50				1634431914.0872	
+StimVisualOn	1	50	t	center	LiberationMono-Regular.ttf	1634431914.3272
+StimVisualOff	1	50				1634431914.4939
+StimVisualOn	1	51	y	center	LiberationMono-Regular.ttf	1634431914.6814
+StimVisualOff	1	51				1634431914.8481
+StimVisualOn	1	52	J	center	LiberationMono-Regular.ttf	1634431915.0356
+StimVisualOff	1	52				1634431915.2023
+StimVisualOn	1	53	B	center	AlexBrush-Regular.ttf	1634431915.3898
+StimVisualOff	1	53				1634431915.5564
+StimVisualOn	1	54	V	center	AlexBrush-Regular.ttf	1634431915.7439
+StimVisualOff	1	54				1634431915.9106
+StimVisualOn	1	55	C	center	LiberationMono-Regular.ttf	1634431916.0981
+StimVisualOff	1	55				1634431916.2648
+StimVisualOn	1	56	S	center	LiberationMono-Regular.ttf	1634431916.4523
+StimVisualOff	1	56				1634431916.6189
+StimVisualOn	1	57	T	center	AlexBrush-Regular.ttf	1634431916.8064
+StimVisualOff	1	57				1634431916.9731
+StimVisualOn	1	58	B	center	AlexBrush-Regular.ttf	1634431917.1606
+StimVisualOff	1	58				1634431917.3273
+StimVisualOn	1	59	V	center	AlexBrush-Regular.ttf	1634431917.5148
+StimVisualOff	1	59				1634431917.6815
+StimVisualOn	1	60	P	center	LiberationMono-Regular.ttf	1634431917.869
+StimVisualOff	1	60				1634431918.0356
+StimVisualOn	1	61	L	center	LiberationMono-Regular.ttf	1634431918.2231
+StimVisualOff	1	61				1634431918.3898
+StimVisualOn	1	62	b	center	AlexBrush-Regular.ttf	1634431918.5773
+StimVisualOff	1	62				1634431918.744
+StimVisualOn	1	63	w	center	AlexBrush-Regular.ttf	1634431918.9315
+StimVisualOff	1	63				1634431919.0982
+StimVisualOn	1	64	1	center	LiberationMono-Regular.ttf	1634431919.2857
+StimVisualOff	1	64				1634431919.4523
+StimVisualOn	1	65	E	center	AlexBrush-Regular.ttf	1634431919.6398
+StimVisualOff	1	65				1634431919.8065
+StimVisualOn	1	66	E	center	LiberationMono-Regular.ttf	1634431919.994
+StimVisualOff	1	66				1634431920.1607
+StimVisualOn	1	67	U	center	LiberationMono-Regular.ttf	1634431920.3482
+StimVisualOff	1	67				1634431920.5149
+StimVisualOn	1	68	y	center	LiberationMono-Regular.ttf	1634431920.7023
+StimVisualOff	1	68				1634431920.869
+StimVisualOn	1	69	G	center	LiberationMono-Regular.ttf	1634431921.0565
+StimVisualOff	1	69				1634431921.2232
+StimVisualOn	1	70	v	center	LiberationMono-Regular.ttf	1634431921.4107
+StimVisualOff	1	70				1634431921.5774
+StimVisualOn	1	71	b	center	AlexBrush-Regular.ttf	1634431921.7649
+StimVisualOff	1	71				1634431921.9315
+StimVisualOn	1	72	B	center	LiberationMono-Regular.ttf	1634431922.119
+StimVisualOff	1	72				1634431922.2857
+StimVisualOn	1	73	H	center	LiberationMono-Regular.ttf	1634431922.4732
+StimVisualOff	1	73				1634431922.6399
+StimVisualOn	1	74	i	center	LiberationMono-Regular.ttf	1634431922.8274
+StimVisualOff	1	74				1634431922.9941
+StimVisualOn	1	75	C	center	AlexBrush-Regular.ttf	1634431923.1816
+StimVisualOff	1	75				1634431923.3482
+StimVisualOn	1	76	p	center	LiberationMono-Regular.ttf	1634431923.5357
+StimVisualOff	1	76				1634431923.7024
+StimVisualOn	1	77	l	center	LiberationMono-Regular.ttf	1634431923.8899
+StimVisualOff	1	77				1634431924.0566
+StimVisualOn	1	78	k	center	AlexBrush-Regular.ttf	1634431924.2441
+StimVisualOff	1	78				1634431924.4107
+StimVisualOn	1	79	Y	center	LiberationMono-Regular.ttf	1634431924.5982
+StimVisualOff	1	79				1634431924.7649
+StimVisualOn	1	80	a	center	AlexBrush-Regular.ttf	1634431924.9524
+StimVisualOff	1	80				1634431925.1191
+StimVisualOn	1	81	T	center	AlexBrush-Regular.ttf	1634431925.3066
+StimVisualOff	1	81				1634431925.4733
+StimVisualOn	1	82	c	center	AlexBrush-Regular.ttf	1634431925.6608
+StimVisualOff	1	82				1634431925.8274
+StimVisualOn	1	83	W	center	LiberationMono-Regular.ttf	1634431926.0149
+StimVisualOff	1	83				1634431926.1816
+StimVisualOn	1	84	l	center	LiberationMono-Regular.ttf	1634431926.3691
+StimVisualOff	1	84				1634431926.5358
+StimVisualOn	1	85	J	center	AlexBrush-Regular.ttf	1634431926.7233
+StimVisualOff	1	85				1634431926.89
+StimVisualOn	1	86	g	center	LiberationMono-Regular.ttf	1634431927.0775
+StimVisualOff	1	86				1634431927.2441
+StimVisualOn	1	87	D	center	AlexBrush-Regular.ttf	1634431927.4316
+StimVisualOff	1	87				1634431927.5983
+StimVisualOn	1	88	2	center	LiberationMono-Regular.ttf	1634431927.7858
+StimVisualOff	1	88				1634431927.9525
+StimVisualOn	1	89	w	center	AlexBrush-Regular.ttf	1634431928.14
+StimVisualOff	1	89				1634431928.3066
+StimVisualOn	1	90	K	center	AlexBrush-Regular.ttf	1634431928.4942
+StimVisualOff	1	90				1634431928.6608
+StimVisualOn	1	91	I	center	LiberationMono-Regular.ttf	1634431928.8483
+StimVisualOff	1	91				1634431929.015
+StimVisualOn	1	92	F	center	AlexBrush-Regular.ttf	1634431929.2025
+StimVisualOff	1	92				1634431929.3692
+StimVisualOn	1	93	X	center	LiberationMono-Regular.ttf	1634431929.5567
+StimVisualOff	1	93				1634431929.7233
+StimVisualOn	1	94	b	center	AlexBrush-Regular.ttf	1634431929.9108
+StimVisualOff	1	94				1634431930.0775
+StimVisualOn	1	95	m	center	AlexBrush-Regular.ttf	1634431930.265
+StimVisualOff	1	95				1634431930.4317
+StimVisualOn	1	96	J	center	AlexBrush-Regular.ttf	1634431930.6192
+StimVisualOff	1	96				1634431930.7859
+StimVisualOn	1	97	D	center	LiberationMono-Regular.ttf	1634431930.9734
+StimVisualOff	1	97				1634431931.14
+StimVisualOn	1	98	B	center	LiberationMono-Regular.ttf	1634431931.3275
+StimVisualOff	1	98				1634431931.4942
+StimVisualOn	1	99	o	center	AlexBrush-Regular.ttf	1634431931.6817
+StimVisualOff	1	99				1634431931.8484
+StimVisualOn	1	100	j	center	AlexBrush-Regular.ttf	1634431932.0359
+StimVisualOff	1	100				1634431932.2025
+StimVisualOn	1	101	B	center	AlexBrush-Regular.ttf	1634431932.39
+StimVisualOff	1	101				1634431932.5567
+StimVisualOn	1	102	R	center	AlexBrush-Regular.ttf	1634431932.7651
+StimVisualOff	1	102				1634431932.9317
+StimVisualOn	1	103	g	center	LiberationMono-Regular.ttf	1634431933.1192
+StimVisualOff	1	103				1634431933.2859
+StimVisualOn	1	104	s	center	LiberationMono-Regular.ttf	1634431933.4734
+StimVisualOff	1	104				1634431933.6401
+StimVisualOn	1	105	E	center	LiberationMono-Regular.ttf	1634431933.8276
+StimVisualOff	1	105				1634431933.9942
+StimVisualOn	1	106	t	center	LiberationMono-Regular.ttf	1634431934.1817
+StimVisualOff	1	106				1634431934.3484
+StimVisualOn	1	107	m	center	AlexBrush-Regular.ttf	1634431934.5359
+StimVisualOff	1	107				1634431934.7026
+StimVisualOn	1	108	1	center	LiberationMono-Regular.ttf	1634431934.8901
+StimVisualOff	1	108				1634431935.0568
+StimVisualOn	1	109	N	center	LiberationMono-Regular.ttf	1634431935.2443
+StimVisualOff	1	109				1634431935.4109
+StimVisualOn	1	110	U	center	LiberationMono-Regular.ttf	1634431935.5984
+StimVisualOff	1	110				1634431935.7651
+StimVisualOn	1	111	b	center	LiberationMono-Regular.ttf	1634431935.9526
+StimVisualOff	1	111				1634431936.1193
+StimVisualOn	1	112	E	center	LiberationMono-Regular.ttf	1634431936.3068
+StimVisualOff	1	112				1634431936.4735
+StimVisualOn	1	113	i	center	LiberationMono-Regular.ttf	1634431936.661
+StimVisualOff	1	113				1634431936.8276
+StimVisualOn	1	114	o	center	AlexBrush-Regular.ttf	1634431937.0151
+StimVisualOff	1	114				1634431937.1818
+StimVisualOn	1	115	z	center	LiberationMono-Regular.ttf	1634431937.3693
+StimVisualOff	1	115				1634431937.536
+StimVisualOn	1	116	b	center	LiberationMono-Regular.ttf	1634431937.7235
+StimVisualOff	1	116				1634431937.8901
+StimVisualOn	1	117	L	center	LiberationMono-Regular.ttf	1634431938.0776
+StimVisualOff	1	117				1634431938.2443
+StimVisualOn	1	118	D	center	LiberationMono-Regular.ttf	1634431938.4318
+StimVisualOff	1	118				1634431938.5985
+StimVisualOn	1	119	p	center	LiberationMono-Regular.ttf	1634431938.786
+StimVisualOff	1	119				1634431938.9527
+StimVisualOn	1	120	i	center	AlexBrush-Regular.ttf	1634431939.1402
+StimVisualOff	1	120				1634431939.3068
+StimVisualOn	1	121	y	center	LiberationMono-Regular.ttf	1634431939.4943
+StimVisualOff	1	121				1634431939.661
+StimVisualOn	1	122	p	center	LiberationMono-Regular.ttf	1634431939.8485
+StimVisualOff	1	122				1634431940.0152
+StimVisualOn	1	123	y	center	LiberationMono-Regular.ttf	1634431940.2027
+StimVisualOff	1	123				1634431940.3694
+StimVisualOn	1	124	S	center	AlexBrush-Regular.ttf	1634431940.5569
+StimVisualOff	1	124				1634431940.7235
+StimVisualOn	1	125	C	center	AlexBrush-Regular.ttf	1634431940.911
+StimVisualOff	1	125				1634431941.0777
+StimVisualOn	1	126	h	center	LiberationMono-Regular.ttf	1634431941.2652
+StimVisualOff	1	126				1634431941.4319
+StimVisualOn	1	127	B	center	LiberationMono-Regular.ttf	1634431941.6194
+StimVisualOff	1	127				1634431941.786
+StimVisualOn	1	128	K	center	AlexBrush-Regular.ttf	1634431941.9735
+StimVisualOff	1	128				1634431942.1402
+StimVisualOn	1	129	b	center	LiberationMono-Regular.ttf	1634431942.3277
+StimVisualOff	1	129				1634431942.4944
+StimVisualOn	1	130	z	center	AlexBrush-Regular.ttf	1634431942.6819
+StimVisualOff	1	130				1634431942.8486
+StimVisualOn	1	131	V	center	AlexBrush-Regular.ttf	1634431943.0361
+StimVisualOff	1	131				1634431943.2027
+StimVisualOn	1	132	d	center	LiberationMono-Regular.ttf	1634431943.3902
+StimVisualOff	1	132				1634431943.5569
+StimVisualOn	1	133	W	center	AlexBrush-Regular.ttf	1634431943.7444
+StimVisualOff	1	133				1634431943.9111
+StimVisualOn	1	134	1	center	LiberationMono-Regular.ttf	1634431944.0986
+StimVisualOff	1	134				1634431944.2652
+StimVisualOn	1	135	d	center	AlexBrush-Regular.ttf	1634431944.4528
+StimVisualOff	1	135				1634431944.6194
+StimVisualOn	1	136	o	center	LiberationMono-Regular.ttf	1634431944.8069
+StimVisualOff	1	136				1634431944.9736
+StimVisualOn	1	137	I	center	AlexBrush-Regular.ttf	1634431945.1611
+StimVisualOff	1	137				1634431945.3278
+StimVisualOn	1	138	W	center	AlexBrush-Regular.ttf	1634431945.5153
+StimVisualOff	1	138				1634431945.6819
+StimVisualOn	1	139	B	center	LiberationMono-Regular.ttf	1634431945.8694
+StimVisualOff	1	139				1634431946.0361
+StimVisualOn	1	140	I	center	LiberationMono-Regular.ttf	1634431946.2236
+StimVisualOff	1	140				1634431946.3903
+StimVisualOn	1	141	Q	center	AlexBrush-Regular.ttf	1634431946.5778
+StimVisualOff	1	141				1634431946.7445
+StimVisualOn	1	142	Z	center	LiberationMono-Regular.ttf	1634431946.932
+StimVisualOff	1	142				1634431947.0986
+StimVisualOn	1	143	A	center	LiberationMono-Regular.ttf	1634431947.2861
+StimVisualOff	1	143				1634431947.4528
+StimVisualOn	1	144	U	center	LiberationMono-Regular.ttf	1634431947.6403
+StimVisualOff	1	144				1634431947.807
+StimVisualOn	1	145	p	center	AlexBrush-Regular.ttf	1634431947.9945
+StimVisualOff	1	145				1634431948.1611
+StimVisualOn	1	146	n	center	LiberationMono-Regular.ttf	1634431948.3487
+StimVisualOff	1	146				1634431948.5153
+StimVisualOn	1	147	E	center	AlexBrush-Regular.ttf	1634431948.7028
+StimVisualOff	1	147				1634431948.8695
+StimVisualOn	1	148	r	center	LiberationMono-Regular.ttf	1634431949.057
+StimVisualOff	1	148				1634431949.2237
+StimVisualOn	1	149	S	center	AlexBrush-Regular.ttf	1634431949.4112
+StimVisualOff	1	149				1634431949.5778
+StimVisualOn	1	150	y	center	AlexBrush-Regular.ttf	1634431949.7653
+StimVisualOff	1	150				1634431949.932
+StimVisualOn	1	151	m	center	AlexBrush-Regular.ttf	1634431950.1195
+StimVisualOff	1	151				1634431950.2862
+StimVisualOn	1	152	R	center	AlexBrush-Regular.ttf	1634431950.4737
+StimVisualOff	1	152				1634431950.6404
+StimVisualOn	1	153	d	center	LiberationMono-Regular.ttf	1634431950.8279
+StimVisualOff	1	153				1634431950.9945
+StimVisualOn	1	154	v	center	LiberationMono-Regular.ttf	1634431951.182
+StimVisualOff	1	154				1634431951.3487
+StimVisualOn	1	155	b	center	AlexBrush-Regular.ttf	1634431951.5362
+StimVisualOff	1	155				1634431951.7029
+StimVisualOn	1	156	t	center	AlexBrush-Regular.ttf	1634431951.8904
+StimVisualOff	1	156				1634431952.0571
+StimVisualOn	1	157	n	center	LiberationMono-Regular.ttf	1634431952.2446
+StimVisualOff	1	157				1634431952.4112
+StimVisualOn	1	158	T	center	LiberationMono-Regular.ttf	1634431952.5987
+StimVisualOff	1	158				1634431952.7654
+StimVisualOn	1	159	3	center	LiberationMono-Regular.ttf	1634431952.9529
+StimVisualOff	1	159				1634431953.1196
+StimVisualOn	1	160	l	center	LiberationMono-Regular.ttf	1634431953.3071
+StimVisualOff	1	160				1634431953.4737
+StimVisualOn	1	161	m	center	AlexBrush-Regular.ttf	1634431953.6612
+StimVisualOff	1	161				1634431953.8279
+StimVisualOn	1	162	r	center	LiberationMono-Regular.ttf	1634431954.0154
+StimVisualOff	1	162				1634431954.1821
+StimVisualOn	1	163	S	center	LiberationMono-Regular.ttf	1634431954.3696
+StimVisualOff	1	163				1634431954.5363
+StimVisualOn	1	164	h	center	AlexBrush-Regular.ttf	1634431954.7238
+StimVisualOff	1	164				1634431954.8904
+StimVisualOn	1	165	s	center	AlexBrush-Regular.ttf	1634431955.0779
+StimVisualOff	1	165				1634431955.2446
+StimVisualOn	1	166	X	center	LiberationMono-Regular.ttf	1634431955.4321
+StimVisualOff	1	166				1634431955.5988
+StimVisualOn	1	167	f	center	LiberationMono-Regular.ttf	1634431955.7863
+StimVisualOff	1	167				1634431955.9529
+StimVisualOn	1	168	Y	center	AlexBrush-Regular.ttf	1634431956.1405
+StimVisualOff	1	168				1634431956.3071
+StimVisualOn	1	169	K	center	LiberationMono-Regular.ttf	1634431956.4946
+StimVisualOff	1	169				1634431956.6613
+StimVisualOn	1	170	v	center	AlexBrush-Regular.ttf	1634431956.8488
+StimVisualOff	1	170				1634431957.0155
+StimVisualOn	1	171	U	center	AlexBrush-Regular.ttf	1634431957.203
+StimVisualOff	1	171				1634431957.3696
+StimVisualOn	1	172	y	center	AlexBrush-Regular.ttf	1634431957.5571
+StimVisualOff	1	172				1634431957.7238
+StimVisualOn	1	173	U	center	AlexBrush-Regular.ttf	1634431957.9113
+StimVisualOff	1	173				1634431958.078
+StimVisualOn	1	174	H	center	AlexBrush-Regular.ttf	1634431958.2655
+StimVisualOff	1	174				1634431958.4322
+StimVisualOn	1	175	C	center	LiberationMono-Regular.ttf	1634431958.6197
+StimVisualOff	1	175				1634431958.7863
+StimVisualOn	1	176	x	center	AlexBrush-Regular.ttf	1634431958.9738
+StimVisualOff	1	176				1634431959.1405
+StimVisualOn	1	177	X	center	AlexBrush-Regular.ttf	1634431959.328
+StimVisualOff	1	177				1634431959.4947
+StimVisualOn	1	178	o	center	LiberationMono-Regular.ttf	1634431959.6822
+StimVisualOff	1	178				1634431959.8488
+StimVisualOn	1	179	x	center	AlexBrush-Regular.ttf	1634431960.0364
+StimVisualOff	1	179				1634431960.203
+StimVisualOn	1	180	E	center	AlexBrush-Regular.ttf	1634431960.3905
+StimVisualOff	1	180				1634431960.5572
+StimVisualOn	1	181	8	center	LiberationMono-Regular.ttf	1634431960.7447
+StimVisualOff	1	181				1634431960.9114
+StimVisualOn	1	182	L	center	AlexBrush-Regular.ttf	1634431961.0989
+StimVisualOff	1	182				1634431961.2655
+StimVisualOn	1	183	n	center	LiberationMono-Regular.ttf	1634431961.453
+StimVisualOff	1	183				1634431961.6197
+StimVisualOn	1	184	t	center	AlexBrush-Regular.ttf	1634431961.8072
+StimVisualOff	1	184				1634431961.9739
+StimVisualOn	1	185	s	center	LiberationMono-Regular.ttf	1634431962.1614
+StimVisualOff	1	185				1634431962.3281
+StimVisualOn	1	186	B	center	LiberationMono-Regular.ttf	1634431962.5156
+StimVisualOff	1	186				1634431962.6822
+StimVisualOn	1	187	K	center	LiberationMono-Regular.ttf	1634431962.8697
+StimVisualOff	1	187				1634431963.0364
+StimVisualOn	1	188	M	center	LiberationMono-Regular.ttf	1634431963.2239
+StimVisualOff	1	188				1634431963.3906
+StimVisualOn	1	189	t	center	LiberationMono-Regular.ttf	1634431963.5781
+StimVisualOff	1	189				1634431963.7448
+StimVisualOn	1	190	k	center	AlexBrush-Regular.ttf	1634431963.9323
+StimVisualOff	1	190				1634431964.0989
+StimVisualOn	1	191	a	center	LiberationMono-Regular.ttf	1634431964.2864
+StimVisualOff	1	191				1634431964.4531
+StimVisualOn	1	192	k	center	LiberationMono-Regular.ttf	1634431964.6406
+StimVisualOff	1	192				1634431964.8073
+StimVisualOn	1	193	u	center	LiberationMono-Regular.ttf	1634431964.9948
+StimVisualOff	1	193				1634431965.1614
+StimVisualOn	1	194	s	center	AlexBrush-Regular.ttf	1634431965.3489
+StimVisualOff	1	194				1634431965.5156
+StimVisualOn	1	195	V	center	LiberationMono-Regular.ttf	1634431965.7031
+StimVisualOff	1	195				1634431965.8698
+StimVisualOn	1	196	L	center	AlexBrush-Regular.ttf	1634431966.0573
+StimVisualOff	1	196				1634431966.224
+StimVisualOn	1	197	s	center	AlexBrush-Regular.ttf	1634431966.4115
+StimVisualOff	1	197				1634431966.5781
+StimVisualOn	1	198	n	center	AlexBrush-Regular.ttf	1634431966.7656
+StimVisualOff	1	198				1634431966.9323
+StimVisualOn	1	199	M	center	AlexBrush-Regular.ttf	1634431967.1198
+StimVisualOff	1	199				1634431967.2865
+StimVisualOn	1	200	X	center	AlexBrush-Regular.ttf	1634431967.474
+StimVisualOff	1	200				1634431967.6406
+StimVisualOn	1	201	v	center	LiberationMono-Regular.ttf	1634431967.8282
+StimVisualOff	1	201				1634431967.9948
+StimVisualOn	1	202	S	center	AlexBrush-Regular.ttf	1634431968.1823
+StimVisualOff	1	202				1634431968.349
+StimVisualOn	1	203	o	center	LiberationMono-Regular.ttf	1634431968.5365
+StimVisualOff	1	203				1634431968.7032
+StimVisualOn	1	204	g	center	AlexBrush-Regular.ttf	1634431968.8907
+StimVisualOff	1	204				1634431969.0573
+StimVisualOn	1	205	9	center	LiberationMono-Regular.ttf	1634431969.2448
+StimVisualOff	1	205				1634431969.4115
+StimVisualOn	1	206	G	center	AlexBrush-Regular.ttf	1634431969.599
+StimVisualOff	1	206				1634431969.7657
+StimVisualOn	1	207	Q	center	AlexBrush-Regular.ttf	1634431969.9532
+StimVisualOff	1	207				1634431970.1199
+StimVisualOn	1	208	K	center	LiberationMono-Regular.ttf	1634431970.3074
+StimVisualOff	1	208				1634431970.474
+StimVisualOn	1	209	M	center	LiberationMono-Regular.ttf	1634431970.6615
+StimVisualOff	1	209				1634431970.8282
+StimVisualOn	1	210	g	center	AlexBrush-Regular.ttf	1634431971.0157
+StimVisualOff	1	210				1634431971.1824
+StimVisualOn	1	211	m	center	LiberationMono-Regular.ttf	1634431971.3699
+StimVisualOff	1	211				1634431971.5366
+StimVisualOn	1	212	P	center	AlexBrush-Regular.ttf	1634431971.7241
+StimVisualOff	1	212				1634431971.8907
+StimVisualOn	1	213	R	center	LiberationMono-Regular.ttf	1634431972.0782
+StimVisualOff	1	213				1634431972.2449
+StimVisualOn	1	214	L	center	AlexBrush-Regular.ttf	1634431972.4324
+StimVisualOff	1	214				1634431972.5991
+StimVisualOn	1	215	u	center	LiberationMono-Regular.ttf	1634431972.7866
+StimVisualOff	1	215				1634431972.9532
+StimVisualOn	1	216	m	center	LiberationMono-Regular.ttf	1634431973.1407
+StimVisualOff	1	216				1634431973.3074
+StimVisualOn	1	217	A	center	AlexBrush-Regular.ttf	1634431973.4949
+StimVisualOff	1	217				1634431973.6616
+StimVisualOn	1	218	w	center	LiberationMono-Regular.ttf	1634431973.8491
+StimVisualOff	1	218				1634431974.0158
+StimVisualOn	1	219	R	center	LiberationMono-Regular.ttf	1634431974.2033
+StimVisualOff	1	219				1634431974.3699
+StimVisualOn	1	220	m	center	AlexBrush-Regular.ttf	1634431974.5574
+StimVisualOff	1	220				1634431974.7241
+StimVisualOn	1	221	s	center	AlexBrush-Regular.ttf	1634431974.9116
+StimVisualOff	1	221				1634431975.0783
+StimVisualOn	1	222	3	center	LiberationMono-Regular.ttf	1634431975.2658
+StimVisualOff	1	222				1634431975.4324
+StimVisualOn	1	223	w	center	AlexBrush-Regular.ttf	1634431975.62
+StimVisualOff	1	223				1634431975.7866
+StimVisualOn	1	224	m	center	AlexBrush-Regular.ttf	1634431975.9741
+StimVisualOff	1	224				1634431976.1408
+StimVisualOn	1	225	z	center	AlexBrush-Regular.ttf	1634431976.3283
+StimVisualOff	1	225				1634431976.495
+StimVisualOn	1	226	I	center	AlexBrush-Regular.ttf	1634431976.6825
+StimVisualOff	1	226				1634431976.8491
+StimVisualOn	1	227	F	center	LiberationMono-Regular.ttf	1634431977.0366
+StimVisualOff	1	227				1634431977.2033
+StimVisualOn	1	228	V	center	LiberationMono-Regular.ttf	1634431977.3908
+StimVisualOff	1	228				1634431977.5575
+StimVisualOn	1	229	n	center	AlexBrush-Regular.ttf	1634431977.745
+StimVisualOff	1	229				1634431977.9117
+StimVisualOn	1	230	i	center	LiberationMono-Regular.ttf	1634431978.0992
+StimVisualOff	1	230				1634431978.2658
+StimVisualOn	1	231	I	center	AlexBrush-Regular.ttf	1634431978.4533
+StimVisualOff	1	231				1634431978.62
+StimVisualOn	1	232	Q	center	LiberationMono-Regular.ttf	1634431978.8075
+StimVisualOff	1	232				1634431978.9742
+StimVisualOn	1	233	P	center	AlexBrush-Regular.ttf	1634431979.1617
+StimVisualOff	1	233				1634431979.3283
+StimVisualOn	1	234	G	center	AlexBrush-Regular.ttf	1634431979.5159
+StimVisualOff	1	234				1634431979.6825
+StimVisualOn	1	235	o	center	AlexBrush-Regular.ttf	1634431979.87
+StimVisualOff	1	235				1634431980.0367
+StimVisualOn	1	236	g	center	LiberationMono-Regular.ttf	1634431980.2242
+StimVisualOff	1	236				1634431980.3909
+StimVisualOn	1	237	q	center	LiberationMono-Regular.ttf	1634431980.5784
+StimVisualOff	1	237				1634431980.745
+StimVisualOn	1	238	z	center	LiberationMono-Regular.ttf	1634431980.9325
+StimVisualOff	1	238				1634431981.0992
+StimVisualOn	1	239	d	center	AlexBrush-Regular.ttf	1634431981.2867
+StimVisualOff	1	239				1634431981.4534
+StimVisualOn	1	240	H	center	LiberationMono-Regular.ttf	1634431981.6409
+StimVisualOff	1	240				1634431981.8076
+StimVisualOn	1	241	Z	center	AlexBrush-Regular.ttf	1634431981.9951
+StimVisualOff	1	241				1634431982.1617
+StimVisualOn	1	242	V	center	LiberationMono-Regular.ttf	1634431982.3492
+StimVisualOff	1	242				1634431982.5159
+StimVisualOn	1	243	R	center	LiberationMono-Regular.ttf	1634431982.7034
+StimVisualOff	1	243				1634431982.8701
+StimVisualOn	1	244	e	center	LiberationMono-Regular.ttf	1634431983.0576
+StimVisualOff	1	244				1634431983.2242
+StimVisualOn	1	245	8	center	LiberationMono-Regular.ttf	1634431983.4118
+StimVisualOff	1	245				1634431983.5784
+StimVisualOn	1	246	n	center	LiberationMono-Regular.ttf	1634431983.7659
+StimVisualOff	1	246				1634431983.9326
+StimVisualOn	1	247	c	center	AlexBrush-Regular.ttf	1634431984.1201
+StimVisualOff	1	247				1634431984.2868
+StimVisualOn	1	248	Y	center	LiberationMono-Regular.ttf	1634431984.4743
+StimVisualOff	1	248				1634431984.6409
+StimVisualOn	1	249	K	center	AlexBrush-Regular.ttf	1634431984.8284
+StimVisualOff	1	249				1634431984.9951
+StimVisualOn	1	250	B	center	AlexBrush-Regular.ttf	1634431985.1826
+StimVisualOff	1	250				1634431985.3493
+StimVisualOn	1	251	t	center	AlexBrush-Regular.ttf	1634431985.5368
+StimVisualOff	1	251				1634431985.7035
+StimVisualOn	1	252	U	center	AlexBrush-Regular.ttf	1634431985.891
+StimVisualOff	1	252				1634431986.0576
+StimVisualOn	1	253	X	center	AlexBrush-Regular.ttf	1634431986.2451
+StimVisualOff	1	253				1634431986.4118
+StimVisualOn	1	254	O	center	AlexBrush-Regular.ttf	1634431986.5993
+StimVisualOff	1	254				1634431986.766
+StimVisualOn	1	255	E	center	AlexBrush-Regular.ttf	1634431986.9535
+StimVisualOff	1	255				1634431987.1201
+StimVisualOn	1	256	Q	center	AlexBrush-Regular.ttf	1634431987.3076
+StimVisualOff	1	256				1634431987.4743
+StimVisualOn	1	257	O	center	LiberationMono-Regular.ttf	1634431987.6618
+StimVisualOff	1	257				1634431987.8285
+StimVisualOn	1	258	Z	center	AlexBrush-Regular.ttf	1634431988.016
+StimVisualOff	1	258				1634431988.1827
+StimVisualOn	1	259	P	center	AlexBrush-Regular.ttf	1634431988.3702
+StimVisualOff	1	259				1634431988.5368
+StimVisualOn	1	260	N	center	AlexBrush-Regular.ttf	1634431988.7243
+StimVisualOff	1	260				1634431988.891
+StimVisualOn	1	261	S	center	AlexBrush-Regular.ttf	1634431989.0785
+StimVisualOff	1	261				1634431989.2452
+StimVisualOn	1	262	T	center	LiberationMono-Regular.ttf	1634431989.4327
+StimVisualOff	1	262				1634431989.5994
+StimVisualOn	1	263	c	center	AlexBrush-Regular.ttf	1634431989.7869
+StimVisualOff	1	263				1634431989.9535
+StimVisualOn	1	264	l	center	LiberationMono-Regular.ttf	1634431990.141
+StimVisualOff	1	264				1634431990.3077
+StimVisualOn	1	265	t	center	AlexBrush-Regular.ttf	1634431990.4952
+StimVisualOff	1	265				1634431990.6619
+StimVisualOn	1	266	w	center	LiberationMono-Regular.ttf	1634431990.8494
+StimVisualOff	1	266				1634431991.016
+StimVisualOn	1	267	r	center	AlexBrush-Regular.ttf	1634431991.2035
+StimVisualOff	1	267				1634431991.3702
+StimVisualOn	1	268	v	center	LiberationMono-Regular.ttf	1634431991.5369
+StimVisualOff	1	268				1634431991.7036
+StimVisualOn	1	269	8	center	LiberationMono-Regular.ttf	1634431991.8911
+StimVisualOff	1	269				1634431992.0577
+StimVisualOn	1	270	u	center	LiberationMono-Regular.ttf	1634431992.2452
+StimVisualOff	1	270				1634431992.4119
+StimVisualOn	1	271	i	center	LiberationMono-Regular.ttf	1634431992.5994
+StimVisualOff	1	271				1634431992.7661
+StimVisualOn	1	272	p	center	LiberationMono-Regular.ttf	1634431992.9536
+StimVisualOff	1	272				1634431993.1203
+StimVisualOn	1	273	i	center	AlexBrush-Regular.ttf	1634431993.3077
+StimVisualOff	1	273				1634431993.4744
+StimVisualOn	1	274	z	center	LiberationMono-Regular.ttf	1634431993.6619
+StimVisualOff	1	274				1634431993.8286
+StimVisualOn	1	275	d	center	LiberationMono-Regular.ttf	1634431994.0161
+StimVisualOff	1	275				1634431994.1828
+StimVisualOn	1	276	A	center	LiberationMono-Regular.ttf	1634431994.3703
+StimVisualOff	1	276				1634431994.5369
+StimVisualOn	1	277	c	center	LiberationMono-Regular.ttf	1634431994.7244
+StimVisualOff	1	277				1634431994.8911
+StimVisualOn	1	278	S	center	LiberationMono-Regular.ttf	1634431995.0786
+StimVisualOff	1	278				1634431995.2453
+StimVisualOn	1	279	k	center	AlexBrush-Regular.ttf	1634431995.4328
+StimVisualOff	1	279				1634431995.5995
+StimVisualOn	1	280	P	center	LiberationMono-Regular.ttf	1634431995.787
+StimVisualOff	1	280				1634431995.9536
+StimVisualOn	1	281	E	center	AlexBrush-Regular.ttf	1634431996.1411
+StimVisualOff	1	281				1634431996.3078
+StimVisualOn	1	282	Y	center	AlexBrush-Regular.ttf	1634431996.4953
+StimVisualOff	1	282				1634431996.662
+StimVisualOn	1	283	X	center	LiberationMono-Regular.ttf	1634431996.8495
+StimVisualOff	1	283				1634431997.0161
+StimVisualOn	1	284	p	center	AlexBrush-Regular.ttf	1634431997.2037
+StimVisualOff	1	284				1634431997.3703
+StimVisualOn	1	285	w	center	AlexBrush-Regular.ttf	1634431997.5578
+StimVisualOff	1	285				1634431997.7245
+StimVisualOn	1	286	p	center	AlexBrush-Regular.ttf	1634431997.912
+StimVisualOff	1	286				1634431998.0787
+StimVisualOn	1	287	P	center	AlexBrush-Regular.ttf	1634431998.2662
+StimVisualOff	1	287				1634431998.4328
+StimVisualOn	1	288	c	center	LiberationMono-Regular.ttf	1634431998.6203
+StimVisualOff	1	288				1634431998.787
+StimVisualOn	1	289	a	center	LiberationMono-Regular.ttf	1634431998.9745
+StimVisualOff	1	289				1634431999.1412
+StimVisualOn	1	290	e	center	LiberationMono-Regular.ttf	1634431999.3287
+StimVisualOff	1	290				1634431999.4954
+StimVisualOn	1	291	9	center	LiberationMono-Regular.ttf	1634431999.6829
+StimVisualOff	1	291				1634431999.8495
+StimVisualOn	1	292	J	center	LiberationMono-Regular.ttf	1634432000.037
+StimVisualOff	1	292				1634432000.2037
+StimVisualOn	1	293	u	center	LiberationMono-Regular.ttf	1634432000.3912
+StimVisualOff	1	293				1634432000.5579
+StimVisualOn	1	294	C	center	LiberationMono-Regular.ttf	1634432000.7454
+StimVisualOff	1	294				1634432000.912
+StimVisualOn	1	295	J	center	AlexBrush-Regular.ttf	1634432001.0995
+StimVisualOff	1	295				1634432001.2662
+StimVisualOn	1	296	H	center	AlexBrush-Regular.ttf	1634432001.4537
+StimVisualOff	1	296				1634432001.6204
+StimVisualOn	1	297	t	center	LiberationMono-Regular.ttf	1634432001.8079
+StimVisualOff	1	297				1634432001.9746
+StimVisualOn	1	298	r	center	AlexBrush-Regular.ttf	1634432002.1621
+StimVisualOff	1	298				1634432002.3287
+StimVisualOn	1	299	q	center	AlexBrush-Regular.ttf	1634432002.5162
+StimVisualOff	1	299				1634432002.6829
+StimVisualOn	1	300	V	center	LiberationMono-Regular.ttf	1634432002.8704
+StimVisualOff	1	300				1634432003.0371
+StimVisualOn	1	301	y	center	AlexBrush-Regular.ttf	1634432003.2454
+StimVisualOff	1	301				1634432003.4121
+StimVisualOn	1	302	a	center	AlexBrush-Regular.ttf	1634432003.5996
+StimVisualOff	1	302				1634432003.7663
+StimVisualOn	1	303	q	center	AlexBrush-Regular.ttf	1634432003.9538
+StimVisualOff	1	303				1634432004.1204
+StimVisualOn	1	304	Y	center	LiberationMono-Regular.ttf	1634432004.3079
+StimVisualOff	1	304				1634432004.4746
+StimVisualOn	1	305	o	center	LiberationMono-Regular.ttf	1634432004.6621
+StimVisualOff	1	305				1634432004.8288
+StimVisualOn	1	306	H	center	LiberationMono-Regular.ttf	1634432005.0163
+StimVisualOff	1	306				1634432005.183
+StimVisualOn	1	307	W	center	LiberationMono-Regular.ttf	1634432005.3705
+StimVisualOff	1	307				1634432005.5371
+StimVisualOn	1	308	r	center	LiberationMono-Regular.ttf	1634432005.7246
+StimVisualOff	1	308				1634432005.8913
+StimVisualOn	1	309	l	center	AlexBrush-Regular.ttf	1634432006.0788
+StimVisualOff	1	309				1634432006.2455
+StimVisualOn	1	310	l	center	AlexBrush-Regular.ttf	1634432006.433
+StimVisualOff	1	310				1634432006.5996
+StimVisualOn	1	311	L	center	LiberationMono-Regular.ttf	1634432006.7872
+StimVisualOff	1	311				1634432006.9538
+StimVisualOn	1	312	x	center	LiberationMono-Regular.ttf	1634432007.1413
+StimVisualOff	1	312				1634432007.308
+StimVisualOn	1	313	D	center	AlexBrush-Regular.ttf	1634432007.4955
+StimVisualOff	1	313				1634432007.6622
+StimVisualOn	1	314	O	center	AlexBrush-Regular.ttf	1634432007.8497
+StimVisualOff	1	314				1634432008.0163
+StimVisualOn	1	315	c	center	LiberationMono-Regular.ttf	1634432008.2038
+StimVisualOff	1	315				1634432008.3705
+StimVisualOn	1	316	D	center	LiberationMono-Regular.ttf	1634432008.558
+StimVisualOff	1	316				1634432008.7247
+StimVisualOn	1	317	3	center	LiberationMono-Regular.ttf	1634432008.9122
+StimVisualOff	1	317				1634432009.0789
+StimVisualOn	1	318	M	center	LiberationMono-Regular.ttf	1634432009.2664
+StimVisualOff	1	318				1634432009.433
+StimVisualOn	1	319	P	center	AlexBrush-Regular.ttf	1634432009.6205
+StimVisualOff	1	319				1634432009.7872
+StimVisualOn	1	320	r	center	LiberationMono-Regular.ttf	1634432009.9747
+StimVisualOff	1	320				1634432010.1414
+StimVisualOn	1	321	S	center	AlexBrush-Regular.ttf	1634432010.3289
+StimVisualOff	1	321				1634432010.4955
+StimVisualOn	1	322	F	center	AlexBrush-Regular.ttf	1634432010.683
+StimVisualOff	1	322				1634432010.8497
+StimVisualOn	1	323	c	center	LiberationMono-Regular.ttf	1634432011.0372
+StimVisualOff	1	323				1634432011.2039
+StimVisualOn	1	324	F	center	LiberationMono-Regular.ttf	1634432011.3914
+StimVisualOff	1	324				1634432011.5581
+StimVisualOn	1	325	i	center	AlexBrush-Regular.ttf	1634432011.7456
+StimVisualOff	1	325				1634432011.9122
+StimVisualOn	1	326	x	center	LiberationMono-Regular.ttf	1634432012.0997
+StimVisualOff	1	326				1634432012.2664
+StimVisualOn	1	327	v	center	AlexBrush-Regular.ttf	1634432012.4539
+StimVisualOff	1	327				1634432012.6206
+StimVisualOn	1	328	y	center	AlexBrush-Regular.ttf	1634432012.8081
+StimVisualOff	1	328				1634432012.9748
+StimVisualOn	1	329	F	center	LiberationMono-Regular.ttf	1634432013.1623
+StimVisualOff	1	329				1634432013.3289
+StimVisualOn	1	330	e	center	AlexBrush-Regular.ttf	1634432013.5164
+StimVisualOff	1	330				1634432013.6831
+StimVisualOn	1	331	e	center	AlexBrush-Regular.ttf	1634432013.8706
+StimVisualOff	1	331				1634432014.0581
+StimVisualOn	1	332	d	center	AlexBrush-Regular.ttf	1634432014.2456
+StimVisualOff	1	332				1634432014.4123
+StimVisualOn	1	333	x	center	AlexBrush-Regular.ttf	1634432014.5998
+StimVisualOff	1	333				1634432014.7664
+StimVisualOn	1	334	e	center	LiberationMono-Regular.ttf	1634432014.954
+StimVisualOff	1	334				1634432015.1206
+StimVisualOn	1	335	M	center	LiberationMono-Regular.ttf	1634432015.3081
+StimVisualOff	1	335				1634432015.4748
+StimVisualOn	1	336	z	center	AlexBrush-Regular.ttf	1634432015.6623
+StimVisualOff	1	336				1634432015.829
+StimVisualOn	1	337	6	center	LiberationMono-Regular.ttf	1634432016.0165
+StimVisualOff	1	337				1634432016.1831
+StimVisualOn	1	338	K	center	AlexBrush-Regular.ttf	1634432016.3706
+StimVisualOff	1	338				1634432016.5373
+StimVisualOn	1	339	e	center	AlexBrush-Regular.ttf	1634432016.7248
+StimVisualOff	1	339				1634432016.8915
+StimVisualOn	1	340	P	center	AlexBrush-Regular.ttf	1634432017.079
+StimVisualOff	1	340				1634432017.2665
+StimVisualOn	1	341	G	center	LiberationMono-Regular.ttf	1634432017.454
+StimVisualOff	1	341				1634432017.6207
+StimVisualOn	1	342	N	center	LiberationMono-Regular.ttf	1634432017.8082
+StimVisualOff	1	342				1634432017.9748
+StimVisualOn	1	343	f	center	LiberationMono-Regular.ttf	1634432018.1623
+StimVisualOff	1	343				1634432018.329
+StimVisualOn	1	344	o	center	AlexBrush-Regular.ttf	1634432018.5165
+StimVisualOff	1	344				1634432018.6832
+StimVisualOn	1	345	Y	center	AlexBrush-Regular.ttf	1634432018.8707
+StimVisualOff	1	345				1634432019.0374
+StimVisualOn	1	346	A	center	AlexBrush-Regular.ttf	1634432019.2249
+StimVisualOff	1	346				1634432019.3915
+StimVisualOn	1	347	j	center	LiberationMono-Regular.ttf	1634432019.579
+StimVisualOff	1	347				1634432019.7457
+StimVisualOn	1	348	B	center	AlexBrush-Regular.ttf	1634432019.9332
+StimVisualOff	1	348				1634432020.0999
+StimVisualOn	1	349	t	center	AlexBrush-Regular.ttf	1634432020.2874
+StimVisualOff	1	349				1634432020.4541
+StimVisualOn	1	350	V	center	LiberationMono-Regular.ttf	1634432020.6416
+StimVisualOff	1	350				1634432020.8082
+StimVisualOn	1	351	o	center	AlexBrush-Regular.ttf	1634432020.9957
+StimVisualOff	1	351				1634432021.1624
+StimVisualOn	1	352	Q	center	AlexBrush-Regular.ttf	1634432021.3499
+StimVisualOff	1	352				1634432021.5166
+StimVisualOn	1	353	d	center	LiberationMono-Regular.ttf	1634432021.7041
+StimVisualOff	1	353				1634432021.8707
+StimVisualOn	1	354	S	center	LiberationMono-Regular.ttf	1634432022.0582
+StimVisualOff	1	354				1634432022.2249
+StimVisualOn	1	355	U	center	LiberationMono-Regular.ttf	1634432022.4124
+StimVisualOff	1	355				1634432022.5791
+StimVisualOn	1	356	z	center	LiberationMono-Regular.ttf	1634432022.7666
+StimVisualOff	1	356				1634432022.9333
+StimVisualOn	1	357	k	center	AlexBrush-Regular.ttf	1634432023.1208
+StimVisualOff	1	357				1634432023.2874
+StimVisualOn	1	358	f	center	AlexBrush-Regular.ttf	1634432023.4749
+StimVisualOff	1	358				1634432023.6416
+StimVisualOn	1	359	P	center	AlexBrush-Regular.ttf	1634432023.8291
+StimVisualOff	1	359				1634432023.9958
+StimVisualOn	1	360	H	center	AlexBrush-Regular.ttf	1634432024.1833
+StimVisualOff	1	360				1634432024.3499
+StimVisualOn	1	361	v	center	LiberationMono-Regular.ttf	1634432024.5375
+StimVisualOff	1	361				1634432024.7041
+StimVisualOn	1	362	o	center	LiberationMono-Regular.ttf	1634432024.8916
+StimVisualOff	1	362				1634432025.0583
+StimVisualOn	1	363	7	center	LiberationMono-Regular.ttf	1634432025.2458
+StimVisualOff	1	363				1634432025.4125
+StimVisualOn	1	364	l	center	LiberationMono-Regular.ttf	1634432025.6
+StimVisualOff	1	364				1634432025.7666
+StimVisualOn	1	365	Q	center	AlexBrush-Regular.ttf	1634432025.9541
+StimVisualOff	1	365				1634432026.1208
+StimVisualOn	1	366	z	center	AlexBrush-Regular.ttf	1634432026.3083
+StimVisualOff	1	366				1634432026.475
+StimVisualOn	1	367	T	center	LiberationMono-Regular.ttf	1634432026.6625
+StimVisualOff	1	367				1634432026.8292
+StimVisualOn	1	368	i	center	AlexBrush-Regular.ttf	1634432027.0167
+StimVisualOff	1	368				1634432027.1833
+StimVisualOn	1	369	n	center	LiberationMono-Regular.ttf	1634432027.3708
+StimVisualOff	1	369				1634432027.5375
+StimVisualOn	1	370	q	center	AlexBrush-Regular.ttf	1634432027.725
+StimVisualOff	1	370				1634432027.8917
+StimVisualOn	1	371	G	center	AlexBrush-Regular.ttf	1634432028.0792
+StimVisualOff	1	371				1634432028.2458
+StimVisualOn	1	372	G	center	LiberationMono-Regular.ttf	1634432028.4333
+StimVisualOff	1	372				1634432028.6
+StimVisualOn	1	373	c	center	AlexBrush-Regular.ttf	1634432028.7875
+StimVisualOff	1	373				1634432028.9542
+StimVisualOn	1	374	f	center	AlexBrush-Regular.ttf	1634432029.1417
+StimVisualOff	1	374				1634432029.3084
+StimVisualOn	1	375	V	center	AlexBrush-Regular.ttf	1634432029.4959
+StimVisualOff	1	375				1634432029.6625
+StimVisualOn	1	376	M	center	AlexBrush-Regular.ttf	1634432029.85
+StimVisualOff	1	376				1634432030.0167
+StimVisualOn	1	377	e	center	LiberationMono-Regular.ttf	1634432030.2042
+StimVisualOff	1	377				1634432030.3709
+StimVisualOn	1	378	N	center	AlexBrush-Regular.ttf	1634432030.5584
+StimVisualOff	1	378				1634432030.7251
+StimVisualOn	1	379	F	center	AlexBrush-Regular.ttf	1634432030.9126
+StimVisualOff	1	379				1634432031.0792
+StimVisualOn	1	380	Z	center	AlexBrush-Regular.ttf	1634432031.2667
+StimVisualOff	1	380				1634432031.4334
+StimVisualOn	1	381	2	center	LiberationMono-Regular.ttf	1634432031.6209
+StimVisualOff	1	381				1634432031.7876
+StimVisualOn	1	382	m	center	LiberationMono-Regular.ttf	1634432031.9751
+StimVisualOff	1	382				1634432032.1417
+StimVisualOn	1	383	i	center	AlexBrush-Regular.ttf	1634432032.3292
+StimVisualOff	1	383				1634432032.4959
+StimVisualOn	1	384	R	center	LiberationMono-Regular.ttf	1634432032.6834
+StimVisualOff	1	384				1634432032.8501
+StimVisualOn	1	385	F	center	LiberationMono-Regular.ttf	1634432033.0376
+StimVisualOff	1	385				1634432033.2043
+StimVisualOn	1	386	V	center	AlexBrush-Regular.ttf	1634432033.3918
+StimVisualOff	1	386				1634432033.5584
+StimVisualOn	1	387	j	center	LiberationMono-Regular.ttf	1634432033.7459
+StimVisualOff	1	387				1634432033.9126
+StimVisualOn	1	388	y	center	AlexBrush-Regular.ttf	1634432034.1001
+StimVisualOff	1	388				1634432034.2668
+StimVisualOn	1	389	Q	center	LiberationMono-Regular.ttf	1634432034.4543
+StimVisualOff	1	389				1634432034.621
+StimVisualOn	1	390	e	center	AlexBrush-Regular.ttf	1634432034.8085
+StimVisualOff	1	390				1634432034.9751
+StimVisualOn	1	391	l	center	LiberationMono-Regular.ttf	1634432035.1626
+StimVisualOff	1	391				1634432035.3293
+StimVisualOn	1	392	o	center	AlexBrush-Regular.ttf	1634432035.5168
+StimVisualOff	1	392				1634432035.6835
+StimVisualOn	1	393	h	center	LiberationMono-Regular.ttf	1634432035.871
+StimVisualOff	1	393				1634432036.0376
+StimVisualOn	1	394	m	center	LiberationMono-Regular.ttf	1634432036.2251
+StimVisualOff	1	394				1634432036.3918
+StimVisualOn	1	395	q	center	AlexBrush-Regular.ttf	1634432036.5793
+StimVisualOff	1	395				1634432036.746
+StimVisualOn	1	396	v	center	LiberationMono-Regular.ttf	1634432036.9335
+StimVisualOff	1	396				1634432037.1002
+StimVisualOn	1	397	X	center	AlexBrush-Regular.ttf	1634432037.2877
+StimVisualOff	1	397				1634432037.4543
+StimVisualOn	1	398	Z	center	LiberationMono-Regular.ttf	1634432037.6418
+StimVisualOff	1	398				1634432037.8085
+StimVisualOn	1	399	u	center	LiberationMono-Regular.ttf	1634432037.996
+StimVisualOff	1	399				1634432038.1627
+StimVisualOn	1	400	y	center	AlexBrush-Regular.ttf	1634432038.3502
+StimVisualOff	1	400				1634432038.5169
+StimVisualOn	1	401	o	center	LiberationMono-Regular.ttf	1634432038.7044
+StimVisualOff	1	401				1634432038.871
+StimVisualOn	1	402	X	center	LiberationMono-Regular.ttf	1634432039.0585
+StimVisualOff	1	402				1634432039.2252
+StimVisualOn	1	403	6	center	LiberationMono-Regular.ttf	1634432039.4127
+StimVisualOff	1	403				1634432039.5794
+StimVisualOn	1	404	W	center	LiberationMono-Regular.ttf	1634432039.7669
+StimVisualOff	1	404				1634432039.9335
+StimVisualOn	1	405	M	center	AlexBrush-Regular.ttf	1634432040.121
+StimVisualOff	1	405				1634432040.2877
+StimVisualOn	1	406	m	center	LiberationMono-Regular.ttf	1634432040.4752
+StimVisualOff	1	406				1634432040.6419
+StimVisualOn	1	407	s	center	LiberationMono-Regular.ttf	1634432040.8294
+StimVisualOff	1	407				1634432040.9961
+StimVisualOn	1	408	I	center	LiberationMono-Regular.ttf	1634432041.1836
+StimVisualOff	1	408				1634432041.3502
+StimVisualOn	1	409	x	center	AlexBrush-Regular.ttf	1634432041.5377
+StimVisualOff	1	409				1634432041.7044
+StimVisualOn	1	410	N	center	AlexBrush-Regular.ttf	1634432041.8919
+StimVisualOff	1	410				1634432042.0586
+StimVisualOn	1	411	r	center	LiberationMono-Regular.ttf	1634432042.2461
+StimVisualOff	1	411				1634432042.4127
+StimVisualOn	1	412	n	center	AlexBrush-Regular.ttf	1634432042.6003
+StimVisualOff	1	412				1634432042.7669
+StimVisualOn	1	413	r	center	AlexBrush-Regular.ttf	1634432042.9544
+StimVisualOff	1	413				1634432043.1211
+StimVisualOn	1	414	E	center	LiberationMono-Regular.ttf	1634432043.3086
+StimVisualOff	1	414				1634432043.4753
+StimVisualOn	1	415	G	center	LiberationMono-Regular.ttf	1634432043.6628
+StimVisualOff	1	415				1634432043.8294
+StimVisualOn	1	416	r	center	AlexBrush-Regular.ttf	1634432044.0169
+StimVisualOff	1	416				1634432044.1836
+StimVisualOn	1	417	M	center	AlexBrush-Regular.ttf	1634432044.3711
+StimVisualOff	1	417				1634432044.5378
+StimVisualOn	1	418	O	center	LiberationMono-Regular.ttf	1634432044.7253
+StimVisualOff	1	418				1634432044.892
+StimVisualOn	1	419	z	center	LiberationMono-Regular.ttf	1634432045.0795
+StimVisualOff	1	419				1634432045.2461
+StimVisualOn	1	420	U	center	LiberationMono-Regular.ttf	1634432045.4336
+StimVisualOff	1	420				1634432045.6003
+StimVisualOn	1	421	6	center	LiberationMono-Regular.ttf	1634432045.7878
+StimVisualOff	1	421				1634432045.9545
+StimVisualOn	1	422	P	center	AlexBrush-Regular.ttf	1634432046.142
+StimVisualOff	1	422				1634432046.3087
+StimVisualOn	1	423	y	center	LiberationMono-Regular.ttf	1634432046.4962
+StimVisualOff	1	423				1634432046.6628
+StimVisualOn	1	424	h	center	AlexBrush-Regular.ttf	1634432046.8503
+StimVisualOff	1	424				1634432047.017
+StimVisualOn	1	425	a	center	AlexBrush-Regular.ttf	1634432047.2045
+StimVisualOff	1	425				1634432047.3712
+StimVisualOn	1	426	b	center	LiberationMono-Regular.ttf	1634432047.5587
+StimVisualOff	1	426				1634432047.7253
+StimVisualOn	1	427	G	center	AlexBrush-Regular.ttf	1634432047.9128
+StimVisualOff	1	427				1634432048.0795
+StimVisualOn	1	428	Z	center	LiberationMono-Regular.ttf	1634432048.267
+StimVisualOff	1	428				1634432048.4337
+StimVisualOn	1	429	L	center	LiberationMono-Regular.ttf	1634432048.6212
+StimVisualOff	1	429				1634432048.7879
+StimVisualOn	1	430	q	center	LiberationMono-Regular.ttf	1634432048.9754
+StimVisualOff	1	430				1634432049.142
+StimVisualOn	1	431	w	center	LiberationMono-Regular.ttf	1634432049.3295
+StimVisualOff	1	431				1634432049.4962
+StimVisualOn	1	432	I	center	AlexBrush-Regular.ttf	1634432049.6837
+StimVisualOff	1	432				1634432049.8504
+StimVisualOn	1	433	j	center	AlexBrush-Regular.ttf	1634432050.0379
+StimVisualOff	1	433				1634432050.2045
+StimVisualOn	1	434	c	center	AlexBrush-Regular.ttf	1634432050.3921
+StimVisualOff	1	434				1634432050.5587
+StimVisualOn	1	435	X	center	LiberationMono-Regular.ttf	1634432050.7462
+StimVisualOff	1	435				1634432050.9129
+StimVisualOn	1	436	Y	center	AlexBrush-Regular.ttf	1634432051.1004
+StimVisualOff	1	436				1634432051.2671
+StimVisualOn	1	437	g	center	LiberationMono-Regular.ttf	1634432051.4546
+StimVisualOff	1	437				1634432051.6212
+StimVisualOn	1	438	O	center	LiberationMono-Regular.ttf	1634432051.8088
+StimVisualOff	1	438				1634432051.9754
+StimVisualOn	1	439	4	center	LiberationMono-Regular.ttf	1634432052.1629
+StimVisualOff	1	439				1634432052.3296
+StimVisualOn	1	440	h	center	AlexBrush-Regular.ttf	1634432052.5171
+StimVisualOff	1	440				1634432052.6838
+StimVisualOn	1	441	j	center	LiberationMono-Regular.ttf	1634432052.8713
+StimVisualOff	1	441				1634432053.0379
+StimVisualOn	1	442	w	center	AlexBrush-Regular.ttf	1634432053.2254
+StimVisualOff	1	442				1634432053.3921
+StimVisualOn	1	443	D	center	AlexBrush-Regular.ttf	1634432053.5796
+StimVisualOff	1	443				1634432053.7463
+StimVisualOn	1	444	q	center	LiberationMono-Regular.ttf	1634432053.9338
+StimVisualOff	1	444				1634432054.1005
+StimVisualOn	1	445	I	center	AlexBrush-Regular.ttf	1634432054.288
+StimVisualOff	1	445				1634432054.4546
+StimVisualOn	1	446	a	center	AlexBrush-Regular.ttf	1634432054.6421
+StimVisualOff	1	446				1634432054.8088
+StimVisualOn	1	447	u	center	AlexBrush-Regular.ttf	1634432054.9963
+StimVisualOff	1	447				1634432055.163
+StimVisualOn	1	448	A	center	AlexBrush-Regular.ttf	1634432055.3505
+StimVisualOff	1	448				1634432055.5171
+StimVisualOn	1	449	m	center	AlexBrush-Regular.ttf	1634432055.7255
+StimVisualOff	1	449				1634432055.8921
+StimVisualOn	1	450	r	center	AlexBrush-Regular.ttf	1634432056.0797
+StimVisualOff	1	450				1634432056.2463
+StimVisualOn	1	451	t	center	LiberationMono-Regular.ttf	1634432056.4338
+StimVisualOff	1	451				1634432056.6005
+StimVisualOn	1	452	K	center	LiberationMono-Regular.ttf	1634432056.788
+StimVisualOff	1	452				1634432056.9547
+StimVisualOn	1	453	D	center	AlexBrush-Regular.ttf	1634432057.1422
+StimVisualOff	1	453				1634432057.3088
+StimVisualOn	1	454	Y	center	AlexBrush-Regular.ttf	1634432057.4963
+StimVisualOff	1	454				1634432057.663
+StimVisualOn	1	455	n	center	AlexBrush-Regular.ttf	1634432057.8505
+StimVisualOff	1	455				1634432058.0172
+StimVisualOn	1	456	U	center	AlexBrush-Regular.ttf	1634432058.2047
+StimVisualOff	1	456				1634432058.3714
+StimVisualOn	1	457	Y	center	AlexBrush-Regular.ttf	1634432058.5589
+StimVisualOff	1	457				1634432058.7255
+StimVisualOn	1	458	Z	center	AlexBrush-Regular.ttf	1634432058.913
+StimVisualOff	1	458				1634432059.0797
+StimVisualOn	1	459	m	center	LiberationMono-Regular.ttf	1634432059.2672
+StimVisualOff	1	459				1634432059.4339
+StimVisualOn	1	460	n	center	AlexBrush-Regular.ttf	1634432059.6214
+StimVisualOff	1	460				1634432059.788
+StimVisualOn	1	461	i	center	AlexBrush-Regular.ttf	1634432059.9756
+StimVisualOff	1	461				1634432060.1422
+StimVisualOn	1	462	e	center	AlexBrush-Regular.ttf	1634432060.3297
+StimVisualOff	1	462				1634432060.4964
+StimVisualOn	1	463	S	center	LiberationMono-Regular.ttf	1634432060.6839
+StimVisualOff	1	463				1634432060.8506
+StimVisualOn	1	464	w	center	LiberationMono-Regular.ttf	1634432061.0381
+StimVisualOff	1	464				1634432061.2047
+StimVisualOn	1	465	Q	center	LiberationMono-Regular.ttf	1634432061.3922
+StimVisualOff	1	465				1634432061.5589
+StimVisualOn	1	466	5	center	LiberationMono-Regular.ttf	1634432061.7464
+StimVisualOff	1	466				1634432061.9131
+StimVisualOn	1	467	j	center	LiberationMono-Regular.ttf	1634432062.1006
+StimVisualOff	1	467				1634432062.2673
+StimVisualOn	1	468	M	center	AlexBrush-Regular.ttf	1634432062.4548
+StimVisualOff	1	468				1634432062.6214
+StimVisualOn	1	469	Y	center	LiberationMono-Regular.ttf	1634432062.8089
+StimVisualOff	1	469				1634432062.9756
+StimVisualOn	1	470	e	center	LiberationMono-Regular.ttf	1634432063.1631
+StimVisualOff	1	470				1634432063.3298
+StimVisualOn	1	471	s	center	LiberationMono-Regular.ttf	1634432063.5173
+StimVisualOff	1	471				1634432063.6839
+StimVisualOn	1	472	D	center	AlexBrush-Regular.ttf	1634432063.8715
+StimVisualOff	1	472				1634432064.0381
+StimVisualOn	1	473	O	center	LiberationMono-Regular.ttf	1634432064.2256
+StimVisualOff	1	473				1634432064.3923
+StimVisualOn	1	474	O	center	LiberationMono-Regular.ttf	1634432064.5798
+StimVisualOff	1	474				1634432064.7465
+StimVisualOn	1	475	l	center	LiberationMono-Regular.ttf	1634432064.934
+StimVisualOff	1	475				1634432065.1215
+StimVisualOn	1	476	N	center	LiberationMono-Regular.ttf	1634432065.309
+StimVisualOff	1	476				1634432065.4756
+StimVisualOn	1	477	j	center	AlexBrush-Regular.ttf	1634432065.6631
+StimVisualOff	1	477				1634432065.8298
+StimVisualOn	1	478	u	center	LiberationMono-Regular.ttf	1634432066.0173
+StimVisualOff	1	478				1634432066.184
+StimVisualOn	1	479	Q	center	AlexBrush-Regular.ttf	1634432066.3715
+StimVisualOff	1	479				1634432066.5382
+StimVisualOn	1	480	M	center	AlexBrush-Regular.ttf	1634432066.7257
+StimVisualOff	1	480				1634432066.8923
+StimVisualOn	1	481	k	center	LiberationMono-Regular.ttf	1634432067.0798
+StimVisualOff	1	481				1634432067.2465
+StimVisualOn	1	482	C	center	AlexBrush-Regular.ttf	1634432067.434
+StimVisualOff	1	482				1634432067.6007
+StimVisualOn	1	483	j	center	LiberationMono-Regular.ttf	1634432067.7882
+StimVisualOff	1	483				1634432067.9549
+StimVisualOn	1	484	l	center	AlexBrush-Regular.ttf	1634432068.1424
+StimVisualOff	1	484				1634432068.309
+StimVisualOn	1	485	X	center	LiberationMono-Regular.ttf	1634432068.4965
+StimVisualOff	1	485				1634432068.6632
+StimVisualOn	1	486	Q	center	AlexBrush-Regular.ttf	1634432068.8507
+StimVisualOff	1	486				1634432069.0174
+StimVisualOn	1	487	b	center	LiberationMono-Regular.ttf	1634432069.2049
+StimVisualOff	1	487				1634432069.3715
+StimVisualOn	1	488	Q	center	LiberationMono-Regular.ttf	1634432069.559
+StimVisualOff	1	488				1634432069.7257
+StimVisualOn	1	489	I	center	LiberationMono-Regular.ttf	1634432069.9132
+StimVisualOff	1	489				1634432070.0799
+StimVisualOn	1	490	9	center	LiberationMono-Regular.ttf	1634432070.2674
+StimVisualOff	1	490				1634432070.4341
+StimVisualOn	1	491	B	center	LiberationMono-Regular.ttf	1634432070.6216
+StimVisualOff	1	491				1634432070.7882
+StimVisualOn	1	492	z	center	LiberationMono-Regular.ttf	1634432070.9757
+StimVisualOff	1	492				1634432071.1424
+StimVisualOn	1	493	F	center	AlexBrush-Regular.ttf	1634432071.3299
+StimVisualOff	1	493				1634432071.4966
+StimVisualOn	1	494	q	center	AlexBrush-Regular.ttf	1634432071.6841
+StimVisualOff	1	494				1634432071.8508
+StimVisualOn	1	495	P	center	LiberationMono-Regular.ttf	1634432072.0383
+StimVisualOff	1	495				1634432072.2049
+StimVisualOn	1	496	z	center	AlexBrush-Regular.ttf	1634432072.3924
+StimVisualOff	1	496				1634432072.5591
+StimVisualOn	1	497	c	center	AlexBrush-Regular.ttf	1634432072.7466
+StimVisualOff	1	497				1634432072.9133
+StimVisualOn	1	498	N	center	AlexBrush-Regular.ttf	1634432073.1008
+StimVisualOff	1	498				1634432073.2674
+StimVisualOn	1	499	O	center	AlexBrush-Regular.ttf	1634432073.4549
+StimVisualOff	1	499				1634432073.6216
+StimVisualOn	1	500	x	center	LiberationMono-Regular.ttf	1634432073.8091
+StimVisualOff	1	500				1634432073.9758
+StimVisualOn	1	501	I	center	LiberationMono-Regular.ttf	1634432074.1633
+StimVisualOff	1	501				1634432074.33
+StimVisualOn	1	502	x	center	LiberationMono-Regular.ttf	1634432074.5383
+StimVisualOff	1	502				1634432074.705
+StimVisualOn	1	503	W	center	AlexBrush-Regular.ttf	1634432074.8925
+StimVisualOff	1	503				1634432075.0591
+StimVisualOn	1	504	J	center	LiberationMono-Regular.ttf	1634432075.2466
+StimVisualOff	1	504				1634432075.4133
+StimVisualOn	1	505	V	center	LiberationMono-Regular.ttf	1634432075.6008
+StimVisualOff	1	505				1634432075.7675
+StimVisualOn	1	506	D	center	LiberationMono-Regular.ttf	1634432075.955
+StimVisualOff	1	506				1634432076.1217
+StimVisualOn	1	507	K	center	AlexBrush-Regular.ttf	1634432076.3092
+StimVisualOff	1	507				1634432076.4758
+StimVisualOn	1	508	p	center	LiberationMono-Regular.ttf	1634432076.6633
+StimVisualOff	1	508				1634432076.83
+StimVisualOn	1	509	a	center	AlexBrush-Regular.ttf	1634432077.0175
+StimVisualOff	1	509				1634432077.1842
+StimVisualOn	1	510	T	center	AlexBrush-Regular.ttf	1634432077.3717
+StimVisualOff	1	510				1634432077.5384
+StimVisualOn	1	511	b	center	LiberationMono-Regular.ttf	1634432077.7259
+StimVisualOff	1	511				1634432077.8925
+StimVisualOn	1	512	z	center	AlexBrush-Regular.ttf	1634432078.08
+StimVisualOff	1	512				1634432078.2467
+StimVisualOn	1	513	f	center	AlexBrush-Regular.ttf	1634432078.4342
+StimVisualOff	1	513				1634432078.6009
+StimVisualOn	1	514	2	center	LiberationMono-Regular.ttf	1634432078.7884
+StimVisualOff	1	514				1634432078.955
+StimVisualOn	1	515	L	center	LiberationMono-Regular.ttf	1634432079.1425
+StimVisualOff	1	515				1634432079.3092
+StimVisualOn	1	516	n	center	LiberationMono-Regular.ttf	1634432079.4967
+StimVisualOff	1	516				1634432079.6634
+StimVisualOn	1	517	J	center	AlexBrush-Regular.ttf	1634432079.8509
+StimVisualOff	1	517				1634432080.0176
+StimVisualOn	1	518	J	center	AlexBrush-Regular.ttf	1634432080.2051
+StimVisualOff	1	518				1634432080.3717
+StimVisualOn	1	519	u	center	AlexBrush-Regular.ttf	1634432080.5592
+StimVisualOff	1	519				1634432080.7259
+StimVisualOn	1	520	R	center	AlexBrush-Regular.ttf	1634432080.9134
+StimVisualOff	1	520				1634432081.0801
+StimVisualOn	1	521	w	center	LiberationMono-Regular.ttf	1634432081.2676
+StimVisualOff	1	521				1634432081.4343
+StimVisualOn	1	522	M	center	AlexBrush-Regular.ttf	1634432081.6218
+StimVisualOff	1	522				1634432081.7884
+StimVisualOn	1	523	s	center	LiberationMono-Regular.ttf	1634432081.9759
+StimVisualOff	1	523				1634432082.1426
+StimVisualOn	1	524	R	center	AlexBrush-Regular.ttf	1634432082.3301
+StimVisualOff	1	524				1634432082.4968
+StimVisualOn	1	525	p	center	AlexBrush-Regular.ttf	1634432082.6843
+StimVisualOff	1	525				1634432082.8509
+StimVisualOn	1	526	d	center	AlexBrush-Regular.ttf	1634432083.0384
+StimVisualOff	1	526				1634432083.2051
+StimVisualOn	1	527	I	center	AlexBrush-Regular.ttf	1634432083.3926
+StimVisualOff	1	527				1634432083.5593
+StimVisualOn	1	528	P	center	LiberationMono-Regular.ttf	1634432083.7468
+StimVisualOff	1	528				1634432083.9135
+StimVisualOn	1	529	k	center	AlexBrush-Regular.ttf	1634432084.101
+StimVisualOff	1	529				1634432084.2676
+StimVisualOn	1	530	v	center	AlexBrush-Regular.ttf	1634432084.4551
+StimVisualOff	1	530				1634432084.6218
+StimVisualOn	1	531	n	center	LiberationMono-Regular.ttf	1634432084.8093
+StimVisualOff	1	531				1634432084.976
+StimVisualOn	1	532	J	center	AlexBrush-Regular.ttf	1634432085.1635
+StimVisualOff	1	532				1634432085.3301
+StimVisualOn	1	533	S	center	LiberationMono-Regular.ttf	1634432085.5177
+StimVisualOff	1	533				1634432085.6843
+StimVisualOn	1	534	T	center	LiberationMono-Regular.ttf	1634432085.8718
+StimVisualOff	1	534				1634432086.0385
+StimVisualOn	1	535	U	center	LiberationMono-Regular.ttf	1634432086.226
+StimVisualOff	1	535				1634432086.3927
+StimVisualOn	1	536	E	center	AlexBrush-Regular.ttf	1634432086.5802
+StimVisualOff	1	536				1634432086.7468
+StimVisualOn	1	537	T	center	LiberationMono-Regular.ttf	1634432086.9343
+StimVisualOff	1	537				1634432087.101
+StimVisualOn	1	538	d	center	LiberationMono-Regular.ttf	1634432087.2885
+StimVisualOff	1	538				1634432087.4552
+StimVisualOn	1	539	C	center	AlexBrush-Regular.ttf	1634432087.6427
+StimVisualOff	1	539				1634432087.8094
+StimVisualOn	1	540	5	center	LiberationMono-Regular.ttf	1634432087.976
+StimVisualOff	1	540				1634432088.1427
+StimVisualOn	1	541	k	center	LiberationMono-Regular.ttf	1634432088.3302
+StimVisualOff	1	541				1634432088.4969
+StimVisualOn	1	542	a	center	AlexBrush-Regular.ttf	1634432088.6844
+StimVisualOff	1	542				1634432088.851
+StimVisualOn	1	543	i	center	LiberationMono-Regular.ttf	1634432089.0385
+StimVisualOff	1	543				1634432089.2052
+StimVisualOn	1	544	N	center	LiberationMono-Regular.ttf	1634432089.3927
+StimVisualOff	1	544				1634432089.5594
+StimVisualOn	1	545	C	center	AlexBrush-Regular.ttf	1634432089.7469
+StimVisualOff	1	545				1634432089.9136
+StimVisualOn	1	546	G	center	LiberationMono-Regular.ttf	1634432090.1011
+StimVisualOff	1	546				1634432090.2677
+StimVisualOn	1	547	Z	center	LiberationMono-Regular.ttf	1634432090.4552
+StimVisualOff	1	547				1634432090.6219
+StimVisualOn	1	548	r	center	AlexBrush-Regular.ttf	1634432090.8094
+StimVisualOff	1	548				1634432090.9761
+StimVisualOn	1	549	d	center	AlexBrush-Regular.ttf	1634432091.1636
+StimVisualOff	1	549				1634432091.3302
+StimVisualOn	1	550	J	center	LiberationMono-Regular.ttf	1634432091.5178
+StimVisualOff	1	550				1634432091.6844
+StimVisualOn	1	551	J	center	LiberationMono-Regular.ttf	1634432091.8719
+StimVisualOff	1	551				1634432092.0386
+StimVisualOn	1	552	U	center	AlexBrush-Regular.ttf	1634432092.2261
+StimVisualOff	1	552				1634432092.3928
+StimVisualOn	1	553	w	center	AlexBrush-Regular.ttf	1634432092.5803
+StimVisualOff	1	553				1634432092.7469
+StimVisualOn	1	554	q	center	LiberationMono-Regular.ttf	1634432092.9344
+StimVisualOff	1	554				1634432093.1011
+StimVisualOn	1	555	F	center	LiberationMono-Regular.ttf	1634432093.2886
+StimVisualOff	1	555				1634432093.4553
+StimVisualOn	1	556	L	center	LiberationMono-Regular.ttf	1634432093.6428
+StimVisualOff	1	556				1634432093.8095
+StimVisualOn	1	557	7	center	LiberationMono-Regular.ttf	1634432093.997
+StimVisualOff	1	557				1634432094.1636
+StimVisualOn	1	558	c	center	LiberationMono-Regular.ttf	1634432094.3511
+StimVisualOff	1	558				1634432094.5178
+StimVisualOn	1	559	t	center	LiberationMono-Regular.ttf	1634432094.7053
+StimVisualOff	1	559				1634432094.872
+StimVisualOn	1	560	F	center	LiberationMono-Regular.ttf	1634432095.0595
+StimVisualOff	1	560				1634432095.2261
+StimVisualOn	1	561	j	center	LiberationMono-Regular.ttf	1634432095.4137
+StimVisualOff	1	561				1634432095.5803
+StimVisualOn	1	562	K	center	AlexBrush-Regular.ttf	1634432095.7678
+StimVisualOff	1	562				1634432095.9345
+StimVisualOn	1	563	H	center	LiberationMono-Regular.ttf	1634432096.122
+StimVisualOff	1	563				1634432096.2887
+StimVisualOn	1	564	l	center	LiberationMono-Regular.ttf	1634432096.4762
+StimVisualOff	1	564				1634432096.6428
+StimVisualOn	1	565	R	center	AlexBrush-Regular.ttf	1634432096.8303
+StimVisualOff	1	565				1634432096.997
+StimVisualOn	1	566	g	center	LiberationMono-Regular.ttf	1634432097.1845
+StimVisualOff	1	566				1634432097.3512
+StimVisualOn	1	567	T	center	AlexBrush-Regular.ttf	1634432097.5387
+StimVisualOff	1	567				1634432097.7054
+StimVisualOn	1	568	j	center	LiberationMono-Regular.ttf	1634432097.8929
+StimVisualOff	1	568				1634432098.0595
+StimVisualOn	1	569	u	center	AlexBrush-Regular.ttf	1634432098.247
+StimVisualOff	1	569				1634432098.4137
+StimVisualOn	1	570	H	center	LiberationMono-Regular.ttf	1634432098.6012
+StimVisualOff	1	570				1634432098.7679
+StimVisualOn	1	571	f	center	LiberationMono-Regular.ttf	1634432098.9554
+StimVisualOff	1	571				1634432099.122
+StimVisualOn	1	572	T	center	AlexBrush-Regular.ttf	1634432099.3096
+StimVisualOff	1	572				1634432099.4762
+StimVisualOn	1	573	z	center	LiberationMono-Regular.ttf	1634432099.6637
+StimVisualOff	1	573				1634432099.8304
+StimVisualOn	1	574	E	center	LiberationMono-Regular.ttf	1634432100.0179
+StimVisualOff	1	574				1634432100.1846
+StimVisualOn	1	575	w	center	AlexBrush-Regular.ttf	1634432100.3721
+StimVisualOff	1	575				1634432100.5387
+StimVisualOn	1	576	u	center	AlexBrush-Regular.ttf	1634432100.7262
+StimVisualOff	1	576				1634432100.8929
+StimVisualOn	1	577	i	center	LiberationMono-Regular.ttf	1634432101.0804
+StimVisualOff	1	577				1634432101.2471
+StimVisualOn	1	578	4	center	LiberationMono-Regular.ttf	1634432101.4346
+StimVisualOff	1	578				1634432101.6013
+StimVisualOn	1	579	a	center	LiberationMono-Regular.ttf	1634432101.7888
+StimVisualOff	1	579				1634432101.9554
+StimVisualOn	1	580	I	center	AlexBrush-Regular.ttf	1634432102.1429
+StimVisualOff	1	580				1634432102.3096
+StimVisualOn	1	581	H	center	AlexBrush-Regular.ttf	1634432102.4971
+StimVisualOff	1	581				1634432102.6638
+StimVisualOn	1	582	s	center	AlexBrush-Regular.ttf	1634432102.8513
+StimVisualOff	1	582				1634432103.018
+StimVisualOn	1	583	Q	center	LiberationMono-Regular.ttf	1634432103.2055
+StimVisualOff	1	583				1634432103.3721
+StimVisualOn	1	584	D	center	AlexBrush-Regular.ttf	1634432103.5596
+StimVisualOff	1	584				1634432103.7263
+StimVisualOn	1	585	K	center	LiberationMono-Regular.ttf	1634432103.9138
+StimVisualOff	1	585				1634432104.0805
+StimVisualOn	1	586	x	center	LiberationMono-Regular.ttf	1634432104.268
+StimVisualOff	1	586				1634432104.4346
+StimVisualOn	1	587	l	center	AlexBrush-Regular.ttf	1634432104.6221
+StimVisualOff	1	587				1634432104.7888
+StimVisualOn	1	588	W	center	LiberationMono-Regular.ttf	1634432104.9763
+StimVisualOff	1	588				1634432105.143
+StimVisualOn	1	589	a	center	LiberationMono-Regular.ttf	1634432105.3305
+StimVisualOff	1	589				1634432105.4972
+StimVisualOn	1	590	m	center	LiberationMono-Regular.ttf	1634432105.6847
+StimVisualOff	1	590				1634432105.8513
+StimVisualOn	1	591	A	center	LiberationMono-Regular.ttf	1634432106.0388
+StimVisualOff	1	591				1634432106.2055
+StimVisualOn	1	592	D	center	LiberationMono-Regular.ttf	1634432106.393
+StimVisualOff	1	592				1634432106.5597
+StimVisualOn	1	593	H	center	LiberationMono-Regular.ttf	1634432106.7472
+StimVisualOff	1	593				1634432106.9139
+StimVisualOn	1	594	C	center	LiberationMono-Regular.ttf	1634432107.1222
+StimVisualOff	1	594				1634432107.2889
+StimVisualOn	1	595	L	center	AlexBrush-Regular.ttf	1634432107.4764
+StimVisualOff	1	595				1634432107.643
+StimVisualOn	1	596	O	center	AlexBrush-Regular.ttf	1634432107.8305
+StimVisualOff	1	596				1634432107.9972
+StimVisualOn	1	597	n	center	LiberationMono-Regular.ttf	1634432108.1847
+StimVisualOff	1	597				1634432108.3514
+StimVisualOn	1	598	j	center	AlexBrush-Regular.ttf	1634432108.5389
+StimVisualOff	1	598				1634432108.7055
+StimVisualOn	1	599	w	center	AlexBrush-Regular.ttf	1634432108.8931
+StimVisualOff	1	599				1634432109.0597
+StimVisualOn	1	600	F	center	AlexBrush-Regular.ttf	1634432109.2472
+StimVisualOff	1	600				1634432109.4139
+StimVisualOn	1	601	U	center	AlexBrush-Regular.ttf	1634432109.6014
+StimVisualOff	1	601				1634432109.7681
+StimVisualOn	1	602	u	center	AlexBrush-Regular.ttf	1634432109.9556
+StimVisualOff	1	602				1634432110.1222
+StimVisualOn	1	603	G	center	LiberationMono-Regular.ttf	1634432110.3097
+StimVisualOff	1	603				1634432110.4764
+StimVisualOn	1	604	9	center	LiberationMono-Regular.ttf	1634432110.6639
+StimVisualOff	1	604				1634432110.8306
+StimVisualOn	1	605	J	center	AlexBrush-Regular.ttf	1634432111.0181
+StimVisualOff	1	605				1634432111.1848
+StimVisualOn	1	606	x	center	LiberationMono-Regular.ttf	1634432111.3723
+StimVisualOff	1	606				1634432111.5389
+StimVisualOn	1	607	f	center	LiberationMono-Regular.ttf	1634432111.7264
+StimVisualOff	1	607				1634432111.8931
+StimVisualOn	1	608	a	center	LiberationMono-Regular.ttf	1634432112.0806
+StimVisualOff	1	608				1634432112.2473
+StimVisualOn	1	609	N	center	AlexBrush-Regular.ttf	1634432112.4348
+StimVisualOff	1	609				1634432112.6014
+StimVisualOn	1	610	B	center	AlexBrush-Regular.ttf	1634432112.7889
+StimVisualOff	1	610				1634432112.9556
+StimVisualOn	1	611	H	center	AlexBrush-Regular.ttf	1634432113.1431
+StimVisualOff	1	611				1634432113.3098
+StimVisualOn	1	612	t	center	AlexBrush-Regular.ttf	1634432113.4973
+StimVisualOff	1	612				1634432113.664
+StimVisualOn	1	613	p	center	LiberationMono-Regular.ttf	1634432113.8515
+StimVisualOff	1	613				1634432114.0181
+StimVisualOn	1	614	n	center	AlexBrush-Regular.ttf	1634432114.2056
+StimVisualOff	1	614				1634432114.3723
+StimVisualOn	1	615	M	center	AlexBrush-Regular.ttf	1634432114.5598
+StimVisualOff	1	615				1634432114.7265
+StimVisualOn	1	616	q	center	AlexBrush-Regular.ttf	1634432114.914
+StimVisualOff	1	616				1634432115.0807
+StimVisualOn	1	617	f	center	LiberationMono-Regular.ttf	1634432115.2682
+StimVisualOff	1	617				1634432115.4348
+StimVisualOn	1	618	q	center	LiberationMono-Regular.ttf	1634432115.6223
+StimVisualOff	1	618				1634432115.789
+StimVisualOn	1	619	I	center	LiberationMono-Regular.ttf	1634432115.9765
+StimVisualOff	1	619				1634432116.1432
+StimVisualOn	1	620	o	center	LiberationMono-Regular.ttf	1634432116.3307
+StimVisualOff	1	620				1634432116.4973
+StimVisualOn	1	621	h	center	LiberationMono-Regular.ttf	1634432116.6848
+StimVisualOff	1	621				1634432116.8515
+StimVisualOn	1	622	g	center	AlexBrush-Regular.ttf	1634432117.039
+StimVisualOff	1	622				1634432117.2057
+StimVisualOn	1	623	x	center	AlexBrush-Regular.ttf	1634432117.3932
+StimVisualOff	1	623				1634432117.5599
+StimVisualOn	1	624	3	center	LiberationMono-Regular.ttf	1634432117.7265
+StimVisualOff	1	624				1634432117.8932
+StimVisualOn	1	625	d	center	LiberationMono-Regular.ttf	1634432118.0807
+StimVisualOff	1	625				1634432118.2474
+StimVisualOn	1	626	K	center	LiberationMono-Regular.ttf	1634432118.4349
+StimVisualOff	1	626				1634432118.6015
+StimVisualOn	1	627	g	center	LiberationMono-Regular.ttf	1634432118.7891
+StimVisualOff	1	627				1634432118.9557
+StimVisualOn	1	628	d	center	AlexBrush-Regular.ttf	1634432119.1432
+StimVisualOff	1	628				1634432119.3099
+StimVisualOn	1	629	h	center	AlexBrush-Regular.ttf	1634432119.4974
+StimVisualOff	1	629				1634432119.6641
+StimVisualOn	1	630	E	center	AlexBrush-Regular.ttf	1634432119.8516
+StimVisualOff	1	630				1634432120.0182
+StimVisualOn	1	631	s	center	LiberationMono-Regular.ttf	1634432120.2057
+StimVisualOff	1	631				1634432120.3724
+StimVisualOn	1	632	u	center	LiberationMono-Regular.ttf	1634432120.5599
+StimVisualOff	1	632				1634432120.7474
+StimVisualOn	1	633	Z	center	LiberationMono-Regular.ttf	1634432120.9349
+StimVisualOff	1	633				1634432121.1016
+StimVisualOn	1	634	p	center	AlexBrush-Regular.ttf	1634432121.2891
+StimVisualOff	1	634				1634432121.4558
+StimVisualOn	1	635	i	center	AlexBrush-Regular.ttf	1634432121.6433
+StimVisualOff	1	635				1634432121.8099
+StimVisualOn	1	636	g	center	AlexBrush-Regular.ttf	1634432121.9974
+StimVisualOff	1	636				1634432122.1641
+StimVisualOn	1	637	v	center	AlexBrush-Regular.ttf	1634432122.3516
+StimVisualOff	1	637				1634432122.5183
+StimVisualOn	1	638	M	center	LiberationMono-Regular.ttf	1634432122.7058
+StimVisualOff	1	638				1634432122.8725
+StimVisualOn	1	639	A	center	AlexBrush-Regular.ttf	1634432123.06
+StimVisualOff	1	639				1634432123.2266
+StimVisualOn	1	640	y	center	LiberationMono-Regular.ttf	1634432123.4141
+StimVisualOff	1	640				1634432123.5808
+StimVisualOn	1	641	R	center	LiberationMono-Regular.ttf	1634432123.7683
+StimVisualOff	1	641				1634432123.935
+StimVisualOn	1	642	s	center	AlexBrush-Regular.ttf	1634432124.1225
+StimVisualOff	1	642				1634432124.2891
+StimVisualOn	1	643	f	center	LiberationMono-Regular.ttf	1634432124.4766
+StimVisualOff	1	643				1634432124.6433
+StimVisualOn	1	644	f	center	AlexBrush-Regular.ttf	1634432124.8308
+StimVisualOff	1	644				1634432124.9975
+StimVisualOn	1	645	h	center	AlexBrush-Regular.ttf	1634432125.185
+StimVisualOff	1	645				1634432125.3517
+StimVisualOn	1	646	j	center	LiberationMono-Regular.ttf	1634432125.5392
+StimVisualOff	1	646				1634432125.7058
+StimVisualOn	1	647	W	center	LiberationMono-Regular.ttf	1634432125.8933
+StimVisualOff	1	647				1634432126.06
+StimVisualOn	1	648	a	center	LiberationMono-Regular.ttf	1634432126.2475
+StimVisualOff	1	648				1634432126.4142
+StimVisualOn	1	649	L	center	LiberationMono-Regular.ttf	1634432126.6017
+StimVisualOff	1	649				1634432126.7684
+StimVisualOn	1	650	k	center	LiberationMono-Regular.ttf	1634432126.9559
+StimVisualOff	1	650				1634432127.1225
+StimVisualOn	1	651	Z	center	AlexBrush-Regular.ttf	1634432127.31
+StimVisualOff	1	651				1634432127.4767
+StimVisualOn	1	652	N	center	LiberationMono-Regular.ttf	1634432127.6642
+StimVisualOff	1	652				1634432127.8309
+StimVisualOn	1	653	9	center	LiberationMono-Regular.ttf	1634432128.0184
+StimVisualOff	1	653				1634432128.185
+StimVisualOn	1	654	I	center	LiberationMono-Regular.ttf	1634432128.3725
+StimVisualOff	1	654				1634432128.5392
+StimVisualOn	1	655	r	center	LiberationMono-Regular.ttf	1634432128.7267
+StimVisualOff	1	655				1634432128.8934
+StimVisualOn	1	656	L	center	AlexBrush-Regular.ttf	1634432129.0809
+StimVisualOff	1	656				1634432129.2476
+StimVisualOn	1	657	H	center	AlexBrush-Regular.ttf	1634432129.4351
+StimVisualOff	1	657				1634432129.6017
+StimVisualOn	1	658	Y	center	LiberationMono-Regular.ttf	1634432129.7892
+StimVisualOff	1	658				1634432129.9559
+StimVisualOn	1	659	Z	center	LiberationMono-Regular.ttf	1634432130.1434
+StimVisualOff	1	659				1634432130.3101
+StimVisualOn	1	660	S	center	AlexBrush-Regular.ttf	1634432130.4976
+StimVisualOff	1	660				1634432130.6643
+StimVisualOn	1	661	v	center	AlexBrush-Regular.ttf	1634432130.8518
+StimVisualOff	1	661				1634432131.0184
+StimVisualOn	1	662	k	center	AlexBrush-Regular.ttf	1634432131.2059
+StimVisualOff	1	662				1634432131.3726
+StimVisualOn	1	663	a	center	AlexBrush-Regular.ttf	1634432131.5601
+StimVisualOff	1	663				1634432131.7268
+StimVisualOn	1	664	U	center	LiberationMono-Regular.ttf	1634432131.9143
+StimVisualOff	1	664				1634432132.0809
+StimVisualOn	1	665	d	center	AlexBrush-Regular.ttf	1634432132.2684
+StimVisualOff	1	665				1634432132.4351
+StimVisualOn	1	666	W	center	AlexBrush-Regular.ttf	1634432132.6226
+StimVisualOff	1	666				1634432132.7893
+StimVisualOn	1	667	v	center	AlexBrush-Regular.ttf	1634432132.9768
+StimVisualOff	1	667				1634432133.1435
+StimVisualOn	1	668	a	center	LiberationMono-Regular.ttf	1634432133.331
+StimVisualOff	1	668				1634432133.4976
+StimVisualOn	1	669	t	center	LiberationMono-Regular.ttf	1634432133.6851
+StimVisualOff	1	669				1634432133.8518
+StimVisualOn	1	670	A	center	AlexBrush-Regular.ttf	1634432134.0393
+StimVisualOff	1	670				1634432134.206
+StimVisualOn	1	671	T	center	AlexBrush-Regular.ttf	1634432134.3935
+StimVisualOff	1	671				1634432134.5602
+StimVisualOn	1	672	W	center	AlexBrush-Regular.ttf	1634432134.7477
+StimVisualOff	1	672				1634432134.9143
+StimVisualOn	1	673	c	center	LiberationMono-Regular.ttf	1634432135.1018
+StimVisualOff	1	673				1634432135.2685
+StimVisualOn	1	674	u	center	LiberationMono-Regular.ttf	1634432135.456
+StimVisualOff	1	674				1634432135.6227
+StimVisualOn	1	675	O	center	LiberationMono-Regular.ttf	1634432135.8102
+StimVisualOff	1	675				1634432135.9768
+StimVisualOn	1	676	e	center	AlexBrush-Regular.ttf	1634432136.1643
+StimVisualOff	1	676				1634432136.331
+StimVisualOn	1	677	r	center	LiberationMono-Regular.ttf	1634432136.5185
+StimVisualOff	1	677				1634432136.6852
+StimVisualOn	1	678	x	center	AlexBrush-Regular.ttf	1634432136.8727
+StimVisualOff	1	678				1634432137.0394
+StimVisualOn	1	679	c	center	AlexBrush-Regular.ttf	1634432137.2269
+StimVisualOff	1	679				1634432137.3935
+StimVisualOn	1	680	X	center	AlexBrush-Regular.ttf	1634432137.581
+StimVisualOff	1	680				1634432137.7477
+StimVisualOn	1	681	W	center	AlexBrush-Regular.ttf	1634432137.9352
+StimVisualOff	1	681				1634432138.1019
+StimVisualOn	1	682	7	center	LiberationMono-Regular.ttf	1634432138.2894
+StimVisualOff	1	682				1634432138.4561
+StimVisualOn	1	683	b	center	AlexBrush-Regular.ttf	1634432138.6436
+StimVisualOff	1	683				1634432138.8102
+StimVisualOn	1	684	r	center	AlexBrush-Regular.ttf	1634432138.9977
+StimVisualOff	1	684				1634432139.1644
+StimVisualOn	1	685	h	center	AlexBrush-Regular.ttf	1634432139.3519
+StimVisualOff	1	685				1634432139.5186
+StimVisualOn	1	686	y	center	LiberationMono-Regular.ttf	1634432139.7061
+StimVisualOff	1	686				1634432139.8727
+StimVisualOn	1	687	h	center	LiberationMono-Regular.ttf	1634432140.0602
+StimVisualOff	1	687				1634432140.2269
+StimVisualOn	1	688	i	center	LiberationMono-Regular.ttf	1634432140.4144
+StimVisualOff	1	688				1634432140.5811
+StimVisualOn	1	689	w	center	LiberationMono-Regular.ttf	1634432140.7686
+StimVisualOff	1	689				1634432140.9353
+StimVisualOn	1	690	A	center	AlexBrush-Regular.ttf	1634432141.1228
+StimVisualOff	1	690				1634432141.2894
+StimVisualOn	1	691	V	center	AlexBrush-Regular.ttf	1634432141.4769
+StimVisualOff	1	691				1634432141.6436
+StimVisualOn	1	692	L	center	AlexBrush-Regular.ttf	1634432141.8311
+StimVisualOff	1	692				1634432141.9978
+StimVisualOn	1	693	f	center	AlexBrush-Regular.ttf	1634432142.1853
+StimVisualOff	1	693				1634432142.3519
+StimVisualOn	1	694	G	center	AlexBrush-Regular.ttf	1634432142.5395
+StimVisualOff	1	694				1634432142.7061
+StimVisualOn	1	695	N	center	LiberationMono-Regular.ttf	1634432142.8936
+StimVisualOff	1	695				1634432143.0603
+StimVisualOn	1	696	d	center	LiberationMono-Regular.ttf	1634432143.2478
+StimVisualOff	1	696				1634432143.4145
+StimVisualOn	1	697	l	center	AlexBrush-Regular.ttf	1634432143.602
+StimVisualOff	1	697				1634432143.7686
+StimVisualOn	1	698	2	center	LiberationMono-Regular.ttf	1634432143.9561
+StimVisualOff	1	698				1634432144.1228
+StimVisualOn	1	699	P	center	LiberationMono-Regular.ttf	1634432144.3103
+StimVisualOff	1	699				1634432144.477
+StimVisualOn	1	700	w	center	AlexBrush-Regular.ttf	1634432144.6645
+StimVisualOff	1	700				1634432144.8312
+StimVisualOn	1	701	Q	center	LiberationMono-Regular.ttf	1634432145.0187
+StimVisualOff	1	701				1634432145.1853
+StimVisualOn	1	702	n	center	LiberationMono-Regular.ttf	1634432145.3728
+StimVisualOff	1	702				1634432145.5395
+StimVisualOn	1	703	C	center	LiberationMono-Regular.ttf	1634432145.727
+StimVisualOff	1	703				1634432145.8937
+StimVisualOn	1	704	A	center	LiberationMono-Regular.ttf	1634432146.0812
+StimVisualOff	1	704				1634432146.2479
+StimVisualOn	1	705	X	center	AlexBrush-Regular.ttf	1634432146.4145
+StimVisualOff	1	705				1634432146.5812
+StimVisualOn	1	706	K	center	AlexBrush-Regular.ttf	1634432146.7687
+StimVisualOff	1	706				1634432146.9354
+StimVisualOn	1	707	M	center	LiberationMono-Regular.ttf	1634432147.1229
+StimVisualOff	1	707				1634432147.2895
+StimVisualOn	1	708	W	center	LiberationMono-Regular.ttf	1634432147.477
+StimVisualOff	1	708				1634432147.6437
+StimVisualOn	1	709	h	center	LiberationMono-Regular.ttf	1634432147.8312
+StimVisualOff	1	709				1634432147.9979
+StimVisualOn	1	710	Q	center	AlexBrush-Regular.ttf	1634432148.1854
+StimVisualOff	1	710				1634432148.3521
+StimVisualOn	1	711	k	center	LiberationMono-Regular.ttf	1634432148.5396
+StimVisualOff	1	711				1634432148.7062
+StimVisualOn	1	712	R	center	LiberationMono-Regular.ttf	1634432148.8937
+StimVisualOff	1	712				1634432149.0604
+StimVisualOn	1	713	j	center	AlexBrush-Regular.ttf	1634432149.2479
+StimVisualOff	1	713				1634432149.4146
+StimVisualOn	1	714	L	center	AlexBrush-Regular.ttf	1634432149.6021
+StimVisualOff	1	714				1634432149.7687
+StimVisualOn	1	715	N	center	LiberationMono-Regular.ttf	1634432149.9563
+StimVisualOff	1	715				1634432150.1229
+StimVisualOn	1	716	Z	center	AlexBrush-Regular.ttf	1634432150.3104
+StimVisualOff	1	716				1634432150.4771
+StimVisualOn	1	717	b	center	AlexBrush-Regular.ttf	1634432150.6646
+StimVisualOff	1	717				1634432150.8313
+StimVisualOn	1	718	8	center	LiberationMono-Regular.ttf	1634432151.0188
+StimVisualOff	1	718				1634432151.1854
+StimVisualOn	1	719	b	center	LiberationMono-Regular.ttf	1634432151.3729
+StimVisualOff	1	719				1634432151.5396
+StimVisualOn	1	720	m	center	AlexBrush-Regular.ttf	1634432151.7271
+StimVisualOff	1	720				1634432151.8938

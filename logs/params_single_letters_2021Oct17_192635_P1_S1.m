@@ -17,16 +17,23 @@ elseif ispc % strcmp(comp,'l')
 end
 
 %% %%%%%%% Text info and params
+params.text_filename = [ngram_type, '.csv'];
 params.font_size = 50; % Fontsize for words presented at the screen center
+params.font_names = {'LiberationMono-Regular.ttf', 'AlexBrush-Regular.ttf'}; % First standard, second cursif
 % params.font_color = 'ffffff';
 
+params.repetitions_letters = 6;
 params.mean_delay_between_numbers = 6; % [sec]
 params.error_delay_between_numbers = 2; % [sec]
 %params.repetitions_numbers = 6;
 
 %% %%%%%%% TIMING params
+params.n_blocks = 1;
 % VISUAL BLOCK
 params.fixation_duration_visual_block = 1.5; %
+params.stimulus_ontime = 0.15; % Duration of each word
+params.stimulus_offtime = 0.15; % Duration of black between stimuli
+params.SOA_visual = params.stimulus_ontime + params.stimulus_offtime;
 params.ISI_visual = 0; % from end of last trial to beginning of first trial
 
 %% EVENTS NUMBERS (TRIGGERS)

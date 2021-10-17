@@ -1,246 +1,246 @@
-1, maf, target, maf, , , root
-2, remaf, target, maf, re, , 1P
-3, ermaf, control, 1P, maf, re, 
-4, unmaf, target, maf, un, , 1P
-5, numaf, control, 1P, maf, un, 
-6, dismaf, target, maf, dis, , 1P
-7, sidmaf, control, 1P, maf, dis, 
-8, mafer, target, maf, , er, 1S
-9, mafre, control, 1S, maf, , er
-10, mafly, target, maf, , ly, 1S
-11, malfy, control, 1S, maf, , ly
-12, mafable, target, maf, , able, 1S
-13, maflabe, control, 1S, maf, , able
-14, unremaf, target, maf, unre, , 2P
-15, ernumaf, control, 2P, maf, unre, 
-16, undismaf, target, maf, undis, , 2P
-17, nusidmaf, control, 2P, maf, undis, 
-18, remafly, target, maf, re, ly, 1P1S
-19, ermalfy, control, 1P1S, maf, re, ly
-20, remafable, target, maf, re, able, 1P1S
-21, ermaflabe, control, 1P1S, maf, re, able
-22, unmafly, target, maf, un, ly, 1P1S
-23, numalfy, control, 1P1S, maf, un, ly
-24, unmafable, target, maf, un, able, 1P1S
-25, numaflabe, control, 1P1S, maf, un, able
-26, dismafly, target, maf, dis, ly, 1P1S
-27, sidmalfy, control, 1P1S, maf, dis, ly
-28, dismafable, target, maf, dis, able, 1P1S
-29, sidmaflabe, control, 1P1S, maf, dis, able
-30, unremafer, target, maf, unre, er, 2P1S
-31, ernumafre, control, 2P1S, maf, unre, er
-32, unremafly, target, maf, unre, ly, 2P1S
-33, ernumalfy, control, 2P1S, maf, unre, ly
-34, unremafable, target, maf, unre, able, 2P1S
-35, ernumaflabe, control, 2P1S, maf, unre, able
-36, undismafer, target, maf, undis, er, 2P1S
-37, nusidmafre, control, 2P1S, maf, undis, er
-38, undismafly, target, maf, undis, ly, 2P1S
-39, nusidmalfy, control, 2P1S, maf, undis, ly
-40, undismafable, target, maf, undis, able, 2P1S
-41, nusidmaflabe, control, 2P1S, maf, undis, able
-42, kag, target, kag, , , root
-43, rekag, target, kag, re, , 1P
-44, erkag, control, 1P, kag, re, 
-45, unkag, target, kag, un, , 1P
-46, nukag, control, 1P, kag, un, 
-47, diskag, target, kag, dis, , 1P
-48, sidkag, control, 1P, kag, dis, 
-49, kager, target, kag, , er, 1S
-50, kagre, control, 1S, kag, , er
-51, kagly, target, kag, , ly, 1S
-52, kalgy, control, 1S, kag, , ly
-53, kagable, target, kag, , able, 1S
-54, kaglabe, control, 1S, kag, , able
-55, unrekag, target, kag, unre, , 2P
-56, ernukag, control, 2P, kag, unre, 
-57, undiskag, target, kag, undis, , 2P
-58, nusidkag, control, 2P, kag, undis, 
-59, rekagly, target, kag, re, ly, 1P1S
-60, erkalgy, control, 1P1S, kag, re, ly
-61, rekagable, target, kag, re, able, 1P1S
-62, erkaglabe, control, 1P1S, kag, re, able
-63, unkagly, target, kag, un, ly, 1P1S
-64, nukalgy, control, 1P1S, kag, un, ly
-65, unkagable, target, kag, un, able, 1P1S
-66, nukaglabe, control, 1P1S, kag, un, able
-67, diskagly, target, kag, dis, ly, 1P1S
-68, sidkalgy, control, 1P1S, kag, dis, ly
-69, diskagable, target, kag, dis, able, 1P1S
-70, sidkaglabe, control, 1P1S, kag, dis, able
-71, unrekager, target, kag, unre, er, 2P1S
-72, ernukagre, control, 2P1S, kag, unre, er
-73, unrekagly, target, kag, unre, ly, 2P1S
-74, ernukalgy, control, 2P1S, kag, unre, ly
-75, unrekagable, target, kag, unre, able, 2P1S
-76, ernukaglabe, control, 2P1S, kag, unre, able
-77, undiskager, target, kag, undis, er, 2P1S
-78, nusidkagre, control, 2P1S, kag, undis, er
-79, undiskagly, target, kag, undis, ly, 2P1S
-80, nusidkalgy, control, 2P1S, kag, undis, ly
-81, undiskagable, target, kag, undis, able, 2P1S
-82, nusidkaglabe, control, 2P1S, kag, undis, able
-83, tis, target, tis, , , root
-84, retis, target, tis, re, , 1P
-85, ertis, control, 1P, tis, re, 
-86, untis, target, tis, un, , 1P
-87, nutis, control, 1P, tis, un, 
-88, distis, target, tis, dis, , 1P
-89, sidtis, control, 1P, tis, dis, 
-90, tiser, target, tis, , er, 1S
-91, tisre, control, 1S, tis, , er
-92, tisly, target, tis, , ly, 1S
-93, tilsy, control, 1S, tis, , ly
-94, tisable, target, tis, , able, 1S
-95, tislabe, control, 1S, tis, , able
-96, unretis, target, tis, unre, , 2P
-97, ernutis, control, 2P, tis, unre, 
-98, undistis, target, tis, undis, , 2P
-99, nusidtis, control, 2P, tis, undis, 
-100, retisly, target, tis, re, ly, 1P1S
-101, ertilsy, control, 1P1S, tis, re, ly
-102, retisable, target, tis, re, able, 1P1S
-103, ertislabe, control, 1P1S, tis, re, able
-104, untisly, target, tis, un, ly, 1P1S
-105, nutilsy, control, 1P1S, tis, un, ly
-106, untisable, target, tis, un, able, 1P1S
-107, nutislabe, control, 1P1S, tis, un, able
-108, distisly, target, tis, dis, ly, 1P1S
-109, sidtilsy, control, 1P1S, tis, dis, ly
-110, distisable, target, tis, dis, able, 1P1S
-111, sidtislabe, control, 1P1S, tis, dis, able
-112, unretiser, target, tis, unre, er, 2P1S
-113, ernutisre, control, 2P1S, tis, unre, er
-114, unretisly, target, tis, unre, ly, 2P1S
-115, ernutilsy, control, 2P1S, tis, unre, ly
-116, unretisable, target, tis, unre, able, 2P1S
-117, ernutislabe, control, 2P1S, tis, unre, able
-118, undistiser, target, tis, undis, er, 2P1S
-119, nusidtisre, control, 2P1S, tis, undis, er
-120, undistisly, target, tis, undis, ly, 2P1S
-121, nusidtilsy, control, 2P1S, tis, undis, ly
-122, undistisable, target, tis, undis, able, 2P1S
-123, nusidtislabe, control, 2P1S, tis, undis, able
-124, viv, target, viv, , , root
-125, reviv, target, viv, re, , 1P
-126, erviv, control, 1P, viv, re, 
-127, unviv, target, viv, un, , 1P
-128, nuviv, control, 1P, viv, un, 
-129, disviv, target, viv, dis, , 1P
-130, sidviv, control, 1P, viv, dis, 
-131, viver, target, viv, , er, 1S
-132, vivre, control, 1S, viv, , er
-133, vivly, target, viv, , ly, 1S
-134, vilvy, control, 1S, viv, , ly
-135, vivable, target, viv, , able, 1S
-136, vivlabe, control, 1S, viv, , able
-137, unreviv, target, viv, unre, , 2P
-138, ernuviv, control, 2P, viv, unre, 
-139, undisviv, target, viv, undis, , 2P
-140, nusidviv, control, 2P, viv, undis, 
-141, revivly, target, viv, re, ly, 1P1S
-142, ervilvy, control, 1P1S, viv, re, ly
-143, revivable, target, viv, re, able, 1P1S
-144, ervivlabe, control, 1P1S, viv, re, able
-145, unvivly, target, viv, un, ly, 1P1S
-146, nuvilvy, control, 1P1S, viv, un, ly
-147, unvivable, target, viv, un, able, 1P1S
-148, nuvivlabe, control, 1P1S, viv, un, able
-149, disvivly, target, viv, dis, ly, 1P1S
-150, sidvilvy, control, 1P1S, viv, dis, ly
-151, disvivable, target, viv, dis, able, 1P1S
-152, sidvivlabe, control, 1P1S, viv, dis, able
-153, unreviver, target, viv, unre, er, 2P1S
-154, ernuvivre, control, 2P1S, viv, unre, er
-155, unrevivly, target, viv, unre, ly, 2P1S
-156, ernuvilvy, control, 2P1S, viv, unre, ly
-157, unrevivable, target, viv, unre, able, 2P1S
-158, ernuvivlabe, control, 2P1S, viv, unre, able
-159, undisviver, target, viv, undis, er, 2P1S
-160, nusidvivre, control, 2P1S, viv, undis, er
-161, undisvivly, target, viv, undis, ly, 2P1S
-162, nusidvilvy, control, 2P1S, viv, undis, ly
-163, undisvivable, target, viv, undis, able, 2P1S
-164, nusidvivlabe, control, 2P1S, viv, undis, able
-165, cor, target, cor, , , root
-166, recor, target, cor, re, , 1P
-167, ercor, control, 1P, cor, re, 
-168, uncor, target, cor, un, , 1P
-169, nucor, control, 1P, cor, un, 
-170, discor, target, cor, dis, , 1P
-171, sidcor, control, 1P, cor, dis, 
-172, corer, target, cor, , er, 1S
-173, corre, control, 1S, cor, , er
-174, corly, target, cor, , ly, 1S
-175, colry, control, 1S, cor, , ly
-176, corable, target, cor, , able, 1S
-177, corlabe, control, 1S, cor, , able
-178, unrecor, target, cor, unre, , 2P
-179, ernucor, control, 2P, cor, unre, 
-180, undiscor, target, cor, undis, , 2P
-181, nusidcor, control, 2P, cor, undis, 
-182, recorly, target, cor, re, ly, 1P1S
-183, ercolry, control, 1P1S, cor, re, ly
-184, recorable, target, cor, re, able, 1P1S
-185, ercorlabe, control, 1P1S, cor, re, able
-186, uncorly, target, cor, un, ly, 1P1S
-187, nucolry, control, 1P1S, cor, un, ly
-188, uncorable, target, cor, un, able, 1P1S
-189, nucorlabe, control, 1P1S, cor, un, able
-190, discorly, target, cor, dis, ly, 1P1S
-191, sidcolry, control, 1P1S, cor, dis, ly
-192, discorable, target, cor, dis, able, 1P1S
-193, sidcorlabe, control, 1P1S, cor, dis, able
-194, unrecorer, target, cor, unre, er, 2P1S
-195, ernucorre, control, 2P1S, cor, unre, er
-196, unrecorly, target, cor, unre, ly, 2P1S
-197, ernucolry, control, 2P1S, cor, unre, ly
-198, unrecorable, target, cor, unre, able, 2P1S
-199, ernucorlabe, control, 2P1S, cor, unre, able
-200, undiscorer, target, cor, undis, er, 2P1S
-201, nusidcorre, control, 2P1S, cor, undis, er
-202, undiscorly, target, cor, undis, ly, 2P1S
-203, nusidcolry, control, 2P1S, cor, undis, ly
-204, undiscorable, target, cor, undis, able, 2P1S
-205, nusidcorlabe, control, 2P1S, cor, undis, able
-206, fod, target, fod, , , root
-207, refod, target, fod, re, , 1P
-208, erfod, control, 1P, fod, re, 
-209, unfod, target, fod, un, , 1P
-210, nufod, control, 1P, fod, un, 
-211, disfod, target, fod, dis, , 1P
-212, sidfod, control, 1P, fod, dis, 
-213, foder, target, fod, , er, 1S
-214, fodre, control, 1S, fod, , er
-215, fodly, target, fod, , ly, 1S
-216, foldy, control, 1S, fod, , ly
-217, fodable, target, fod, , able, 1S
-218, fodlabe, control, 1S, fod, , able
-219, unrefod, target, fod, unre, , 2P
-220, ernufod, control, 2P, fod, unre, 
-221, undisfod, target, fod, undis, , 2P
-222, nusidfod, control, 2P, fod, undis, 
-223, refodly, target, fod, re, ly, 1P1S
-224, erfoldy, control, 1P1S, fod, re, ly
-225, refodable, target, fod, re, able, 1P1S
-226, erfodlabe, control, 1P1S, fod, re, able
-227, unfodly, target, fod, un, ly, 1P1S
-228, nufoldy, control, 1P1S, fod, un, ly
-229, unfodable, target, fod, un, able, 1P1S
-230, nufodlabe, control, 1P1S, fod, un, able
-231, disfodly, target, fod, dis, ly, 1P1S
-232, sidfoldy, control, 1P1S, fod, dis, ly
-233, disfodable, target, fod, dis, able, 1P1S
-234, sidfodlabe, control, 1P1S, fod, dis, able
-235, unrefoder, target, fod, unre, er, 2P1S
-236, ernufodre, control, 2P1S, fod, unre, er
-237, unrefodly, target, fod, unre, ly, 2P1S
-238, ernufoldy, control, 2P1S, fod, unre, ly
-239, unrefodable, target, fod, unre, able, 2P1S
-240, ernufodlabe, control, 2P1S, fod, unre, able
-241, undisfoder, target, fod, undis, er, 2P1S
-242, nusidfodre, control, 2P1S, fod, undis, er
-243, undisfodly, target, fod, undis, ly, 2P1S
-244, nusidfoldy, control, 2P1S, fod, undis, ly
-245, undisfodable, target, fod, undis, able, 2P1S
-246, nusidfodlabe, control, 2P1S, fod, undis, able
+maf
+remaf
+ermaf
+unmaf
+numaf
+dismaf
+sidmaf
+mafer
+mafre
+mafly
+malfy
+mafable
+maflabe
+unremaf
+ernumaf
+undismaf
+nusidmaf
+remafly
+ermalfy
+remafable
+ermaflabe
+unmafly
+numalfy
+unmafable
+numaflabe
+dismafly
+sidmalfy
+dismafable
+sidmaflabe
+unremafer
+ernumafre
+unremafly
+ernumalfy
+unremafable
+ernumaflabe
+undismafer
+nusidmafre
+undismafly
+nusidmalfy
+undismafable
+nusidmaflabe
+kag
+rekag
+erkag
+unkag
+nukag
+diskag
+sidkag
+kager
+kagre
+kagly
+kalgy
+kagable
+kaglabe
+unrekag
+ernukag
+undiskag
+nusidkag
+rekagly
+erkalgy
+rekagable
+erkaglabe
+unkagly
+nukalgy
+unkagable
+nukaglabe
+diskagly
+sidkalgy
+diskagable
+sidkaglabe
+unrekager
+ernukagre
+unrekagly
+ernukalgy
+unrekagable
+ernukaglabe
+undiskager
+nusidkagre
+undiskagly
+nusidkalgy
+undiskagable
+nusidkaglabe
+tis
+retis
+ertis
+untis
+nutis
+distis
+sidtis
+tiser
+tisre
+tisly
+tilsy
+tisable
+tislabe
+unretis
+ernutis
+undistis
+nusidtis
+retisly
+ertilsy
+retisable
+ertislabe
+untisly
+nutilsy
+untisable
+nutislabe
+distisly
+sidtilsy
+distisable
+sidtislabe
+unretiser
+ernutisre
+unretisly
+ernutilsy
+unretisable
+ernutislabe
+undistiser
+nusidtisre
+undistisly
+nusidtilsy
+undistisable
+nusidtislabe
+viv
+reviv
+erviv
+unviv
+nuviv
+disviv
+sidviv
+viver
+vivre
+vivly
+vilvy
+vivable
+vivlabe
+unreviv
+ernuviv
+undisviv
+nusidviv
+revivly
+ervilvy
+revivable
+ervivlabe
+unvivly
+nuvilvy
+unvivable
+nuvivlabe
+disvivly
+sidvilvy
+disvivable
+sidvivlabe
+unreviver
+ernuvivre
+unrevivly
+ernuvilvy
+unrevivable
+ernuvivlabe
+undisviver
+nusidvivre
+undisvivly
+nusidvilvy
+undisvivable
+nusidvivlabe
+cor
+recor
+ercor
+uncor
+nucor
+discor
+sidcor
+corer
+corre
+corly
+colry
+corable
+corlabe
+unrecor
+ernucor
+undiscor
+nusidcor
+recorly
+ercolry
+recorable
+ercorlabe
+uncorly
+nucolry
+uncorable
+nucorlabe
+discorly
+sidcolry
+discorable
+sidcorlabe
+unrecorer
+ernucorre
+unrecorly
+ernucolry
+unrecorable
+ernucorlabe
+undiscorer
+nusidcorre
+undiscorly
+nusidcolry
+undiscorable
+nusidcorlabe
+fod
+refod
+erfod
+unfod
+nufod
+disfod
+sidfod
+foder
+fodre
+fodly
+foldy
+fodable
+fodlabe
+unrefod
+ernufod
+undisfod
+nusidfod
+refodly
+erfoldy
+refodable
+erfodlabe
+unfodly
+nufoldy
+unfodable
+nufodlabe
+disfodly
+sidfoldy
+disfodable
+sidfodlabe
+unrefoder
+ernufodre
+unrefodly
+ernufoldy
+unrefodable
+ernufodlabe
+undisfoder
+nusidfodre
+undisfodly
+nusidfoldy
+undisfodable
+nusidfodlabe
