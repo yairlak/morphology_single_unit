@@ -10,7 +10,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 
 # PATHs
-ngram = 'quadrigrams'
+ngram = 'unigrams'
 path2stimuli = f'../../stimuli/visual/{ngram}.csv'
 path2images = f'../../stimuli/visual/images/{ngram}/'
 os.makedirs(path2images, exist_ok=True)
@@ -35,13 +35,13 @@ if ngram == 'unigrams':
 # SCALE FONT
 def get_scale_factor_for_font(font):
     if font == 'AlexBrush-Regular.ttf':
-        letter_scale_factor = 1
+        factor = 2
     elif font == 'LiberationMono-Regular.ttf':
-        letter_scale_factor = 1
+        factor = 1
     else:
-        letter_scale_factor = None
+        factor = 1
         raise(f'Unkwnown font name {font}')
-    return scale_factor
+    return factor
 
 
 def get_text_dimensions(text_string, font):
@@ -65,6 +65,7 @@ for l in letters:
             else:
                 l = l.lower()
                 # scale up lower case letters
+                letter_scale_factor = 1
                 letter_scale_factor = get_scale_factor_for_font(font)
                 size_corrected = letter_scale_factor*size
             for position in positions:

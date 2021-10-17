@@ -62,3 +62,8 @@ print(f'Total time: {n_repetitions*len(all_quadrigrams)/3/60}')
 with open(os.path.join(path2stimuli, 'quadrigrams.csv'), 'w') as f:
     for ngram in sorted(all_quadrigrams):
         f.write(f'{ngram}\n')
+        
+all_ngrams = all_bigrams + all_trigrams + all_quadrigrams
+with open(os.path.join(path2stimuli, 'ngrams.csv'), 'w') as f:
+    for ngram in sorted(all_ngrams):
+        f.write(f'{ngram}\n')
