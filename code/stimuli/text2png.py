@@ -127,7 +127,7 @@ d.text((x, y),
        '+',
        font=image_font,
        fill='white',
-       anchor='mm')
+       anchor='ms')
 # SAVE IMAGE
 fn = 'fixation'
 img.save(os.path.join(path2images, '..', fn + '.png'))
