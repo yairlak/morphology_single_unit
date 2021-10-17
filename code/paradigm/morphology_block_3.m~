@@ -8,5 +8,5 @@ letter_cases = {'lower'};
 positions = {'center'};
 n_blocks = 3;
 stimulus_ontime = 0.25;
-morphology_single_unit
+morphology_s  ingle_unit
 
