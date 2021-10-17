@@ -10,7 +10,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 
 # PATHs
-ngram = 'ngrams'
+ngram = 'pseudowords' # unigrams/ngrams/pseudowords
 path2stimuli = f'../../stimuli/{ngram}.csv'
 path2images = f'../../stimuli/visual/{ngram}/'
 os.makedirs(path2images, exist_ok=True)
@@ -29,8 +29,7 @@ dx = scale_factor*50 # number of pixels used to shift text from center
 with open(path2stimuli, 'r') as f:
     letters = f.readlines()
 letters = [l.strip('\n') for l in letters]
-if ngram == 'unigrams':
-    letters += ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+letters += ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
 
 # SCALE FONT
 def get_scale_factor_for_font(font):
