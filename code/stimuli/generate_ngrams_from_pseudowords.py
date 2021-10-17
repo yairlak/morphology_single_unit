@@ -10,7 +10,7 @@ import os
 path2stimuli = '../../stimuli/'
 n_repetitions = 6
 
-with open(os.path.join(path2stimuli, 'pseudowords.csv'), 'r') as f:
+with open(os.path.join(path2stimuli, 'pseudowords_features.csv'), 'r') as f:
     lines = f.readlines()
 target_stimuli = [l.split(',')[1].strip() for l in lines 
                   if l.split(',')[2].strip() == 'target']

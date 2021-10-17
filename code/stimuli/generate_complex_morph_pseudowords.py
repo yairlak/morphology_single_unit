@@ -13,7 +13,8 @@ path2stimuli = '../../stimuli/'
 elements = {}
 elements['prefixes'] = ['re', 'un', 'dis']
 elements['suffixes'] = ['er', 'ly', 'able']
-elements['CVCs'] = ['maf', 'kag', 'tis', 'viv', 'cor', 'fod']
+# elements['CVCs'] = ['maf', 'kag', 'tis', 'viv', 'cor', 'fod']
+elements['CVCs'] = ['kag', 'tis', 'viv']
 elements['affix_patterns'] = ['root', '1P', '1S', '2P', '1P1S', '2P1S']
 
 def get_affixes(affix_pattern, elements):
@@ -57,14 +58,14 @@ def get_control_stimulus(prefix, CVC, suffix):
     elif suffix == 'er':
         control_suffix = 're'
     elif suffix == 'ly':
-        control_suffix = CVC[-1] + 'y'
-        control_CVC = CVC[:2] + 'l'
+        control_suffix = 'yl'
     elif suffix == '':
         control_suffix = ''
         
     control_stimulus = control_prefix + control_CVC + control_suffix
     return control_stimulus
 
+f_features = open(os.path.join(path2stimuli, 'pseudowords_features.csv'), 'w')
 f = open(os.path.join(path2stimuli, 'pseudowords.csv'), 'w')
 
 cnt = 0
@@ -81,7 +82,8 @@ for CVC in elements['CVCs']:
             target_stimuli.append(target_stimulus)
             
             line = f'{cnt}, {target_stimulus}, target, {CVC}, {prefix}, {suffix}, {affix_pattern}\n'
-            f.write(line)
+            f_features.write(line)
+            f.write(f'{target_stimulus}\n')
             
             if affix_pattern != 'root':
                 control_stimulus = get_control_stimulus(prefix, CVC, suffix)
@@ -90,9 +92,11 @@ for CVC in elements['CVCs']:
                 control_stimuli.append(control_stimulus)
                 
                 line = f'{cnt}, {control_stimulus}, control, {affix_pattern}, {CVC}, {prefix}, {suffix}\n'
-                f.write(line)
+                f_features.write(line)
+                f.write(f'{control_stimulus}\n')
 f.close()
-          
+f_features.close()
+   
 print(f'Number of stimuli {cnt}')
 n_repetitions = 8
 print(f'Total time: {cnt*n_repetitions/2/60}')
