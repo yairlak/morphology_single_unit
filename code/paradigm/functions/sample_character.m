@@ -4,10 +4,10 @@ function random_stimulu = sample_character(characters, ...
                                             fonts, ...
                                             params)
     random_stimulu = cell(1, 5);
-    char_random = datasample(characters, 1);
-    case_random = datasample(letter_cases, 1);
-    position_random = datasample(positions, 1);
-    font_random = datasample(fonts, 1);
+    char_random = randperm(length(characters));char_random = characters(char_random(1));
+    case_random = randperm(length(letter_cases));case_random = letter_cases(case_random(1));
+    position_random = randperm(length(positions));position_random = positions(position_random(1));
+    font_random = randperm(length(fonts));font_random = fonts(font_random(1));
     random_stimulu{1, 1} = char_random{1};
     random_stimulu{1, 2} = case_random{1};
     random_stimulu{1, 3} = position_random{1};
