@@ -1,8 +1,0 @@
-Event	Block	Trial	Stimulus	Position	Font	Time
-GrandStart					---	1634417122.105	
-BlockStart	1	0	0		-	1634417122.8979	
-Fix	1	0	0		+	1634417122.9296
-StimVisualOn	1	1	A	center	LiberationMono-Regular.ttf	1634417122.9505
-StimVisualOff	1	1				1634417123.0546
-StimVisualOn	1	2	K	center	LiberationMono-Regular.ttf	1634417123.1796
-StimVisualOff	1	2				1634417123.2838
