@@ -10,17 +10,17 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 
 # PATHs
-ngram = 'ngrams' # unigrams/ngrams/pseudowords
+ngram = 'pseudowords' # unigrams/ngrams/pseudowords
 path2stimuli = f'../../stimuli/{ngram}.csv'
 path2images = f'../../stimuli/visual/{ngram}/'
 os.makedirs(path2images, exist_ok=True)
 
 # FONTS AND TEXT SIZE
 
-scale_factor = 2
+scale_factor = 1
 fonts = ['LiberationMono-Regular.ttf', 'AlexBrush-Regular.ttf']
 sizes = [scale_factor*50, scale_factor*50]
-size_fixation = 30
+size_fixation = 15*scale_factor
 positions = ['left', 'right', 'center'] # left/right/center
 positions = ['center'] # left/right/center
 dx = scale_factor*50 # number of pixels used to shift text from center
