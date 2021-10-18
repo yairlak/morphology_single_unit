@@ -35,6 +35,7 @@ def get_quadrigrams(stimuli):
 
 # BIGRAMS
 target_bigrams = get_bigrams(target_stimuli)
+target_bigrams.extend(['al', 'de', 'es', 'ed', 'en', 'co', 'in', 'im'])
 control_bigrams = get_bigrams(control_stimuli)
 all_bigrams = list(set(target_bigrams + control_bigrams))
 print(f'Number of bigrams {len(all_bigrams)}')
@@ -43,8 +44,11 @@ with open(os.path.join(path2stimuli, 'bigrams.csv'), 'w') as f:
     for ngram in sorted(all_bigrams):
         f.write(f'{ngram}\n')
 
+
+
 # TRIGRAMS
 target_trigrams = get_trigrams(target_stimuli)
+target_bigrams.extend(['pre', 'ing', 'mis'])
 control_trigrams = get_trigrams(control_stimuli)
 all_trigrams = list(set(target_trigrams + control_trigrams))
 print(f'Number of trigrams {len(all_trigrams)}')
@@ -55,6 +59,7 @@ with open(os.path.join(path2stimuli, 'trigrams.csv'), 'w') as f:
 
 # QUADRIGRAMS
 target_quadrigrams = get_quadrigrams(target_stimuli)
+target_quadrigrams.extend(['over', 'ment', 'less', 'tion'])
 control_quadrigrams = get_quadrigrams(control_stimuli)
 all_quadrigrams = list(set(target_quadrigrams + control_quadrigrams))
 print(f'Number of quadrigrams {len(all_quadrigrams)}')
