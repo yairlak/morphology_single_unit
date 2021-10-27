@@ -10,7 +10,7 @@ import pandas as pd
 from .features import Features
 from wordfreq import word_frequency, zipf_frequency
 from utils.utils import probename2picks
-#from utils.brpylib import NsxFile, brpylib_ver
+from utils.brpylib import NsxFile, brpylib_ver
 from scipy.ndimage import gaussian_filter1d
 import neo
 import h5py
@@ -59,7 +59,7 @@ class DataHandler:
                                                            self.data_type,
                                                            self.filter)):
             # Load RAW object
-            path2rawdata = f'../../Data/UCLA/{patient}/Raw/mne'
+            path2rawdata = f'../../data/{patient}/raw/mne'
             fname_raw = '%s_%s_%s-raw.fif' % (patient, data_type, filt)
 
             raw_neural = mne.io.read_raw_fif(os.path.join(path2rawdata,
@@ -107,9 +107,57 @@ class DataHandler:
         if verbose:
             print(self.raws)
             [print(raw.ch_names) for raw in self.raws]
+            
+            
+    def prepare_metadata(self,
+                         block_names=['unigrams', 'ngrams', 'pseudowords'],
+                         verbose=False):
+        '''
+        
+
+        Parameters
+        ----------
+        log_types : TYPE, optional
+            DESCRIPTION. The default is ['unigrams', 'ngrams', 'pseudowords'].
+        verbose : TYPE, optional
+            DESCRIPTION. The default is False.
+
+        Returns
+        -------
+        None.
+
+        '''
+        name2block_num = {'unigrams':1, 'ngrams':2, 'pseudowords':3}
+        if verbose:
+            print('Preparing metadata from logs...')
+        path2log = os.path.join('..', '..', 
+                                'data', self.patient[0], 'logs')
+        
+        df_logs = []
+        for block_name in block_names:
+            fn_log = f'log_morphology_{block_name}_pt_{self.patient[0].split("_")[1]}_synched.log'
+            df_log = pd.read_csv(os.path.join(path2log, fn_log), delimiter='\t')
+            df_log = df_log.rename({'Time':'event_time'}, axis=1)
+            df_logs.append(df_log)
+        metadata = pd.concat(df_logs)    
+        metadata = metadata.loc[metadata['Event']=='StimVisualOn']
+        metadata.sort_values(by='event_time')
+        # ADD COLUMNS
+        def check_case(row):
+            isupper = row['Stimulus'].isupper()
+            if isupper:
+                case = 'upper'
+            else:
+                case = 'lower'
+            return case
+        metadata['Block'] = metadata.apply(lambda row: name2block_num[row['Block-Type']], axis=1)
+        metadata['Case'] = metadata.apply(lambda row: check_case(row), axis=1)
+        metadata['Stimulus_insensitive'] = metadata.apply(lambda row: row['Stimulus'].lower(), axis=1)
+        self.metadata = metadata
+
 
     def epoch_data(self, level,
-                   tmin=None, tmax=None,  query=None,
+                   tmin=-0.2, tmax=1,  query=None,
                    block_type=None, scale_epochs=False, verbose=False,
                    smooth=None):
         '''
@@ -144,48 +192,12 @@ class DataHandler:
         for p, (patient, data_type) in enumerate(zip(self.patient,
                                                      self.data_type)):
             print(f'Epoching {patient}, {data_type}, {level}')
-            ############
-            # METADATA #
-            ############
-            metadata = prepare_metadata(patient)
-            metadata = extend_metadata(metadata)
-            
-
-            if level == 'sentence_onset':
-                tmin_, tmax_ = (-1.2, 3.5)
-                metadata_level = metadata.loc[((metadata['block'].isin([1, 3, 5])) &
-                                              (metadata['word_position'] == 1)) |
-                                              ((metadata['block'].isin([2, 4, 6])) &
-                                              (metadata['word_position'] == 1) &
-                                              (metadata['phone_position'] == 1))]
-            elif level == 'sentence_offset':
-                tmin_, tmax_ = (-3.5, 1.5)
-                metadata_level = metadata.loc[(metadata['is_last_word'] == 1)]
-            elif level == 'word':
-                tmin_, tmax_ = (-1.5, 2.5)
-                metadata_level = metadata.loc[((metadata['word_onset'] == 1) &
-                                              (metadata['block'].isin([2, 4, 6]))) |
-                                              ((metadata['block'].isin([1, 3, 5])) &
-                                              (metadata['word_position'] > 0))] 
-            elif level == 'phone':
-                tmin_, tmax_ = (-0.3, 1.2)
-                metadata_level = metadata.loc[(metadata['block'].isin([2, 4, 6])) &
-                                              (metadata['phone_position'] > 0)]
-            elif level == 'block':
-                metadata_level = metadata.loc[(metadata['chronological_order'] == 1) |
-                                              (metadata['chronological_order'] == 509) |
-                                              (metadata['chronological_order'] == 2127) |
-                                              (metadata['chronological_order'] == 2635) |
-                                              (metadata['chronological_order'] == 4253) |
-                                              (metadata['chronological_order'] == 4761)]
-            else:
-                raise('Unknown level type (sentence_onset/sentence_offset/word/phone)')
-            
             
             ##########
             # EVENTS #
             ##########
-            events, event_id = get_events(metadata_level, self.sfreq)
+            events, event_id = create_events_array(self.metadata,
+                                                   self.sfreq)
             
             if verbose:
                 print(self.raws[p].first_samp, events)
@@ -193,16 +205,12 @@ class DataHandler:
             ############
             # EPOCHING #
             ############
-            epochs = mne.Epochs(self.raws[p], events, event_id, tmin_, tmax_,
-                                metadata=metadata_level, baseline=None,
+            epochs = mne.Epochs(self.raws[p], events, event_id, tmin, tmax,
+                                metadata=self.metadata, baseline=None,
                                 preload=True, reject=None)
             if any(epochs.drop_log):
                 print('Dropped:', epochs.drop_log)
 
-            if block_type == 'auditory':
-                epochs = epochs['block in [2, 4, 6]']
-            elif block_type == 'visual':
-                epochs = epochs['block in [1, 3, 5]']
             # QUERY
             if query:
                 epochs = epochs[query]
@@ -210,8 +218,8 @@ class DataHandler:
                 print(query)
                 print(epochs)
             # CROP
-            if tmin and tmax:
-                epochs = epochs.crop(tmin=tmin, tmax=tmax)
+            #if tmin and tmax:
+            #    epochs = epochs.crop(tmin=tmin, tmax=tmax)
             
 
             # Separate neural data from features before pick and scale
@@ -256,8 +264,9 @@ class DataHandler:
             self.epochs.append(epochs_neural)
 
 
-def get_events(metadata, sfreq, verbose=False):
-
+def create_events_array(metadata, sfreq, verbose=False):
+    name2block_num = {'unigrams':1, 'ngrams':2, 'pseudowords':3}
+    
     # First column of events object
     times_in_sec = sorted(metadata['event_time'].values)
     min_diff_sec = np.min(np.diff(times_in_sec))
@@ -270,8 +279,10 @@ def get_events(metadata, sfreq, verbose=False):
     second_column = np.zeros((len(curr_times), 1))
     
     # Third column
-    event_numbers = 100 * metadata['block'].values  # For each block, the event_ids are ordered within a range of 100 numbers block1: 101-201, block2: 201-300, etc.
-    event_type_names = ['block_' + str(i) for i in metadata['block'].values]
+    block_names = metadata['Block-Type']
+    block_nums = [name2block_num[block_name] for block_name in block_names]
+    event_numbers = [100 * bn for bn in block_nums]  # For each block, the event_ids are ordered within a range of 100 numbers block1: 101-201, block2: 201-300, etc.
+    event_type_names = metadata['Block-Type'].values
     event_numbers = np.expand_dims(event_numbers, axis=1)
     
     # EVENT object: concatenate all three columns together (then change to int and sort)
@@ -289,6 +300,9 @@ def get_events(metadata, sfreq, verbose=False):
     return events, event_id
 
 
+
+
+
 def generate_mne_raw(data_type, from_mat, path2rawdata, sfreq_down):
     
     assert not (data_type == 'spike' and from_mat)
@@ -301,6 +315,7 @@ def generate_mne_raw(data_type, from_mat, path2rawdata, sfreq_down):
     
     # Extract raw data
     if data_type == 'spike':
+        path2data = os.path.join(path2rawdata, 'micro')
         channel_data, sfreq, ch_names = get_data_from_combinato(path2data)
     else:
         if from_mat:
@@ -327,9 +342,7 @@ def get_data_from_combinato(path2data):
 
     print('Loading spike cluster data')
     
-    CSC_folders = glob.glob(os.path.join(path2data, 'CSC?/')) + \
-                  glob.glob(os.path.join(path2data, 'CSC??/')) + \
-                  glob.glob(os.path.join(path2data, 'CSC???/'))
+    CSC_folders = glob.glob(os.path.join(path2data, 'G??-*/'))
     
     recording_system = identify_recording_system(path2data)
     if recording_system == 'Neuralynx':
@@ -352,8 +365,9 @@ def get_data_from_combinato(path2data):
     
     ch_names, spike_times_samples = [], []
     for CSC_folder in CSC_folders:
-        channel_num = int(CSC_folder.split('CSC')[-1].strip('/'))
-        spikes, curr_ch_names = load_combinato_sorted_h5(path2data, channel_num)
+        # channel_num = int(CSC_folder.split('CSC')[-1].strip('/'))
+        channel_name = os.path.basename(os.path.normpath(CSC_folder))
+        spikes, curr_ch_names = load_combinato_sorted_h5(path2data, channel_name)
         assert len(curr_ch_names)==len(spikes)
 
         if len(spikes) > 0:
@@ -362,7 +376,7 @@ def get_data_from_combinato(path2data):
                 curr_spike_times_samples = [int(t*sfreq/1e3) for t in curr_spike_times_msec] # convert to samples from sec
                 spike_times_samples.append(curr_spike_times_samples)
         else:
-            print(f'No spikes in channel: {channel_num}')
+            print(f'No spikes in channel: {channel_name}')
 
     # ADD to array
     num_groups = len(spike_times_samples)
@@ -503,21 +517,23 @@ def identify_recording_system(path2data):
     return recording_system
 
 
-def load_combinato_sorted_h5(path2data, channel_num):  # , probe_name):
+def load_combinato_sorted_h5(path2data, ch_name):  # , probe_name):
     target_types = [2] # -1: artifact, 0: unassigned, 1: MU, 2: SU
 
-    dict_ch_names, _ = get_dict_ch_names(os.path.join(path2data, '..', 'micro'))
-    ch_name = dict_ch_names[channel_num]
+    # dict_ch_names, _ = get_dict_ch_names(os.path.join(path2data, '..', 'micro'))
+    # ch_name = dict_ch_names[channel_num]
 
     spike_times_msec = []; group_names = []
-    h5_files = glob.glob(os.path.join(path2data, 'CSC' + str(channel_num), 'data_*.h5'))
+    # h5_files = glob.glob(os.path.join(path2data, 'CSC' + str(channel_num), 'data_*.h5'))
+    h5_files = glob.glob(os.path.join(path2data, ch_name, 'data_*.h5'))
     if len(h5_files) == 1:
         filename = h5_files[0]
         f_all_spikes = h5py.File(filename, 'r')
 
         for sign in ['neg', 'pos']:
         #for sign in ['neg']:
-            filename_sorted = glob.glob(os.path.join(path2data, 'CSC' + str(channel_num), 'sort_' + sign + '_yl2', 'sort_cat.h5'))
+            # filename_sorted = glob.glob(os.path.join(path2data, 'CSC' + str(channel_num), 'sort_' + sign + '_yl2', 'sort_cat.h5'))
+            filename_sorted = glob.glob(os.path.join(path2data, ch_name, 'sort_' + sign + '_yl2', 'sort_cat.h5'))
             if len(filename_sorted) == 1:
                 f_sort_cat = h5py.File(filename_sorted[0], 'r')
                 group_numbers = []
@@ -544,7 +560,7 @@ def load_combinato_sorted_h5(path2data, channel_num):  # , probe_name):
                         raise ('issue with types: more than one group assigned to a type')
                     # if type_of_curr_group>0: # ignore artifact and unassigned groups
                     if type_of_curr_group in target_types: # Single-unit (SU) only
-                        print(f'found cluster in {ch_name}, channel {channel_num}, group {g}')
+                        print(f'found cluster in {ch_name}, group {g}')
                         # Loop over all spikes
                         for i, c in enumerate(classes):
                             # check if current cluster in group
@@ -568,9 +584,10 @@ def load_combinato_sorted_h5(path2data, channel_num):  # , probe_name):
                         #        pn=None
                         #elif isinstance(probe_name, str):
                         #    pn=probe_name
-                        group_names.append(f'{ch_name}_{channel_num}{sign[0]}{g}')
+                        # group_names.append(f'{ch_name}_{channel_num}{sign[0]}{g}')
+                        group_names.append(f'{ch_name}_{sign[0]}{g}')
             else:
-                print('%s was not found!' % os.path.join(path2data, 'micro', 'CSC_ncs', 'CSC' + str(channel_num), 'sort_' + sign + '_yl2', 'sort_cat.h5'))
+                print('%s was not found!' % os.path.join(path2data, 'micro', 'CSC_ncs', ch_name, 'sort_' + sign + '_yl2', 'sort_cat.h5'))
 
     else:
         print('None or more than a single combinato h5 was found')

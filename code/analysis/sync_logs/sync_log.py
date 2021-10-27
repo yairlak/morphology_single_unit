@@ -18,8 +18,8 @@ from pprint import pprint
 from data_manip import read_events, read_logs, split_to_blocks, extract_target_triggers
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--patient', default = '545')
-parser.add_argument('--recording-system', choices=['Neuralynx', 'BlackRock'], default='Neuralynx')
+parser.add_argument('--patient', default = '544')
+parser.add_argument('--recording-system', choices=['Neuralynx', 'BlackRock'], default='BlackRock')
 parser.add_argument('--logs', default=['unigrams', 'ngrams', 'pseudowords'], help='Since there could be more cheetah logs than block, these indexes define the log indexes of interest')
 parser.add_argument('--merge-logs', action='store_true', default=True)
 parser.add_argument('-v', '--verbose', action='store_true', default=True)
@@ -31,6 +31,16 @@ block_num2name = {0:'unigrams', 1:'ngrams', 2:'pseudowords'}
 logs_folder = os.path.join('..', '..', '..', 'data',
                            'patient_' + args.patient, 'logs')
 
+
+
+if args.recording_system == 'BlackRock':
+    event_id_block_starts = [[65535]*4, [65535]*13, [65535]*13]
+    target_triggers = [65410, 65416, 65424]
+elif args.recording_system == 'Neuralynx':
+    event_id_block_starts = [[255]*4, [255]*13, [255]*13]
+    target_triggers = [2, 8, 16]
+
+
 #################
 # Read NEV file #
 #################
@@ -39,8 +49,9 @@ times_device, event_ids, sfreq = read_events(args)
 print(f'sfreq = {sfreq}')
 
 # SPLIT TO BLOCKS
-dict_device, IX_block_starts = split_to_blocks(times_device, event_ids)
-target_triggers = [2, 8, 16]
+dict_device, IX_block_starts = split_to_blocks(times_device, event_ids,
+                                               event_id_block_starts=event_id_block_starts)
+
 dict_device = extract_target_triggers(dict_device, target_triggers)
 
 # Plot TTLs
@@ -92,7 +103,6 @@ ax.scatter(times_log_all_blocks, times_device_all_blocks)
 ax.set_title(f'All logs together: R^2 = {r2score_all:1.2f}')
 
 # REGRESSION FOR EACH LOG
-cnt_log = 0
 for block_num in dict_device.keys():
     block_name = block_num2name[block_num]
     print(dict_logs[block_name]['log_filename'])
@@ -111,7 +121,7 @@ for block_num in dict_device.keys():
     ax.plot(times_log, model.intercept_[0] + model.coef_[0] * times_log, ls='--', color='k', lw=2)
     ax.set_xlabel('Time (log)', fontsize=16)
     ax.set_ylabel('Time (recording-device)', fontsize=16)
-    fn_fig = fn_fig = op.join(dir_figures, f'regrssion_log2device_pt_{args.patient}_block_{cnt_log+1}.png')
+    fn_fig = fn_fig = op.join(dir_figures, f'regrssion_log2device_pt_{args.patient}_{block_name}.png')
     plt.savefig(fn_fig)
     plt.close(fig)
     
@@ -124,8 +134,8 @@ for block_num in dict_device.keys():
     
     
     new_log_lines = []
-    new_log_lines.append(f'Block\tTrial\tEvent\tStimulus\tPosition\tFont\tTime')
-    for (t, event_name, block, trial, stimulus, position, font) in zip(times_log,
+    new_log_lines.append(f'Block-Type\tMini-Block\tTrial\tEvent\tStimulus\tPosition\tFont\tTime')
+    for (t, event_name, mini_block, trial, stimulus, position, font) in zip(times_log,
                                                                        event_names,
                                                                        block_nums,
                                                                        trial_nums,
@@ -136,11 +146,10 @@ for block_num in dict_device.keys():
             t_estimated = model_all.predict(np.asarray([t]).reshape(1, -1))[0]
         else:
             t_estimated = model.predict(np.asarray([t]).reshape(1, -1))[0]
-        new_log_lines.append(f'{block}\t{trial}\t{event_name}\t{stimulus}\t{position}\t{font}\t{t_estimated[0]:.4f}')
+        new_log_lines.append(f'{block_name}\t{mini_block}\t{trial}\t{event_name}\t{stimulus}\t{position}\t{font}\t{t_estimated[0]:.4f}')
     # SAVE
     fn_log_new = op.join(logs_folder, f'log_morphology_{block_name}_pt_{args.patient}_synched.log')
     with open(fn_log_new, 'w') as f:
         [f.write(l+'\n') for l in new_log_lines]
-    cnt_log += 1
 
 

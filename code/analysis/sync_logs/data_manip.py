@@ -19,7 +19,7 @@ def read_events(args):
                                   'data', 'patient_' + args.patient,
                                   'raw', 'nev')
     print(session_folder)
-    nev_files = glob.glob(os.path.join(session_folder, 'events.*'))
+    nev_files = glob.glob(os.path.join(session_folder, 'Events.*'))
     assert len(nev_files) > 0
     
     event_nums_zero, time_stamps, IXs2nev = [], [], []
@@ -56,7 +56,8 @@ def read_events(args):
                 events_times = duration_prev_nevs + np.asarray([float(e[0]/sfreq) for e in events])
                 time_stamps.extend(events_times)
                 event_nums = [e[4] for e in events] 
-                event_nums_zero.extend(event_nums - min(event_nums))
+                event_nums_zero = event_nums
+                # event_nums_zero.extend(event_nums - min(event_nums)-128) # HACK (128)
                 
         elif nev_file[-3:] == 'mat':
             assert len(nev_files) == 1

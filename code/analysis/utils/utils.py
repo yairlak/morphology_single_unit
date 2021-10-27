@@ -71,41 +71,26 @@ def get_queries(comparison):
     return queries
 
 
-def update_queries(comp, block_type, fixed_constraint, metadata):
+def update_queries(comp, fixed_constraint, metadata, block_type=None):
     # If 'queries' value is a string (instead of a list of strings) then queries are based on all values in metadata
     # The string in 'queries' should indicate a field name in metadata.
     if isinstance(comp['queries'], str):
-        if comp['queries'] != 'phone_string':
-            queries = []; condition_names = []
-            all_possible_values = sorted(list(set(metadata[comp['queries']])))
+        queries = []; condition_names = []
+        all_possible_values = list(set(metadata[comp['queries']]))
+        if np.nan in all_possible_values:
+            all_possible_values.remove(np.nan)
+        all_possible_values = sorted(all_possible_values)
             
-            for val in all_possible_values:
-                if isinstance(val, str):
-                    query = comp['queries'] + ' == "' + str(val) + '"'
-                else:
-                    query = comp['queries'] + ' == ' + str(val)
-                queries.append(query)
-                condition_names.append(str(val))
-            comp['queries'] = queries
-            comp['condition_names'] = condition_names
-        else: # special case for phone_string
-            queries = []; condition_names = []
-            all_possible_values = list(set(metadata[comp['queries']]))
-            print(all_possible_values)
-            for val in all_possible_values:
-                if isinstance(val, str):
-                    if all([not i.isdigit() for i in val[0:-1]]) and val[-1].isdigit(): # if only last character is a digit
-                        val = val[0:-1]
-                        query = comp['queries'] + '.str.startswith("' + str(val) + '")'
-                    else:
-                        query = comp['queries'] + ' == "' + str(val) + '"'
-                    if query not in queries:
-                        queries.append(query)
-                        condition_names.append(str(val))
-            assert len(queries) == len(condition_names)
-            comp['queries'] = queries
-            comp['condition_names'] = condition_names
-
+        for val in all_possible_values:
+            if isinstance(val, str):
+                query = comp['queries'] + ' == "' + str(val) + '"'
+            else:
+                query = comp['queries'] + ' == ' + str(val)
+            queries.append(query)
+            condition_names.append(str(val))
+        comp['queries'] = queries
+        comp['condition_names'] = condition_names
+        
     if not comp['colors']:
         color_vals = ['b', 'g', 'r', 'c', 'm', 'y', 'k']
         for i, _ in enumerate(comp['queries']):
