@@ -1,6 +1,6 @@
-
-
 clear all; close all; clc
+addpath('functions')
+block_type = 'visual';
 stimulus_type = 'unigrams';
 repetitions = 6;
 fonts = {'LiberationMono-Regular.ttf', 'AlexBrush-Regular.ttf'};

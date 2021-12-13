@@ -7,8 +7,7 @@ params.path2intro_slide = '../../stimuli/instructions_single_letters.png';
 if ismac || isunix %comp == 'h'
     params.default_path = fileparts(fileparts(fileparts(which('getParamsUCLAParadigm'))));
     %'~/Projects/Yair/morphology_single_unit/code';
-    params.path2images = fullfile('..', '..', 'stimuli', 'visual', ngram_type);
-    params.path2sounds = fullfile('..', '..', 'stimuli', 'audio', ngram_type);
+    params.path2images = fullfile('..', '..', 'stimuli', block_type, ngram_type);
     params.path2stimuli = fullfile('..', '..', 'stimuli');
     params.path2logs = fullfile('..', '..', 'logs');
     params.sio = '/dev/tty.usbserial';
@@ -30,11 +29,6 @@ params.error_delay_between_numbers = 2; % [sec]
 % VISUAL BLOCK
 params.fixation_duration_visual_block = 1.5; %
 params.ISI_visual = 0; % from end of last trial to beginning of first trial
-
-% AUDITORY BLOCK
-params.ISI_audio = 0.5;
-% params.patientChannel = 1;
-% params.TTLChannel = 1;
 
 %% EVENTS NUMBERS (TRIGGERS)
 % FIXATION

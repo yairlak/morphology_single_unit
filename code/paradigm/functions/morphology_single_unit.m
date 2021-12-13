@@ -7,7 +7,7 @@ debug_mode = 0;
 addpath('functions')
 KbName('UnifyKeyNames')
 [params, events] = getParamsUCLAParadigm(block_type, stimulus_type);
-params.block_type = block_type
+params.block_type = block_type;
 params.text_filename = [stimulus_type, '.csv'];
 params.stimulus_type = stimulus_type;
 params.repetitions = repetitions;

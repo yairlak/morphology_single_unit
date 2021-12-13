@@ -1,6 +1,6 @@
-
-
 clear all; close all; clc
+addpath('functions')
+block_type = 'visual';
 stimulus_type = 'pseudowords';
 repetitions = 8;
 fonts = {'LiberationMono-Regular.ttf'};

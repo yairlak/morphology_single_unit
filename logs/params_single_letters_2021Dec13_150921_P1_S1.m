@@ -7,8 +7,7 @@ params.path2intro_slide = '../../stimuli/instructions_single_letters.png';
 if ismac || isunix %comp == 'h'
     params.default_path = fileparts(fileparts(fileparts(which('getParamsUCLAParadigm'))));
     %'~/Projects/Yair/morphology_single_unit/code';
-    params.path2images = fullfile('..', '..', 'stimuli', 'visual', ngram_type);
-    params.path2sounds = fullfile('..', '..', 'stimuli', 'audio', ngram_type);
+    params.path2images = fullfile('..', '..', 'stimuli', block_type, ngram_type);
     params.path2stimuli = fullfile('..', '..', 'stimuli');
     params.path2logs = fullfile('..', '..', 'logs');
     params.sio = '/dev/tty.usbserial';

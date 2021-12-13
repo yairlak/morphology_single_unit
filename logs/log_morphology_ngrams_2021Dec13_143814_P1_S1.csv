@@ -1,0 +1,397 @@
+Event	Block	Trial	Stimulus	Position	Font	Time
+GrandStart					---	1639402701.4275	
+BlockStart	1	0	0		-	1639402702.4342	
+Fix	1	0	0		+	1639402702.4721
+KeyPress	1	1				1639402702.4311	
+StimVisualOn	1	1	able	center	LiberationMono-Regular.ttf	1639402704.0347
+StimVisualOff	1	1				1639402704.2013
+StimVisualOn	1	2	yl	center	LiberationMono-Regular.ttf	1639402704.368
+StimVisualOff	1	2				1639402704.5347
+StimVisualOn	1	3	velb	center	LiberationMono-Regular.ttf	1639402704.7013
+StimVisualOff	1	3				1639402704.868
+StimVisualOn	1	4	isti	center	LiberationMono-Regular.ttf	1639402705.0347
+StimVisualOff	1	4				1639402705.2013
+StimVisualOn	1	5	isyl	center	LiberationMono-Regular.ttf	1639402705.3889
+StimVisualOff	1	5				1639402705.5555
+StimVisualOn	1	6	sti	center	LiberationMono-Regular.ttf	1639402705.7222
+StimVisualOff	1	6				1639402705.8889
+StimVisualOn	1	7	sly	center	LiberationMono-Regular.ttf	1639402706.0555
+StimVisualOff	1	7				1639402706.2222
+StimVisualOn	1	8	gl	center	LiberationMono-Regular.ttf	1639402706.3889
+StimVisualOff	1	8				1639402706.5556
+StimVisualOn	1	9	se	center	LiberationMono-Regular.ttf	1639402706.7222
+StimVisualOff	1	9				1639402706.8889
+StimVisualOn	1	10	gly	center	LiberationMono-Regular.ttf	1639402707.0764
+StimVisualOff	1	10				1639402707.2431
+StimVisualOn	1	11	isyl	center	LiberationMono-Regular.ttf	1639402707.4097
+StimVisualOff	1	11				1639402707.5764
+StimVisualOn	1	12	rnuv	center	LiberationMono-Regular.ttf	1639402707.7639
+StimVisualOff	1	12				1639402707.9306
+StimVisualOn	1	13	isyl	center	LiberationMono-Regular.ttf	1639402708.0973
+StimVisualOff	1	13				1639402708.2639
+StimVisualOn	1	14	vi	center	LiberationMono-Regular.ttf	1639402708.4306
+StimVisualOff	1	14				1639402708.5973
+StimVisualOn	1	15	dkag	center	LiberationMono-Regular.ttf	1639402708.7639
+StimVisualOff	1	15				1639402708.9306
+StimVisualOn	1	16	vivr	center	LiberationMono-Regular.ttf	1639402709.0973
+StimVisualOff	1	16				1639402709.2639
+StimVisualOn	1	17	ver	center	LiberationMono-Regular.ttf	1639402709.4515
+StimVisualOff	1	17				1639402709.6181
+StimVisualOn	1	18	uka	center	LiberationMono-Regular.ttf	1639402709.7848
+StimVisualOff	1	18				1639402709.9515
+StimVisualOn	1	19	undi	center	LiberationMono-Regular.ttf	1639402710.1181
+StimVisualOff	1	19				1639402710.2848
+StimVisualOn	1	20	sre	center	LiberationMono-Regular.ttf	1639402710.4515
+StimVisualOff	1	20				1639402710.6182
+StimVisualOn	1	21	6	center	LiberationMono-Regular.ttf	1639402710.7848
+StimVisualOff	1	21				1639402710.9515
+StimVisualOn	1	22	ka	center	LiberationMono-Regular.ttf	1639402711.139
+StimVisualOff	1	22				1639402711.3057
+StimVisualOn	1	23	ly	center	LiberationMono-Regular.ttf	1639402711.4723
+StimVisualOff	1	23				1639402711.639
+StimVisualOn	1	24	eka	center	LiberationMono-Regular.ttf	1639402711.8057
+StimVisualOff	1	24				1639402711.9723
+StimVisualOn	1	25	er	center	LiberationMono-Regular.ttf	1639402712.139
+StimVisualOff	1	25				1639402712.3057
+StimVisualOn	1	26	erti	center	LiberationMono-Regular.ttf	1639402712.4724
+StimVisualOff	1	26				1639402712.639
+StimVisualOn	1	27	kagl	center	LiberationMono-Regular.ttf	1639402712.8057
+StimVisualOff	1	27				1639402712.9724
+StimVisualOn	1	28	nviv	center	LiberationMono-Regular.ttf	1639402713.1599
+StimVisualOff	1	28				1639402713.3266
+StimVisualOn	1	29	gabl	center	LiberationMono-Regular.ttf	1639402713.4932
+StimVisualOff	1	29				1639402713.6599
+StimVisualOn	1	30	ek	center	LiberationMono-Regular.ttf	1639402713.8266
+StimVisualOff	1	30				1639402713.9932
+StimVisualOn	1	31	rtis	center	LiberationMono-Regular.ttf	1639402714.1599
+StimVisualOff	1	31				1639402714.3266
+StimVisualOn	1	32	evi	center	LiberationMono-Regular.ttf	1639402714.4932
+StimVisualOff	1	32				1639402714.6599
+StimVisualOn	1	33	sviv	center	LiberationMono-Regular.ttf	1639402714.8266
+StimVisualOff	1	33				1639402714.9933
+StimVisualOn	1	34	agre	center	LiberationMono-Regular.ttf	1639402715.1599
+StimVisualOff	1	34				1639402715.3266
+StimVisualOn	1	35	nt	center	LiberationMono-Regular.ttf	1639402715.4933
+StimVisualOff	1	35				1639402715.6599
+StimVisualOn	1	36	lba	center	LiberationMono-Regular.ttf	1639402715.8266
+StimVisualOff	1	36				1639402715.9933
+StimVisualOn	1	37	di	center	LiberationMono-Regular.ttf	1639402716.16
+StimVisualOff	1	37				1639402716.3266
+StimVisualOn	1	38	unv	center	LiberationMono-Regular.ttf	1639402716.4933
+StimVisualOff	1	38				1639402716.66
+StimVisualOn	1	39	di	center	LiberationMono-Regular.ttf	1639402716.8266
+StimVisualOff	1	39				1639402716.9933
+StimVisualOn	1	40	disk	center	LiberationMono-Regular.ttf	1639402717.16
+StimVisualOff	1	40				1639402717.3267
+StimVisualOn	1	41	ver	center	LiberationMono-Regular.ttf	1639402717.4933
+StimVisualOff	1	41				1639402717.66
+StimVisualOn	1	42	2	center	LiberationMono-Regular.ttf	1639402717.8475
+StimVisualOff	1	42				1639402718.0142
+StimVisualOn	1	43	evi	center	LiberationMono-Regular.ttf	1639402718.1808
+StimVisualOff	1	43				1639402718.3475
+StimVisualOn	1	44	kagl	center	LiberationMono-Regular.ttf	1639402718.5142
+StimVisualOff	1	44				1639402718.6809
+StimVisualOn	1	45	ivly	center	LiberationMono-Regular.ttf	1639402718.8475
+StimVisualOff	1	45				1639402719.0142
+StimVisualOn	1	46	tis	center	LiberationMono-Regular.ttf	1639402719.1809
+StimVisualOff	1	46				1639402719.3475
+StimVisualOn	1	47	svi	center	LiberationMono-Regular.ttf	1639402719.5142
+StimVisualOff	1	47				1639402719.6809
+StimVisualOn	1	48	ekag	center	LiberationMono-Regular.ttf	1639402719.8475
+StimVisualOff	1	48				1639402720.0142
+StimVisualOn	1	49	rviv	center	LiberationMono-Regular.ttf	1639402720.2017
+StimVisualOff	1	49				1639402720.3684
+StimVisualOn	1	50	rnuv	center	LiberationMono-Regular.ttf	1639402720.5351
+StimVisualOff	1	50				1639402720.7017
+StimVisualOn	1	51	nret	center	LiberationMono-Regular.ttf	1639402720.8684
+StimVisualOff	1	51				1639402721.0559
+StimVisualOn	1	52	erv	center	LiberationMono-Regular.ttf	1639402721.2434
+StimVisualOff	1	52				1639402721.4101
+StimVisualOn	1	53	rti	center	LiberationMono-Regular.ttf	1639402721.5768
+StimVisualOff	1	53				1639402721.7434
+StimVisualOn	1	54	le	center	LiberationMono-Regular.ttf	1639402721.9101
+StimVisualOff	1	54				1639402722.0768
+StimVisualOn	1	55	kagy	center	LiberationMono-Regular.ttf	1639402722.2434
+StimVisualOff	1	55				1639402722.4101
+StimVisualOn	1	56	unre	center	LiberationMono-Regular.ttf	1639402722.5768
+StimVisualOff	1	56				1639402722.7435
+StimVisualOn	1	57	ut	center	LiberationMono-Regular.ttf	1639402722.9101
+StimVisualOff	1	57				1639402723.0768
+StimVisualOn	1	58	ise	center	LiberationMono-Regular.ttf	1639402723.2643
+StimVisualOff	1	58				1639402723.431
+StimVisualOn	1	59	7	center	LiberationMono-Regular.ttf	1639402723.5976
+StimVisualOff	1	59				1639402723.7643
+StimVisualOn	1	60	gre	center	LiberationMono-Regular.ttf	1639402723.9518
+StimVisualOff	1	60				1639402724.1185
+StimVisualOn	1	61	erk	center	LiberationMono-Regular.ttf	1639402724.2852
+StimVisualOff	1	61				1639402724.4518
+StimVisualOn	1	62	eviv	center	LiberationMono-Regular.ttf	1639402724.6185
+StimVisualOff	1	62				1639402724.7852
+StimVisualOn	1	63	rv	center	LiberationMono-Regular.ttf	1639402724.9727
+StimVisualOff	1	63				1639402725.1393
+StimVisualOn	1	64	si	center	LiberationMono-Regular.ttf	1639402725.3269
+StimVisualOff	1	64				1639402725.4935
+StimVisualOn	1	65	nr	center	LiberationMono-Regular.ttf	1639402725.6602
+StimVisualOff	1	65				1639402725.8269
+StimVisualOn	1	66	less	center	LiberationMono-Regular.ttf	1639402725.9935
+StimVisualOff	1	66				1639402726.1602
+StimVisualOn	1	67	le	center	LiberationMono-Regular.ttf	1639402726.3269
+StimVisualOff	1	67				1639402726.4935
+StimVisualOn	1	68	isvi	center	LiberationMono-Regular.ttf	1639402726.681
+StimVisualOff	1	68				1639402726.8477
+StimVisualOn	1	69	en	center	LiberationMono-Regular.ttf	1639402727.0144
+StimVisualOff	1	69				1639402727.1811
+StimVisualOn	1	70	uv	center	LiberationMono-Regular.ttf	1639402727.3477
+StimVisualOff	1	70				1639402727.5352
+StimVisualOn	1	71	agyl	center	LiberationMono-Regular.ttf	1639402727.7227
+StimVisualOff	1	71				1639402727.8894
+StimVisualOn	1	72	nusi	center	LiberationMono-Regular.ttf	1639402728.0561
+StimVisualOff	1	72				1639402728.2228
+StimVisualOn	1	73	ive	center	LiberationMono-Regular.ttf	1639402728.3894
+StimVisualOff	1	73				1639402728.5561
+StimVisualOn	1	74	se	center	LiberationMono-Regular.ttf	1639402728.7228
+StimVisualOff	1	74				1639402728.8894
+StimVisualOn	1	75	unr	center	LiberationMono-Regular.ttf	1639402729.0769
+StimVisualOff	1	75				1639402729.2436
+StimVisualOn	1	76	ly	center	LiberationMono-Regular.ttf	1639402729.4103
+StimVisualOff	1	76				1639402729.577
+StimVisualOn	1	77	nrev	center	LiberationMono-Regular.ttf	1639402729.7436
+StimVisualOff	1	77				1639402729.9103
+StimVisualOn	1	78	nret	center	LiberationMono-Regular.ttf	1639402730.077
+StimVisualOff	1	78				1639402730.2436
+StimVisualOn	1	79	ment	center	LiberationMono-Regular.ttf	1639402730.4103
+StimVisualOff	1	79				1639402730.577
+StimVisualOn	1	80	ut	center	LiberationMono-Regular.ttf	1639402730.7437
+StimVisualOff	1	80				1639402730.9103
+StimVisualOn	1	81	vivl	center	LiberationMono-Regular.ttf	1639402731.077
+StimVisualOff	1	81				1639402731.2437
+StimVisualOn	1	82	rev	center	LiberationMono-Regular.ttf	1639402731.4103
+StimVisualOff	1	82				1639402731.577
+StimVisualOn	1	83	re	center	LiberationMono-Regular.ttf	1639402731.7437
+StimVisualOff	1	83				1639402731.9104
+StimVisualOn	1	84	disk	center	LiberationMono-Regular.ttf	1639402732.077
+StimVisualOff	1	84				1639402732.2437
+StimVisualOn	1	85	syl	center	LiberationMono-Regular.ttf	1639402732.4104
+StimVisualOff	1	85				1639402732.577
+StimVisualOn	1	86	tisl	center	LiberationMono-Regular.ttf	1639402732.7437
+StimVisualOff	1	86				1639402732.9104
+StimVisualOn	1	87	isyl	center	LiberationMono-Regular.ttf	1639402733.077
+StimVisualOff	1	87				1639402733.2437
+StimVisualOn	1	88	kag	center	LiberationMono-Regular.ttf	1639402733.4312
+StimVisualOff	1	88				1639402733.5979
+StimVisualOn	1	89	3	center	LiberationMono-Regular.ttf	1639402733.7854
+StimVisualOff	1	89				1639402733.9521
+StimVisualOn	1	90	al	center	LiberationMono-Regular.ttf	1639402734.1187
+StimVisualOff	1	90				1639402734.2854
+StimVisualOn	1	91	nd	center	LiberationMono-Regular.ttf	1639402734.4521
+StimVisualOff	1	91				1639402734.6187
+StimVisualOn	1	92	ivy	center	LiberationMono-Regular.ttf	1639402734.7854
+StimVisualOff	1	92				1639402734.9521
+StimVisualOn	1	93	skag	center	LiberationMono-Regular.ttf	1639402735.1396
+StimVisualOff	1	93				1639402735.3063
+StimVisualOn	1	94	aga	center	LiberationMono-Regular.ttf	1639402735.4729
+StimVisualOff	1	94				1639402735.6396
+StimVisualOn	1	95	iv	center	LiberationMono-Regular.ttf	1639402735.8063
+StimVisualOff	1	95				1639402735.9729
+StimVisualOn	1	96	isv	center	LiberationMono-Regular.ttf	1639402736.1396
+StimVisualOff	1	96				1639402736.3063
+StimVisualOn	1	97	rnuk	center	LiberationMono-Regular.ttf	1639402736.473
+StimVisualOff	1	97				1639402736.6396
+StimVisualOn	1	98	dka	center	LiberationMono-Regular.ttf	1639402736.8063
+StimVisualOff	1	98				1639402736.973
+StimVisualOn	1	99	sid	center	LiberationMono-Regular.ttf	1639402737.1396
+StimVisualOff	1	99				1639402737.3063
+StimVisualOn	1	100	und	center	LiberationMono-Regular.ttf	1639402737.473
+StimVisualOff	1	100				1639402737.6397
+StimVisualOn	1	101	agly	center	LiberationMono-Regular.ttf	1639402737.8063
+StimVisualOff	1	101				1639402737.9938
+StimVisualOn	1	102	able	center	LiberationMono-Regular.ttf	1639402738.1605
+StimVisualOff	1	102				1639402738.3272
+StimVisualOn	1	103	ve	center	LiberationMono-Regular.ttf	1639402738.4938
+StimVisualOff	1	103				1639402738.6605
+StimVisualOn	1	104	ab	center	LiberationMono-Regular.ttf	1639402738.8272
+StimVisualOff	1	104				1639402739.0147
+StimVisualOn	1	105	ek	center	LiberationMono-Regular.ttf	1639402739.1814
+StimVisualOff	1	105				1639402739.348
+StimVisualOn	1	106	skag	center	LiberationMono-Regular.ttf	1639402739.5147
+StimVisualOff	1	106				1639402739.6814
+StimVisualOn	1	107	nviv	center	LiberationMono-Regular.ttf	1639402739.8689
+StimVisualOff	1	107				1639402740.0356
+StimVisualOn	1	108	agr	center	LiberationMono-Regular.ttf	1639402740.2022
+StimVisualOff	1	108				1639402740.3689
+StimVisualOn	1	109	ive	center	LiberationMono-Regular.ttf	1639402740.5356
+StimVisualOff	1	109				1639402740.7022
+StimVisualOn	1	110	unv	center	LiberationMono-Regular.ttf	1639402740.8897
+StimVisualOff	1	110				1639402741.0564
+StimVisualOn	1	111	nuti	center	LiberationMono-Regular.ttf	1639402741.2231
+StimVisualOff	1	111				1639402741.3898
+StimVisualOn	1	112	reti	center	LiberationMono-Regular.ttf	1639402741.5564
+StimVisualOff	1	112				1639402741.7231
+StimVisualOn	1	113	unka	center	LiberationMono-Regular.ttf	1639402741.8898
+StimVisualOff	1	113				1639402742.0564
+StimVisualOn	1	114	sk	center	LiberationMono-Regular.ttf	1639402742.2231
+StimVisualOff	1	114				1639402742.3898
+StimVisualOn	1	115	und	center	LiberationMono-Regular.ttf	1639402742.5564
+StimVisualOff	1	115				1639402742.7231
+StimVisualOn	1	116	9	center	LiberationMono-Regular.ttf	1639402742.8898
+StimVisualOff	1	116				1639402743.0565
+StimVisualOn	1	117	sk	center	LiberationMono-Regular.ttf	1639402743.2231
+StimVisualOff	1	117				1639402743.3898
+StimVisualOn	1	118	nuka	center	LiberationMono-Regular.ttf	1639402743.5565
+StimVisualOff	1	118				1639402743.7231
+StimVisualOn	1	119	ly	center	LiberationMono-Regular.ttf	1639402743.8898
+StimVisualOff	1	119				1639402744.0565
+StimVisualOn	1	120	abl	center	LiberationMono-Regular.ttf	1639402744.244
+StimVisualOff	1	120				1639402744.4107
+StimVisualOn	1	121	gelb	center	LiberationMono-Regular.ttf	1639402744.5773
+StimVisualOff	1	121				1639402744.744
+StimVisualOn	1	122	dk	center	LiberationMono-Regular.ttf	1639402744.9107
+StimVisualOff	1	122				1639402745.0773
+StimVisualOn	1	123	viva	center	LiberationMono-Regular.ttf	1639402745.244
+StimVisualOff	1	123				1639402745.4107
+StimVisualOn	1	124	unk	center	LiberationMono-Regular.ttf	1639402745.5774
+StimVisualOff	1	124				1639402745.744
+StimVisualOn	1	125	agyl	center	LiberationMono-Regular.ttf	1639402745.9107
+StimVisualOff	1	125				1639402746.0774
+StimVisualOn	1	126	ret	center	LiberationMono-Regular.ttf	1639402746.244
+StimVisualOff	1	126				1639402746.4107
+StimVisualOn	1	127	kagy	center	LiberationMono-Regular.ttf	1639402746.5774
+StimVisualOff	1	127				1639402746.744
+StimVisualOn	1	128	ive	center	LiberationMono-Regular.ttf	1639402746.9107
+StimVisualOff	1	128				1639402747.0774
+StimVisualOn	1	129	etis	center	LiberationMono-Regular.ttf	1639402747.2441
+StimVisualOff	1	129				1639402747.4107
+StimVisualOn	1	130	vr	center	LiberationMono-Regular.ttf	1639402747.5774
+StimVisualOff	1	130				1639402747.7441
+StimVisualOn	1	131	evi	center	LiberationMono-Regular.ttf	1639402747.9107
+StimVisualOff	1	131				1639402748.0774
+StimVisualOn	1	132	rti	center	LiberationMono-Regular.ttf	1639402748.2441
+StimVisualOff	1	132				1639402748.4108
+StimVisualOn	1	133	nret	center	LiberationMono-Regular.ttf	1639402748.5983
+StimVisualOff	1	133				1639402748.7649
+StimVisualOn	1	134	ntis	center	LiberationMono-Regular.ttf	1639402748.9316
+StimVisualOff	1	134				1639402749.0983
+StimVisualOn	1	135	agly	center	LiberationMono-Regular.ttf	1639402749.2649
+StimVisualOff	1	135				1639402749.4316
+StimVisualOn	1	136	6	center	LiberationMono-Regular.ttf	1639402749.5983
+StimVisualOff	1	136				1639402749.765
+StimVisualOn	1	137	sti	center	LiberationMono-Regular.ttf	1639402749.9316
+StimVisualOff	1	137				1639402750.0983
+StimVisualOn	1	138	isly	center	LiberationMono-Regular.ttf	1639402750.265
+StimVisualOff	1	138				1639402750.4316
+StimVisualOn	1	139	rnut	center	LiberationMono-Regular.ttf	1639402750.5983
+StimVisualOff	1	139				1639402750.765
+StimVisualOn	1	140	idka	center	LiberationMono-Regular.ttf	1639402750.9317
+StimVisualOff	1	140				1639402751.0983
+StimVisualOn	1	141	agly	center	LiberationMono-Regular.ttf	1639402751.265
+StimVisualOff	1	141				1639402751.4317
+StimVisualOn	1	142	ret	center	LiberationMono-Regular.ttf	1639402751.5983
+StimVisualOff	1	142				1639402751.765
+StimVisualOn	1	143	isre	center	LiberationMono-Regular.ttf	1639402751.9525
+StimVisualOff	1	143				1639402752.1192
+StimVisualOn	1	144	vyl	center	LiberationMono-Regular.ttf	1639402752.2859
+StimVisualOff	1	144				1639402752.4525
+StimVisualOn	1	145	nusi	center	LiberationMono-Regular.ttf	1639402752.64
+StimVisualOff	1	145				1639402752.8067
+StimVisualOn	1	146	nd	center	LiberationMono-Regular.ttf	1639402752.9734
+StimVisualOff	1	146				1639402753.14
+StimVisualOn	1	147	dkag	center	LiberationMono-Regular.ttf	1639402753.3067
+StimVisualOff	1	147				1639402753.4734
+StimVisualOn	1	148	gl	center	LiberationMono-Regular.ttf	1639402753.6401
+StimVisualOff	1	148				1639402753.8067
+StimVisualOn	1	149	kagl	center	LiberationMono-Regular.ttf	1639402753.9734
+StimVisualOff	1	149				1639402754.1401
+StimVisualOn	1	150	erti	center	LiberationMono-Regular.ttf	1639402754.3067
+StimVisualOff	1	150				1639402754.4734
+StimVisualOn	1	151	disv	center	LiberationMono-Regular.ttf	1639402754.6401
+StimVisualOff	1	151				1639402754.8068
+StimVisualOn	1	152	st	center	LiberationMono-Regular.ttf	1639402754.9734
+StimVisualOff	1	152				1639402755.1401
+StimVisualOn	1	153	kage	center	LiberationMono-Regular.ttf	1639402755.3068
+StimVisualOff	1	153				1639402755.4734
+StimVisualOn	1	154	ser	center	LiberationMono-Regular.ttf	1639402755.6609
+StimVisualOff	1	154				1639402755.8276
+StimVisualOn	1	155	sidv	center	LiberationMono-Regular.ttf	1639402755.9943
+StimVisualOff	1	155				1639402756.161
+StimVisualOn	1	156	nviv	center	LiberationMono-Regular.ttf	1639402756.3276
+StimVisualOff	1	156				1639402756.4943
+StimVisualOn	1	157	sa	center	LiberationMono-Regular.ttf	1639402756.661
+StimVisualOff	1	157				1639402756.8276
+StimVisualOn	1	158	agy	center	LiberationMono-Regular.ttf	1639402757.0151
+StimVisualOff	1	158				1639402757.1818
+StimVisualOn	1	159	uti	center	LiberationMono-Regular.ttf	1639402757.3485
+StimVisualOff	1	159				1639402757.5152
+StimVisualOn	1	160	erk	center	LiberationMono-Regular.ttf	1639402757.6818
+StimVisualOff	1	160				1639402757.8485
+StimVisualOn	1	161	yl	center	LiberationMono-Regular.ttf	1639402758.0152
+StimVisualOff	1	161				1639402758.1818
+StimVisualOn	1	162	8	center	LiberationMono-Regular.ttf	1639402758.3485
+StimVisualOff	1	162				1639402758.5152
+StimVisualOn	1	163	uv	center	LiberationMono-Regular.ttf	1639402758.6818
+StimVisualOff	1	163				1639402758.8485
+StimVisualOn	1	164	tisy	center	LiberationMono-Regular.ttf	1639402759.0152
+StimVisualOff	1	164				1639402759.1819
+StimVisualOn	1	165	rt	center	LiberationMono-Regular.ttf	1639402759.3485
+StimVisualOff	1	165				1639402759.5152
+StimVisualOn	1	166	undi	center	LiberationMono-Regular.ttf	1639402759.6819
+StimVisualOff	1	166				1639402759.8485
+StimVisualOn	1	167	kagy	center	LiberationMono-Regular.ttf	1639402760.0152
+StimVisualOff	1	167				1639402760.1819
+StimVisualOn	1	168	ti	center	LiberationMono-Regular.ttf	1639402760.3486
+StimVisualOff	1	168				1639402760.5152
+StimVisualOn	1	169	gy	center	LiberationMono-Regular.ttf	1639402760.7027
+StimVisualOff	1	169				1639402760.8694
+StimVisualOn	1	170	nre	center	LiberationMono-Regular.ttf	1639402761.0361
+StimVisualOff	1	170				1639402761.2027
+StimVisualOn	1	171	over	center	LiberationMono-Regular.ttf	1639402761.3694
+StimVisualOff	1	171				1639402761.5361
+StimVisualOn	1	172	selb	center	LiberationMono-Regular.ttf	1639402761.7028
+StimVisualOff	1	172				1639402761.8694
+StimVisualOn	1	173	lb	center	LiberationMono-Regular.ttf	1639402762.0361
+StimVisualOff	1	173				1639402762.2028
+StimVisualOn	1	174	uka	center	LiberationMono-Regular.ttf	1639402762.3694
+StimVisualOff	1	174				1639402762.5361
+StimVisualOn	1	175	ivr	center	LiberationMono-Regular.ttf	1639402762.7236
+StimVisualOff	1	175				1639402762.8903
+StimVisualOn	1	176	rk	center	LiberationMono-Regular.ttf	1639402763.057
+StimVisualOff	1	176				1639402763.2236
+StimVisualOn	1	177	sl	center	LiberationMono-Regular.ttf	1639402763.3903
+StimVisualOff	1	177				1639402763.557
+StimVisualOn	1	178	vel	center	LiberationMono-Regular.ttf	1639402763.7236
+StimVisualOff	1	178				1639402763.8903
+StimVisualOn	1	179	nuv	center	LiberationMono-Regular.ttf	1639402764.057
+StimVisualOff	1	179				1639402764.2237
+StimVisualOn	1	180	viva	center	LiberationMono-Regular.ttf	1639402764.3903
+StimVisualOff	1	180				1639402764.557
+StimVisualOn	1	181	6	center	LiberationMono-Regular.ttf	1639402764.7237
+StimVisualOff	1	181				1639402764.8903
+StimVisualOn	1	182	isab	center	LiberationMono-Regular.ttf	1639402765.057
+StimVisualOff	1	182				1639402765.2237
+StimVisualOn	1	183	elba	center	LiberationMono-Regular.ttf	1639402765.4112
+StimVisualOff	1	183				1639402765.5779
+StimVisualOn	1	184	rvi	center	LiberationMono-Regular.ttf	1639402765.7445
+StimVisualOff	1	184				1639402765.9112
+StimVisualOn	1	185	disk	center	LiberationMono-Regular.ttf	1639402766.0779
+StimVisualOff	1	185				1639402766.2445
+StimVisualOn	1	186	ern	center	LiberationMono-Regular.ttf	1639402766.432
+StimVisualOff	1	186				1639402766.5987
+StimVisualOn	1	187	nti	center	LiberationMono-Regular.ttf	1639402766.7654
+StimVisualOff	1	187				1639402766.9321
+StimVisualOn	1	188	nu	center	LiberationMono-Regular.ttf	1639402767.1196
+StimVisualOff	1	188				1639402767.2862
+StimVisualOn	1	189	iva	center	LiberationMono-Regular.ttf	1639402767.4529
+StimVisualOff	1	189				1639402767.6196
+StimVisualOn	1	190	ger	center	LiberationMono-Regular.ttf	1639402767.7862
+StimVisualOff	1	190				1639402767.9529
+StimVisualOn	1	191	nuk	center	LiberationMono-Regular.ttf	1639402768.1196
+StimVisualOff	1	191				1639402768.2863
+StimVisualOn	1	192	revi	center	LiberationMono-Regular.ttf	1639402768.4529
+StimVisualOff	1	192				1639402768.6196
+StimVisualOn	1	193	dtis	center	LiberationMono-Regular.ttf	1639402768.7863
+StimVisualOff	1	193				1639402768.9529
+StimVisualOn	1	194	uka	center	LiberationMono-Regular.ttf	1639402769.1196
+StimVisualOff	1	194				1639402769.2863
+StimVisualOn	1	195	sly	center	LiberationMono-Regular.ttf	1639402769.4529
+StimVisualOff	1	195				1639402769.6196
+StimVisualOn	1	196	gl	center	LiberationMono-Regular.ttf	1639402769.7863
+StimVisualOff	1	196				1639402769.953

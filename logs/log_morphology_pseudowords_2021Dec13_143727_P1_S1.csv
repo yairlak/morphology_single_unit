@@ -1,0 +1,37 @@
+Event	Block	Trial	Stimulus	Position	Font	Time
+GrandStart					---	1639402654.3596	
+BlockStart	1	0	0		-	1639402655.7954	
+Fix	1	0	0		+	1639402655.8251
+KeyPress	1	1				1639402655.7812	
+StimVisualOn	1	1	erkag	center	LiberationMono-Regular.ttf	1639402657.3877
+StimVisualOff	1	1				1639402657.6585
+StimVisualOn	1	2	nukag	center	LiberationMono-Regular.ttf	1639402657.9293
+StimVisualOff	1	2				1639402658.2002
+StimVisualOn	1	3	nusidviv	center	LiberationMono-Regular.ttf	1639402658.471
+StimVisualOff	1	3				1639402658.7419
+StimVisualOn	1	4	unretisable	center	LiberationMono-Regular.ttf	1639402659.0127
+StimVisualOff	1	4				1639402659.2835
+StimVisualOn	1	5	ernutiselba	center	LiberationMono-Regular.ttf	1639402659.5544
+StimVisualOff	1	5				1639402659.8252
+StimVisualOn	1	6	untisly	center	LiberationMono-Regular.ttf	1639402660.0961
+StimVisualOff	1	6				1639402660.3669
+StimVisualOn	1	7	nusidtisre	center	LiberationMono-Regular.ttf	1639402660.6377
+StimVisualOff	1	7				1639402660.9086
+StimVisualOn	1	8	rekag	center	LiberationMono-Regular.ttf	1639402661.2003
+StimVisualOff	1	8				1639402661.4711
+StimVisualOn	1	9	sidkag	center	LiberationMono-Regular.ttf	1639402661.7419
+StimVisualOff	1	9				1639402662.0128
+StimVisualOn	1	10	nusidvivre	center	LiberationMono-Regular.ttf	1639402662.2836
+StimVisualOff	1	10				1639402662.5545
+StimVisualOn	1	11	unretisly	center	LiberationMono-Regular.ttf	1639402662.8253
+StimVisualOff	1	11				1639402663.0961
+StimVisualOn	1	12	3	center	LiberationMono-Regular.ttf	1639402663.3878
+StimVisualOff	1	12				1639402663.6587
+StimVisualOn	1	13	unretisly	center	LiberationMono-Regular.ttf	1639402663.9295
+StimVisualOff	1	13				1639402664.2003
+StimVisualOn	1	14	viv	center	LiberationMono-Regular.ttf	1639402664.4712
+StimVisualOff	1	14				1639402664.742
+StimVisualOn	1	15	tiselba	center	LiberationMono-Regular.ttf	1639402665.0129
+StimVisualOff	1	15				1639402665.2837
+StimVisualOn	1	16	sidkagyl	center	LiberationMono-Regular.ttf	1639402665.5754
+StimVisualOff	1	16				1639402665.8462
