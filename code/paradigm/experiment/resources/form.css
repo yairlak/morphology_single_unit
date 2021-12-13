@@ -1,0 +1,139 @@
+form {
+  width: 600px;
+  font-size: 14px;
+}
+
+#jspsych-survey-dropdown-preamble {
+  font-size: 20px;
+}
+
+form label {
+  display: inline;
+  margin: 0px 0px 15px 0px;
+  min-width: 280px;
+  font-weight: bold;
+  float: left;
+  /*padding-top: 8px;*/
+  padding-right: 5px;
+}
+form input {
+  margin-left: auto;
+  display: block;
+  width: 180px;
+  margin-right: 0px;
+}
+form select {
+  margin-left: auto;
+  display: block;
+  width: 190px;
+  margin-right: 0px;
+}
+form input[type="range"] {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 600px;
+}
+
+.likert-left {
+  float:left;
+}
+.likert-right {
+  float:right
+}
+
+hr {
+  color: #5f2500;
+}
+
+form input[type=range] {
+  width: 100%;
+  margin: 5.3px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+form input[type=range]:focus {
+  outline: none;
+}
+form input[type=range]::-webkit-slider-runnable-track {
+  background: #ffa500;
+  border: 0.2px solid #010101;
+  border-radius: 1.3px;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+}
+form input[type=range]::-webkit-slider-thumb {
+  margin-top: -5.5px;
+  width: 16px;
+  height: 19px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+form input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ffae1a;
+}
+form input[type=range]::-moz-range-track {
+  background: #ffa500;
+  border: 0.2px solid #010101;
+  border-radius: 1.3px;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+}
+form input[type=range]::-moz-range-thumb {
+  width: 16px;
+  height: 19px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  cursor: pointer;
+}
+form input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 6.3px 0;
+  color: transparent;
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+}
+form input[type=range]::-ms-fill-lower {
+  background: #e69500;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+}
+form input[type=range]::-ms-fill-upper {
+  background: #ffa500;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+}
+form input[type=range]::-ms-thumb {
+  width: 16px;
+  height: 19px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+form input[type=range]:focus::-ms-fill-lower {
+  background: #ffa500;
+}
+form input[type=range]:focus::-ms-fill-upper {
+  background: #ffae1a;
+}
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align:auto) {
+  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+  input[type=range] {
+    margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+  }
+}
+

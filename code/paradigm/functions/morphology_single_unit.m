@@ -6,7 +6,8 @@ debug_mode = 0;
 %% INITIALIZATION
 addpath('functions')
 KbName('UnifyKeyNames')
-[params, events] = getParamsUCLAParadigm(stimulus_type);
+[params, events] = getParamsUCLAParadigm(block_type, stimulus_type);
+params.block_type = block_type
 params.text_filename = [stimulus_type, '.csv'];
 params.stimulus_type = stimulus_type;
 params.repetitions = repetitions;
@@ -71,6 +72,12 @@ fid_log=createLogFileUCLAParadigm(params); % OPEN LOG
 
 %% EXTEND STIMULI (ADD REPETITIONS, CASE, NUMBERS)
 stimuli = load_stimuli(params); % LOAD STIMULI
+if strcmp(params.block_type, 'auditory')
+  % Create a struct (dict) with field names that correspond to stimulus names
+  % e.g., stimuli_wav.kag, stimuli_wav.unkag, etc. 
+  % each field contains a vector of the audio waveform.
+  [stimuli_wavs, Fs] = load_audio_stimuli(stimuli, params);
+end
 stimuli = extend_stimuli(stimuli, params); % ADD CASE, FONT, POSITION
 stimuli = stimuli(randperm(length(stimuli)), :);
 stimuli = combine_with_numbers(stimuli, params); % ADD NUMBERS RANDOMLY
@@ -78,7 +85,7 @@ if debug_mode
     stimuli = stimuli(1:100, :);
 end
 stimuli_blocks = split_to_blocks(stimuli, params.n_blocks);
-   
+
 fn = ['../../stimuli/visual/fixation.png'];
 image_fixation = imread(fn);
 
@@ -112,15 +119,21 @@ try
               ]); % write to log file
         end
         % %%%%%% WAIT FOR KEY PRESS
-        DrawFormattedText(handles.win, 'Press any key...', 'center', 'center', handles.white);
+        DrawFormattedText(handles.win, 'Press any key...', 'center', ...
+                          'center', handles.white);
         Screen('Flip',handles.win);
         wait_for_key_press()   
-         
+
         % %%%%%% LOOP OVER STIMULI
-        run_visual_block(handles, i_block, stimuli_blocks{i_block}, ...
-                         image_fixation, ...
-                         fid_log, triggers, cumTrial, params, events)
-        
+        if strcmp(params.block_type, 'visual')
+            run_visual_block(handles, i_block, stimuli_blocks{i_block}, ...
+                             image_fixation, ...
+                             fid_log, triggers, cumTrial, params, events)
+        elseif strcmp(params.block_type, 'auditory')
+            run_auditory_block(handles, i_block, stimuli_blocks{i_block}, ...
+                             stimuli_wavs, image_fixation, ...
+                             fid_log, triggers, cumTrial, params, events)
+        end
     end
 catch
     sca
