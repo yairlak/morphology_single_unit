@@ -1,6 +1,9 @@
 function fid=createLogFileUCLAParadigm(params)
 timestamp=gettimestamp();
 subses=['P' num2str(params.subject) '_S' num2str(params.session)];
+if ~exist(params.path2logs,'dir')
+    mkdir(params.path2logs);
+end
 fid=fopen(fullfile(params.path2logs, ['log_morphology_' ...
                                       params.stimulus_type '_' ...
                                       timestamp '_' subses '.csv']) ,'w');

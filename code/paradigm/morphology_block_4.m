@@ -1,5 +1,6 @@
-% Auditory block
+% Auditory block  
 clear all; close all; clc
+pth = fileparts(which('morphology_block_4')); cd(pth);
 addpath('functions')
 block_type = 'auditory';
 stimulus_type = 'pseudowords';

@@ -1,5 +1,5 @@
 function run_auditory_block(handles, block, stimuli, ...
-                             stimuli_wavs, image_fixation, ...
+                             stimuli_wavs,fs, image_fixation, ...
                              fid_log, triggers, cumTrial, params, events)
                          
 % %%%%%% BLOCK START: mark a new block with four 255 triggers separated 200ms from each other
@@ -37,40 +37,72 @@ fprintf(fid_log,['Fix\t' ...
 WaitSecs('UntilTime', fixation_onset + params.fixation_duration_visual_block);
 fixation_offset = Screen('Flip', handles.win); % Fixation OFF  
 
+handles.pahandle = PsychPortAudio('Open',[],[],[],fs(1),2);
+
 for trial=1:length(stimuli)
   [stimulus, ~, ~, ~, ~] = stimuli{trial, :};
+  if length(stimulus)==1
+      switch stimulus
+          case '1'
+              stimulus = 'one';
+          case '2'
+              stimulus = 'two';
+          case '3'
+              stimulus = 'three';
+          case '4'
+              stimulus = 'four';
+          case '5'
+              stimulus = 'five';
+          case '6'
+              stimulus = 'six';
+          case '7'
+              stimulus = 'seven';
+          case '8'
+              stimulus = 'eight';
+          case '9'
+              stimulus = 'nine';
+      end
+  end
   
   cumTrial=cumTrial+1;
   fprintf('Block %i, trial %i\n', block, trial)
 
-  % %%%%%%% START presentation
+  % %%%%%%% START presentation  
 
   % AUDIO ON
   clear wavedata;
-  wavedata = stimuli_wavs.(stimulus);
+  wavedata = formatAudioForPsychToolbox(stimuli_wavs.(stimulus));
   
   % %%%%%% Echo status
   fprintf('Block %i, trial %i, stimulus %s\n', block, trial, stimulus)
   
   % %%%%%%% Present fixation and fill buffer
-  handles.pahandle = 1;
+  
   PsychPortAudio('FillBuffer', handles.pahandle, wavedata);
   WaitSecs('UntilTime', fixation_onset + params.fixation_duration_visual_block);
   fixation_offset = Screen('Flip', handles.win);      
   
   % %%%%%%% START AUDIO AND SEND TRIGGER AT START AND END
-  audioOnset = PsychPortAudio('Start', handles.pahandle, 1, 0, 1); % it takes ~15ms to start the sound
+  audioOnset = PsychPortAudio('Start', handles.pahandle);%, 1, 0, 0); % it takes ~15ms to start the sound
+  KbQueueStart;
+%   stimulusDuration = length(wavedata)/fs(1);
+  
   if triggers
       send_trigger(triggers, handles, params, events, 'StartAudio', 0)
   end
-  if pressed
-      if triggers
-           send_trigger(triggers, handles, params, events, 'PressKey', 0)
-      end
-  end
+%   WaitSecs(stimulusDuration)
+  
   
   
   [~, ~, ~, audioStopTime]=PsychPortAudio('Stop', handles.pahandle,1);
+  [pressed, firstPress]=KbQueueCheck; 
+  if pressed
+        if triggers
+           send_trigger(triggers, handles, params, events, 'PressKey', 0)
+%       else
+%           disp('pressed a key');
+      end
+  end
   if triggers
       send_trigger(triggers, handles, params, events, 'EndAudio', 0)
   end
@@ -120,4 +152,14 @@ for trial=1:length(stimuli)
 
 end  %trial
 %     
+end
+
+function y = formatAudioForPsychToolbox(y)
+
+if size(y,1)>size(y,2)
+    y = y';
+end
+if size(y,1)==1
+    y = [y;y];
+end
 end

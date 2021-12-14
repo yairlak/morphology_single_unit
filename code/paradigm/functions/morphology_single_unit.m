@@ -1,7 +1,10 @@
 %% 
 % This is the main script for the experiment
 % ------------------------------------------------
-debug_mode = 0; 
+debug_mode = 0;
+Screen('Preference','VisualDebugLevel',1);
+Screen('Preference','SkipSyncTests',1);
+PsychDebugWindowConfiguration;
 
 %% INITIALIZATION
 addpath('functions')
@@ -22,7 +25,7 @@ params.SOA_visual = params.stimulus_ontime + params.stimulus_offtime;
 
 %% SUBJECT AND SESSION NUMBERS
 if debug_mode
-    params.subject = "1";
+    params.subject = '1';
     params.session = 1;
 else
     subject = inputdlg({'Enter subject number'},...
@@ -33,8 +36,8 @@ else
         'Subject Number',1,{''});
     params.session=str2double(session);
 end
-rng(str2double(params.subject)*params.session);
-
+rng(str2double(params.subject)*params.session,'twister');
+ 
 %% UCLA TTL settings
 params.location='UCLA';  %options: 'UCLA' or 'TLVMC', affecting hardware to use for TTL
 params.portA = 0;
@@ -76,7 +79,8 @@ if strcmp(params.block_type, 'auditory')
   % Create a struct (dict) with field names that correspond to stimulus names
   % e.g., stimuli_wav.kag, stimuli_wav.unkag, etc. 
   % each field contains a vector of the audio waveform.
-  [stimuli_wavs, Fs] = load_audio_stimuli(stimuli, params);
+  theseStimuli = [stimuli;{'one';'two';'three';'four';'five';'six';'seven';'eight';'nine'}];
+  [stimuli_wavs, Fs] = load_audio_stimuli(theseStimuli, params);
 end
 stimuli = extend_stimuli(stimuli, params); % ADD CASE, FONT, POSITION
 stimuli = stimuli(randperm(length(stimuli)), :);
@@ -131,7 +135,7 @@ try
                              fid_log, triggers, cumTrial, params, events)
         elseif strcmp(params.block_type, 'auditory')
             run_auditory_block(handles, i_block, stimuli_blocks{i_block}, ...
-                             stimuli_wavs, image_fixation, ...
+                             stimuli_wavs, Fs, image_fixation, ...
                              fid_log, triggers, cumTrial, params, events)
         end
     end
