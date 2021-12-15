@@ -97,10 +97,10 @@ for trial=1:length(stimuli)
   [~, ~, ~, audioStopTime]=PsychPortAudio('Stop', handles.pahandle,1);
   [pressed, firstPress]=KbQueueCheck; 
   if pressed
-        if triggers
-           send_trigger(triggers, handles, params, events, 'PressKey', 0)
-%       else
-%           disp('pressed a key');
+      if triggers
+          send_trigger(triggers, handles, params, events, 'PressKey', 0)
+          %       else
+          %           disp('pressed a key');
       end
   end
   if triggers

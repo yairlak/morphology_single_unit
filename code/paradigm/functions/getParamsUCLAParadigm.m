@@ -45,6 +45,10 @@ events.EndFixation = 4;
 events.StartVisualWord = 8;
 events.EndVisualWord = 16;
 
+% AUDIO BLOCK
+events.StartAudio = 9;
+events.EndAudio = 17;
+
 % KEY PRESS
 events.PressKey = 128;
 

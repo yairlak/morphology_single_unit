@@ -2,10 +2,14 @@
 % This is the main script for the experiment
 % ------------------------------------------------
 debug_mode = 0;
-Screen('Preference','VisualDebugLevel',1);
+% Screen('Preference','VisualDebugLevel',1);
 Screen('Preference','SkipSyncTests',1);
-PsychDebugWindowConfiguration;
-
+% PsychDebugWindowConfiguration;
+if ~exist('makeDiary','var'),makeDiary = 0;end
+if makeDiary
+    counter = 0; 
+disp('morphology_single_unit')
+end
 %% INITIALIZATION
 addpath('functions')
 KbName('UnifyKeyNames')
@@ -24,6 +28,11 @@ params.SOA_visual = params.stimulus_ontime + params.stimulus_offtime;
 
 
 %% SUBJECT AND SESSION NUMBERS
+if makeDiary
+    disp(counter);
+    disp('%% SUBJECT AND SESSION NUMBERS');
+    counter = counter + 1;
+end
 if debug_mode
     params.subject = '1';
     params.session = 1;
@@ -39,6 +48,11 @@ end
 rng(str2double(params.subject)*params.session,'twister');
  
 %% UCLA TTL settings
+if makeDiary
+    disp(counter);
+    disp('%% UCLA TTL settings');
+    counter = counter + 1;
+end
 params.location='UCLA';  %options: 'UCLA' or 'TLVMC', affecting hardware to use for TTL
 params.portA = 0;
 params.portB = 1;
@@ -49,6 +63,11 @@ AssertOpenGL;
 %% TRIGGERS
 %#################################################################
 % Send TTLs though the DAQ hardware interface
+if makeDiary
+    disp(counter);
+    disp('%% TRIGGERS');
+    counter = counter + 1;
+end
 if debug_mode
     triggers = false;
 else
@@ -66,6 +85,11 @@ end
 handles = initialize_TTL_hardware(triggers, params, events);
 
 %% LOAD LOG, STIMULI, PTB handles.
+if makeDiary
+    disp(counter);
+    disp('%% LOAD LOG, STIMULI, PTB handles.');
+    counter = counter + 1;
+end
 if triggers
     for i=1:9 % Mark the beginning of the experiment with NINE consective '255' triggers separated by 0.1 sec
         send_trigger(triggers, handles, params, events, 'event255', 0.1)
@@ -74,6 +98,11 @@ end
 fid_log=createLogFileUCLAParadigm(params); % OPEN LOG
 
 %% EXTEND STIMULI (ADD REPETITIONS, CASE, NUMBERS)
+if makeDiary
+    disp(counter);
+    disp('%% EXTEND STIMULI (ADD REPETITIONS, CASE, NUMBERS)');
+    counter = counter + 1;
+end
 stimuli = load_stimuli(params); % LOAD STIMULI
 if strcmp(params.block_type, 'auditory')
   % Create a struct (dict) with field names that correspond to stimulus names
@@ -94,6 +123,11 @@ fn = ['../../stimuli/visual/fixation.png'];
 image_fixation = imread(fn);
 
 %% PTB
+if makeDiary
+    disp(counter);
+    disp('%% PTB');
+    counter = counter + 1;
+end
 %stimDur = cellfun(@(x) size(x, 1), stimuli_wavs, 'UniformOutput', false);  %in samples
 handles = Initialize_PTB_devices(params, handles, debug_mode);
 warning off; HideCursor
@@ -123,6 +157,11 @@ try
               ]); % write to log file
         end
         % %%%%%% WAIT FOR KEY PRESS
+        if makeDiary
+            disp(counter);
+            disp('%%%%%% WAIT FOR KEY PRESS');
+            counter = counter + 1;
+        end
         DrawFormattedText(handles.win, 'Press any key...', 'center', ...
                           'center', handles.white);
         Screen('Flip',handles.win);
@@ -134,12 +173,23 @@ try
                              image_fixation, ...
                              fid_log, triggers, cumTrial, params, events)
         elseif strcmp(params.block_type, 'auditory')
+            if makeDiary
+                disp(counter);
+                disp('%%%%%% LOOP OVER STIMULI');
+                counter = counter + 1;
+            end
             run_auditory_block(handles, i_block, stimuli_blocks{i_block}, ...
-                             stimuli_wavs, Fs, image_fixation, ...
-                             fid_log, triggers, cumTrial, params, events)
+                stimuli_wavs, Fs, image_fixation, ...
+                fid_log, triggers, cumTrial, params, events)
         end
     end
 catch
+    if makeDiary
+        disp(counter);
+        disp('CATCH');
+        counter = counter + 1;
+        diary off
+    end
     sca
     psychrethrow(psychlasterror);
     KbQueueRelease;
