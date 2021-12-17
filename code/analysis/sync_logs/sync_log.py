@@ -41,10 +41,18 @@ logs_folder = os.path.join('..', '..', '..', 'data',
 
 if args.recording_system == 'BlackRock':
     event_id_block_starts = [[65535]*4, [65535]*13, [65535]*21, [65535]*21]
-    target_triggers = [65410, 65416, 65424]
+    # event_id_block_starts = [[65535]*4, [65535]*13, [65535]*21]
+    # target_triggers = [65410, 65416, 65424]
+    target_triggers = {0:[65410, 65416, 65424], # dict: block_num -> target_event_ids
+                       1:[65410, 65416, 65424],
+                       2:[65410, 65416, 65424],
+                       3:[65410, 65417, 65425]}
 elif args.recording_system == 'Neuralynx':
-    event_id_block_starts = [[255]*4, [255]*13, [255]*13]
-    target_triggers = [2, 8, 16]
+    event_id_block_starts = [[255]*4, [255]*13, [255]*21]
+    target_triggers = {0:[2, 8, 16], # dict: block_num -> target_event_ids
+                       1:[2, 8, 16],
+                       2:[2, 8, 16],
+                       3:[2, 9, 17]}
 
 
 #################
@@ -56,7 +64,8 @@ print(f'sfreq = {sfreq}')
 
 # SPLIT TO BLOCKS
 dict_device, IX_block_starts = split_to_blocks(times_device, event_ids,
-                                               event_id_block_starts=event_id_block_starts)
+                                               event_id_block_starts=event_id_block_starts,
+                                               n_blocks=3)
 
 dict_device = extract_target_triggers(dict_device, target_triggers)
 
