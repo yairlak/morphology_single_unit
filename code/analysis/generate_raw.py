@@ -17,7 +17,6 @@ from scipy.ndimage import gaussian_filter1d
 from sklearn.decomposition import PCA
 import scipy
 from neo.io import NeuralynxIO
-import matplotlib.pyplot as plt
 
 abspath = os.path.abspath(__file__)
 dname = os.path.dirname(abspath)

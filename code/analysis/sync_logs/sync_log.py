@@ -26,7 +26,7 @@ parser.add_argument('-v', '--verbose', action='store_true', default=True)
 args = parser.parse_args()
 pprint(args)
 
-block_num2name = {0:'unigrams', 1:'ngrams', 2:'pseudowords'}
+block_num2name = {0:'unigrams_visual', 1:'ngrams_visual', 2:'pseudowords_visual', 3:'pseudowords_auditory'}
 
 logs_folder = os.path.join('..', '..', '..', 'data',
                            'patient_' + args.patient, 'logs')
@@ -34,7 +34,7 @@ logs_folder = os.path.join('..', '..', '..', 'data',
 
 
 if args.recording_system == 'BlackRock':
-    event_id_block_starts = [[65535]*4, [65535]*13, [65535]*13]
+    event_id_block_starts = [[65535]*4, [65535]*13, [65535]*13, [65535]*13]
     target_triggers = [65410, 65416, 65424]
 elif args.recording_system == 'Neuralynx':
     event_id_block_starts = [[255]*4, [255]*13, [255]*13]
@@ -78,12 +78,15 @@ dict_logs = read_logs(args)
 ##################################
 # REGRESS EVENT ON CHEETAH TIMES #
 ##################################
-assert len(dict_logs.keys()) == len(dict_device.keys()) 
+assert len(dict_logs.keys()) == len(dict_device.keys()) # same number of blocks
+
 # RUN REGRESSION FIRST FOR ALL LOGS MERGED TOGETHER
 times_log_all_blocks, times_device_all_blocks = [], []
 for block_num in dict_device.keys():
     times_log = dict_logs[block_num2name[block_num]]['df_log_stim_on_of']['Time']
     times_device = dict_device[block_num]['times_clean']
+    print(block_num2name[block_num], block_num)
+    print(len(times_device), len(times_log))
     assert len(times_log) == len(times_device)
     # times_log, times_device = remove_outliers(times_log, times_device, i_log, args)
     times_log_all_blocks.extend(times_log)
