@@ -1,6 +1,7 @@
-
-
 clear all; close all; clc
+pth = fileparts(which('morphology_block_3')); cd(pth);
+addpath('functions')
+block_type = 'visual';
 stimulus_type = 'pseudowords';
 repetitions = 8;
 fonts = {'LiberationMono-Regular.ttf'};

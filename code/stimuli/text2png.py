@@ -10,7 +10,7 @@ import os
 from PIL import Image, ImageDraw, ImageFont
 
 # PATHs
-ngram = 'pseudowords' # unigrams/ngrams/pseudowords
+ngram = 'unigrams' # unigrams/ngrams/pseudowords
 path2stimuli = f'../../stimuli/{ngram}.csv'
 path2images = f'../../stimuli/visual/{ngram}/'
 os.makedirs(path2images, exist_ok=True)

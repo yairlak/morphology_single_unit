@@ -54,7 +54,7 @@ def get_control_stimulus(prefix, CVC, suffix):
     
     #
     if suffix == 'able':
-        control_suffix = 'labe'
+        control_suffix = 'elba'
     elif suffix == 'er':
         control_suffix = 're'
     elif suffix == 'ly':

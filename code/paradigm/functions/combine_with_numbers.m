@@ -22,7 +22,7 @@ function stimuli_extended = combine_with_numbers(stimuli, params)
     i_extended = 1;
     stimuli_extended = {};
     while i_stimuli <= length(stimuli)
-        n_stimuli_step = randi([step_min, step_max], 1);
+        n_stimuli_step = randi([step_min,  ], 1);
         for i=1:n_stimuli_step
             if i_stimuli > length(stimuli)
                 break

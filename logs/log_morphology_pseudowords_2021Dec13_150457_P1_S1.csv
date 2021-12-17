@@ -1,0 +1,8 @@
+Event	Block	Trial	Stimulus	Position	Font	Time
+GrandStart					---	1639404303.2812	
+BlockStart	1	0	0		-	1639404304.3681	
+Fix	1	0	0		+	1639404304.3853
+BlockStart	2	0	0		-	1639404306.8555	
+Fix	2	0	0		+	1639404306.8853
+BlockStart	3	0	0		-	1639404309.9791	
+Fix	3	0	0		+	1639404309.9895

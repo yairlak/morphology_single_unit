@@ -1,4 +1,4 @@
-function [params, events] = getParamsUCLAParadigm(ngram_type)
+function [params, events] = getParamsUCLAParadigm(block_type, ngram_type)
 %function params = getParams
 %This function makes the struct that holds the parameters for the presentation of the stimuli and such.
 
@@ -8,6 +8,7 @@ if ismac || isunix %comp == 'h'
     params.default_path = fileparts(fileparts(fileparts(which('getParamsUCLAParadigm'))));
     %'~/Projects/Yair/morphology_single_unit/code';
     params.path2images = fullfile('..', '..', 'stimuli', 'visual', ngram_type);
+    params.path2sounds = fullfile('..', '..', 'stimuli', 'audio', ngram_type);
     params.path2stimuli = fullfile('..', '..', 'stimuli');
     params.path2logs = fullfile('..', '..', 'logs');
     params.sio = '/dev/tty.usbserial';
@@ -30,6 +31,11 @@ params.error_delay_between_numbers = 2; % [sec]
 params.fixation_duration_visual_block = 1.5; %
 params.ISI_visual = 0; % from end of last trial to beginning of first trial
 
+% AUDITORY BLOCK
+params.ISI_audio = 0.5;
+% params.patientChannel = 1;
+% params.TTLChannel = 1;
+
 %% EVENTS NUMBERS (TRIGGERS)
 % FIXATION
 events.StartFixation = 2;
@@ -38,6 +44,10 @@ events.EndFixation = 4;
 % VISUAL BLOCK
 events.StartVisualWord = 8;
 events.EndVisualWord = 16;
+
+% AUDIO BLOCK
+events.StartAudio = 9;
+events.EndAudio = 17;
 
 % KEY PRESS
 events.PressKey = 128;
