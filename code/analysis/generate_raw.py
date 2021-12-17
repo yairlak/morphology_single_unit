@@ -23,11 +23,11 @@ dname = os.path.dirname(abspath)
 os.chdir(dname)
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--patient', default='544', help='Patient number')
+parser.add_argument('--patient', default='546', help='Patient number')
 parser.add_argument('--data-type',
                     choices=['micro', 'macro', 'spike', 'microphone'],
-                    default='spike', help='macro/micro/spike')
-parser.add_argument('--filter', default='high-gamma',
+                    default='macro', help='macro/micro/spike')
+parser.add_argument('--filter', default='raw',
                     choices=['raw', 'high-gamma'])
 parser.add_argument('--from-mat',
                     default=False, action='store_true',

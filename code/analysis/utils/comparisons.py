@@ -22,14 +22,24 @@ def comparison_list():
     comparisons['all_ngrams']['level'] = 'word'
     comparisons['all_ngrams']['tmin_tmax'] = [-0.2, 0.5]
 
-    comparisons['all_pseudowords'] = {}
-    comparisons['all_pseudowords']['queries'] = "Stimulus_insensitive"
-    comparisons['all_pseudowords']['fixed_constraint'] = 'Event=="StimVisualOn" and Block==3'
-    comparisons['all_pseudowords']['condition_names'] = [] 
-    comparisons['all_pseudowords']['colors'] = []
-    comparisons['all_pseudowords']['sort'] = ['Case', 'Font']
-    comparisons['all_pseudowords']['y-tick-step'] = 4
-    comparisons['all_pseudowords']['level'] = 'word'
-    comparisons['all_pseudowords']['tmin_tmax'] = [-0.2, 0.5]
+    comparisons['all_pseudowords_visual'] = {}
+    comparisons['all_pseudowords_visual']['queries'] = "Stimulus_insensitive"
+    comparisons['all_pseudowords_visual']['fixed_constraint'] = 'Event=="StimVisualOn" and Block==3'
+    comparisons['all_pseudowords_visual']['condition_names'] = [] 
+    comparisons['all_pseudowords_visual']['colors'] = []
+    comparisons['all_pseudowords_visual']['sort'] = ['Case', 'Font']
+    comparisons['all_pseudowords_visual']['y-tick-step'] = 4
+    comparisons['all_pseudowords_visual']['level'] = 'word'
+    comparisons['all_pseudowords_visual']['tmin_tmax'] = [-0.2, 0.5]
+    
+    comparisons['all_pseudowords_auditory'] = {}
+    comparisons['all_pseudowords_auditory']['queries'] = "Stimulus_insensitive"
+    comparisons['all_pseudowords_auditory']['fixed_constraint'] = 'Event=="StimAudioOn" and Block==4'
+    comparisons['all_pseudowords_auditory']['condition_names'] = [] 
+    comparisons['all_pseudowords_auditory']['colors'] = []
+    comparisons['all_pseudowords_auditory']['sort'] = ['Case', 'Font']
+    comparisons['all_pseudowords_auditory']['y-tick-step'] = 4
+    comparisons['all_pseudowords_auditory']['level'] = 'word'
+    comparisons['all_pseudowords_auditory']['tmin_tmax'] = [-0.2, 0.5]
 
     return comparisons

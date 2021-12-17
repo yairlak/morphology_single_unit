@@ -110,7 +110,8 @@ class DataHandler:
             
             
     def prepare_metadata(self,
-                         block_names=['unigrams', 'ngrams', 'pseudowords'],
+                         block_names=['unigrams_visual', 'ngrams_visual',
+                                      'pseudowords_visual', 'pseudowords_auditory'],
                          verbose=False):
         '''
         
@@ -127,7 +128,8 @@ class DataHandler:
         None.
 
         '''
-        name2block_num = {'unigrams':1, 'ngrams':2, 'pseudowords':3}
+        name2block_num = {'unigrams_visual':1, 'ngrams_visual':2,
+                          'pseudowords_visual':3, 'pseudowords_auditory':4}
         if verbose:
             print('Preparing metadata from logs...')
         path2log = os.path.join('..', '..', 
@@ -140,7 +142,7 @@ class DataHandler:
             df_log = df_log.rename({'Time':'event_time'}, axis=1)
             df_logs.append(df_log)
         metadata = pd.concat(df_logs)    
-        metadata = metadata.loc[metadata['Event']=='StimVisualOn']
+        metadata = metadata.loc[metadata['Event'] in ['StimVisualOn', 'StimAudioOn']]
         metadata.sort_values(by='event_time')
         # ADD COLUMNS
         def check_case(row):
@@ -503,8 +505,8 @@ def get_data_from_ncs_or_ns(data_type, path2data, sfreq_down):
 
 
 def identify_recording_system(path2data):
-    print(os.getcwd())
-    print(path2data)
+    #print(os.getcwd())
+    #print(path2data)
     if len(glob.glob(os.path.join(path2data, '..', 'micro', '*.ncs'))):
         recording_system = 'Neuralynx'
         # assert neural_files[0][-3:] == 'ncs'

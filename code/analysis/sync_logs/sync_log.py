@@ -91,8 +91,6 @@ times_log_all_blocks, times_device_all_blocks = [], []
 for block_num in dict_device.keys():
     times_log = dict_logs[block_num2name[block_num]]['df_log_stim_on_of']['Time']
     times_device = dict_device[block_num]['times_clean']
-    print(block_num2name[block_num], block_num)
-    print(len(times_device), len(times_log))
     assert len(times_log) == len(times_device)
     # times_log, times_device = remove_outliers(times_log, times_device, i_log, args)
     times_log_all_blocks.extend(times_log)
@@ -102,7 +100,6 @@ model_all = LinearRegression()
 times_log_all_blocks = np.asarray(times_log_all_blocks).reshape(-1, 1)
 times_device_all_blocks= np.asarray(times_device_all_blocks).reshape(-1, 1)
 
-print(len(times_log_all_blocks), len(times_device_all_blocks))
 assert len(times_log_all_blocks) > 0 and len(times_device_all_blocks) > 0
 model_all.fit(times_log_all_blocks, times_device_all_blocks)
 r2score_all = model_all.score(times_log_all_blocks, times_device_all_blocks)
