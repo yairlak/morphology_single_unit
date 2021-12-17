@@ -18,7 +18,7 @@ from pprint import pprint
 from data_manip import read_events, read_logs, split_to_blocks, extract_target_triggers
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--patient', default = '544')
+parser.add_argument('--patient', default = '546')
 parser.add_argument('--recording-system', choices=['Neuralynx', 'BlackRock'], default='BlackRock')
 parser.add_argument('--logs', default=['unigrams', 'ngrams', 'pseudowords'], help='Since there could be more cheetah logs than block, these indexes define the log indexes of interest')
 parser.add_argument('--merge-logs', action='store_true', default=True)
@@ -32,9 +32,15 @@ logs_folder = os.path.join('..', '..', '..', 'data',
                            'patient_' + args.patient, 'logs')
 
 
+# GrandStart is marked with 9 triggers with id=255.
+# Run_visual_block and run_auditory_block are marked with 4 * '255'
+# unigrams has a single block
+# ngrams and pseudowords have each 3 blocks (so, (9+4), (4) (4) of 255)
+# check below with: np.where(np.asarray(event_ids) == 65535) 
+# or: np.where(np.asarray(event_ids) == 255) 
 
 if args.recording_system == 'BlackRock':
-    event_id_block_starts = [[65535]*4, [65535]*13, [65535]*13, [65535]*13]
+    event_id_block_starts = [[65535]*4, [65535]*13, [65535]*21, [65535]*21]
     target_triggers = [65410, 65416, 65424]
 elif args.recording_system == 'Neuralynx':
     event_id_block_starts = [[255]*4, [255]*13, [255]*13]
