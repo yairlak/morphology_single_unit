@@ -51,8 +51,8 @@ def read_events(args):
             elif args.recording_system == 'BlackRock':
                 reader = io.BlackrockIO(nev_file)
                 #time0, timeend = reader._seg_t_starts[0], reader._seg_t_stops[0]
-                sfreq = reader.header['unit_channels'][0][-1] # FROM FILE
-                #sfreq = reader.header['spike_channels'][0][-1] # FROM FILE
+                #sfreq = reader.header['unit_channels'][0][-1] # FROM FILE
+                sfreq = reader.header['spike_channels'][0][-1] # FROM FILE
                 events = reader.nev_data['NonNeural'][0]
                 events_times = duration_prev_nevs + np.asarray([float(e[0]/sfreq) for e in events])
                 time_stamps.extend(events_times)

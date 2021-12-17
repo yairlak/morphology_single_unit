@@ -87,6 +87,7 @@ if 'level' in comparison.keys():
 
 # GET SENTENCE-LEVEL DATA BEFORE SPLIT
 data.prepare_metadata()
+print(set(data.metadata['Block-Type'].values))
 data.epoch_data(level=args.level,
                 query=None,
                 scale_epochs=args.scale_epochs,

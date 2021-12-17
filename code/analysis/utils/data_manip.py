@@ -142,7 +142,8 @@ class DataHandler:
             df_log = df_log.rename({'Time':'event_time'}, axis=1)
             df_logs.append(df_log)
         metadata = pd.concat(df_logs)    
-        metadata = metadata.loc[metadata['Event'] in ['StimVisualOn', 'StimAudioOn']]
+        metadata = metadata.replace(['StimVisualOn', 'StimAudioOn'], 'StimOn')
+        metadata = metadata.loc[metadata['Event'] == 'StimOn']
         metadata.sort_values(by='event_time')
         # ADD COLUMNS
         def check_case(row):
@@ -267,7 +268,8 @@ class DataHandler:
 
 
 def create_events_array(metadata, sfreq, verbose=False):
-    name2block_num = {'unigrams':1, 'ngrams':2, 'pseudowords':3}
+    name2block_num = {'unigrams_visual':1, 'ngrams_visual':2,
+                      'pseudowords_visual':3, 'pseudowords_auditory':4}
     
     # First column of events object
     times_in_sec = sorted(metadata['event_time'].values)
@@ -295,10 +297,6 @@ def create_events_array(metadata, sfreq, verbose=False):
     # EVENT_ID dictionary: mapping block names to event numbers
     event_id = dict([(event_type_name, event_number[0]) for event_type_name, event_number in zip(event_type_names, event_numbers)])
 
-    # HACK: since spike sorting was done with CSC*.ncs files that were not merged
-    # Hence, timing should be shifted by the length of the first ncs files (suffix0)
-    # if patient == 'patient_479_25' and data_type=='spike':
-    #     events[:, 0] -= int(117.647 * sfreq)
     return events, event_id
 
 
