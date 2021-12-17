@@ -161,7 +161,7 @@ def read_logs(args):
         df_log = pd.read_csv(fn_log, delimiter='\t', index_col=False)
         df_log_stim_on_off = df_log.loc[df_log['Event'].isin(['StimVisualOn',
                                                               'StimVisualOff',
-                                                              'StimAudioOn',
+                                                              # 'StimAudioOn',
                                                               'StimAudioOff',
                                                               'Fix'])]
         df_log_keypress = df_log.loc[df_log['Event']=='KeyPress']
