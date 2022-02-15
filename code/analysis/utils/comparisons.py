@@ -34,12 +34,12 @@ def comparison_list():
     
     comparisons['all_pseudowords_auditory'] = {}
     comparisons['all_pseudowords_auditory']['queries'] = "Stimulus_insensitive"
-    comparisons['all_pseudowords_auditory']['fixed_constraint'] = 'Event=="StimOn" and Block==4'
+    comparisons['all_pseudowords_auditory']['fixed_constraint'] = 'Event=="StimAudioOff" and Block==4'
     comparisons['all_pseudowords_auditory']['condition_names'] = [] 
     comparisons['all_pseudowords_auditory']['colors'] = []
-    comparisons['all_pseudowords_auditory']['sort'] = ['Case', 'Font']
+    comparisons['all_pseudowords_auditory']['sort'] = ['Stimulus_insensitive']
     comparisons['all_pseudowords_auditory']['y-tick-step'] = 4
     comparisons['all_pseudowords_auditory']['level'] = 'word'
-    comparisons['all_pseudowords_auditory']['tmin_tmax'] = [-0.2, 0.5]
+    comparisons['all_pseudowords_auditory']['tmin_tmax'] = [-2, 1]
 
     return comparisons

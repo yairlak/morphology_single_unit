@@ -147,7 +147,6 @@ for block_num in dict_device.keys():
     positions = dict_logs[block_num2name[block_num]]['df_log_stim_on_of']['Position']
     fonts = dict_logs[block_num2name[block_num]]['df_log_stim_on_of']['Font']
     
-    
     new_log_lines = []
     new_log_lines.append(f'Block-Type\tMini-Block\tTrial\tEvent\tStimulus\tPosition\tFont\tTime')
     for (t, event_name, mini_block, trial, stimulus, position, font) in zip(times_log,

@@ -23,15 +23,16 @@ dname = os.path.dirname(abspath)
 os.chdir(dname)
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--patient', default='546', help='Patient number')
+parser.add_argument('--patient', default='549', help='Patient number')
 parser.add_argument('--data-type',
                     choices=['micro', 'macro', 'spike', 'microphone'],
-                    default='macro', help='macro/micro/spike')
+                    default='spike', help='macro/micro/spike')
 parser.add_argument('--filter', default='raw',
                     choices=['raw', 'high-gamma'])
 parser.add_argument('--from-mat',
                     default=False, action='store_true',
-                    help='Load data from mat files.')
+                    help='If zero, does nothing. If 1, load all CSC files. \
+                          If 2, split to two, loads and saves into separate files (for large data)')
 parser.add_argument('--sfreq-downsample', type=int,
                     default=1000, help='Downsampling frequency')
 parser.add_argument('--line-frequency',

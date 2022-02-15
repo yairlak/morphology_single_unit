@@ -143,19 +143,26 @@ class DataHandler:
             df_logs.append(df_log)
         metadata = pd.concat(df_logs)    
         metadata = metadata.replace(['StimVisualOn', 'StimAudioOn'], 'StimOn')
-        metadata = metadata.loc[metadata['Event'] == 'StimOn']
+        metadata = metadata.loc[(metadata['Event'] == 'StimOn') | (metadata['Event'] == 'StimAudioOff')]
         metadata.sort_values(by='event_time')
         # ADD COLUMNS
         def check_case(row):
+            if row['Stimulus'] != row['Stimulus']: # check if nan
+                return np.nan # return the same
             isupper = row['Stimulus'].isupper()
             if isupper:
                 case = 'upper'
             else:
                 case = 'lower'
             return case
+        def get_lower(row):
+            if row['Stimulus'] != row['Stimulus']: # check if nan
+                return np.nan # return the same
+            return row['Stimulus'].lower()
+
         metadata['Block'] = metadata.apply(lambda row: name2block_num[row['Block-Type']], axis=1)
         metadata['Case'] = metadata.apply(lambda row: check_case(row), axis=1)
-        metadata['Stimulus_insensitive'] = metadata.apply(lambda row: row['Stimulus'].lower(), axis=1)
+        metadata['Stimulus_insensitive'] = metadata.apply(lambda row: get_lower(row), axis=1)
         self.metadata = metadata
 
 
@@ -208,6 +215,7 @@ class DataHandler:
             ############
             # EPOCHING #
             ############
+            print(tmin, tmax)
             epochs = mne.Epochs(self.raws[p], events, event_id, tmin, tmax,
                                 metadata=self.metadata, baseline=None,
                                 preload=True, reject=None)
@@ -316,6 +324,7 @@ def generate_mne_raw(data_type, from_mat, path2rawdata, sfreq_down):
     # Extract raw data
     if data_type == 'spike':
         path2data = os.path.join(path2rawdata, 'micro')
+        #path2data = os.path.join(path2rawdata, 'spike')
         channel_data, sfreq, ch_names = get_data_from_combinato(path2data)
     else:
         if from_mat:
@@ -323,7 +332,7 @@ def generate_mne_raw(data_type, from_mat, path2rawdata, sfreq_down):
         else:
             raw = get_data_from_ncs_or_ns(data_type, path2data, sfreq_down)
             return raw
-    #print(f'Shape channel_data: {channel_data.shape}')
+    print(f'Shape channel_data: {channel_data.shape}')
     n_channels = channel_data.shape[0]
     ch_types = ['seeg'] * n_channels
     #print(ch_names)
@@ -342,18 +351,19 @@ def get_data_from_combinato(path2data):
 
     print('Loading spike cluster data')
     
-    CSC_folders = glob.glob(os.path.join(path2data, 'G??-*/'))
     
     recording_system = identify_recording_system(path2data)
     if recording_system == 'Neuralynx':
         reader = neo.io.NeuralynxIO(os.path.join(path2data, '..', 'micro'))        
         channel_tuples = reader.header['signal_channels']
         time0, timeend = reader.global_t_start, reader.global_t_stop    
+        CSC_folders = glob.glob(os.path.join(path2data, 'G??-*/'))
     elif recording_system == 'BlackRock':
         #fn_br = glob.glob(os.path.join(path2data, '..', 'micro', '*.ns5'))
         #assert len(fn_br) == 1
         #nsx_file = NsxFile(fn_br[0])
         time0, timeend = 0, 5400 # set timeend to max of 1.5 hours.
+        CSC_folders = glob.glob(os.path.join(path2data, 'CSC*/'))
         # Extract data - note:
         # Data will be returned based on *SORTED* elec_ids,
         # see cont_data['elec_ids']
@@ -404,18 +414,33 @@ def get_data_from_mat(data_type, path2data):
 
     channel_data, ch_names = [], []
     for i_ch, CSC_file in enumerate(CSC_files):
-        curr_channel_data = io.loadmat(CSC_file)    
-        sfreq = int(1/curr_channel_data['samplingInterval'])
-        channel_data.append(curr_channel_data['data'])
-        if 'channelName' in curr_channel_data:
-            ch_name = curr_channel_data['channelName']
+        open_method = 'scipy' # scipy/h5
+        if open_method == 'scipy':
+            f = io.loadmat(CSC_file)
+            f['data'] = np.transpose(np.array(f['data']))
         else:
-            ch_name = os.path.basename(CSC_file)[:-4]
+            f = h5py.File(CSC_file, 'r')
+        sfreq = int(1/np.array(f['samplingInterval']))*1e3
+        channel_data.append(np.array(f['data']))
+
+        # sfreq = int(1/curr_channel_data['samplingInterval'])
+        # channel_data.append(curr_channel_data['data'])
+        #if 'channelName' in curr_channel_data:
+        if 'channelName' in f.keys():
+            ch_name = np.array(f['channelName'])
+        else:
+            fn_channel_names =  os.path.join(path2data, '..', 'channel_numbers_to_names.txt')
+            if os.path.isfile(fn_channel_names):
+                CSC_num = int(os.path.basename(CSC_file)[3:-4])
+                lines = open(fn_channel_names, 'r').readlines()
+                ch_name = lines[CSC_num-1].split('\t')[1]
+            else:
+                ch_name = os.path.basename(CSC_file)[:-4]
         ch_names.append(ch_name)
         print(f'Processing file: {ch_name} ({i_ch+1}/{len(CSC_files)}), sfreq = {sfreq} Hz')
-    channel_data = np.vstack(channel_data)
+    channel_data = np.hstack(channel_data)
 
-    return channel_data, sfreq, ch_names
+    return channel_data.transpose(), sfreq, ch_names
 
 
 def get_data_from_ncs_or_ns(data_type, path2data, sfreq_down):
@@ -503,12 +528,13 @@ def get_data_from_ncs_or_ns(data_type, path2data, sfreq_down):
 
 
 def identify_recording_system(path2data):
-    #print(os.getcwd())
-    #print(path2data)
+    print(os.getcwd())
+    print(path2data)
+    print(os.path.join(path2data, '..', 'micro', '*.ncs'))
     if len(glob.glob(os.path.join(path2data, '..', 'micro', '*.ncs'))):
         recording_system = 'Neuralynx'
         # assert neural_files[0][-3:] == 'ncs'
-    elif len(glob.glob(os.path.join(path2data, '..', 'micro', '*.ns*')))>0 or len(glob.glob(os.path.join(path2data, '..', 'micro', '*.mat')))>0:
+    elif len(glob.glob(os.path.join(path2data, '..', 'micro', '*.ns*')))>0 or len(glob.glob(os.path.join(path2data, '..', 'micro', '*.mat')))>0 or len(glob.glob(os.path.join(path2data, '..', 'micro', 'mat', '*.mat')))>0:
         recording_system = 'BlackRock'
     else:
         print(f'No neural files found: {path2data}')

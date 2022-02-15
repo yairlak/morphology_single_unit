@@ -37,8 +37,8 @@ parser.add_argument('--comparison-name', default='all_pseudowords', help='int. C
 parser.add_argument('--block-type', default=[], help='Block type will be added to the query in the comparison')
 parser.add_argument('--fixed-constraint', default=[], help='A fixed constrained added to query. For example first_phone == 1 for auditory blocks')
 parser.add_argument('--average-repeated-trials', action="store_true", default=False, help='')
-parser.add_argument('--tmin', default=-0.1, type=float, help='crop window. If empty, only crops 0.1s from both sides, due to edge effects.')
-parser.add_argument('--tmax', default=0.6, type=float, help='crop window')
+parser.add_argument('--tmin', default=None, type=float, help='crop window. If empty, only crops 0.1s from both sides, due to edge effects.')
+parser.add_argument('--tmax', default=None, type=float, help='crop window')
 parser.add_argument('--baseline', default=[], type=str, help='Baseline to apply as in mne: (a, b), (None, b), (a, None), (None, None) or None')
 parser.add_argument('--baseline-mode', choices=['mean', 'ratio', 'logratio', 'percent', 'zscore', 'zlogratio'], default=None, help='Type of baseline method')
 # MISC
@@ -70,7 +70,6 @@ if isinstance(args.baseline, str):
 if args.data_type == 'spike':
     args.vmin = 0
     args.vmax = 0.5
-print(args)
 
 # LOAD
 data = DataHandler(args.patient, args.data_type, args.filter,
@@ -85,18 +84,6 @@ comparison = comparisons[args.comparison_name].copy()
 if 'level' in comparison.keys():
     args.level = comparison['level']
 
-# GET SENTENCE-LEVEL DATA BEFORE SPLIT
-data.prepare_metadata()
-print(set(data.metadata['Block-Type'].values))
-data.epoch_data(level=args.level,
-                query=None,
-                scale_epochs=args.scale_epochs,
-                smooth=args.smooth,
-                verbose=True)
-epochs = data.epochs[0]
-
-
-
 if 'sort' not in comparison.keys():
     comparison['sort'] = args.sort_key
 else:
@@ -109,11 +96,24 @@ if 'y-tick-step' in comparison.keys():
 if 'fixed_constraint' in comparison.keys():
     args.fixed_constraint = comparison['fixed_constraint']
 
+# GET SENTENCE-LEVEL DATA BEFORE SPLIT
+data.prepare_metadata()
+print(set(data.metadata['Block-Type'].values))
+data.epoch_data(level=args.level,
+                tmin=args.tmin, 
+                tmax=args.tmax,
+                query=None,
+                scale_epochs=args.scale_epochs,
+                smooth=args.smooth,
+                verbose=True)
+epochs = data.epochs[0]
+
 comparison = update_queries(comparison,
                             args.fixed_constraint,
                             epochs.metadata.query(args.fixed_constraint),
                             None)
 
+print(args)
 print(args.comparison_name)
 pprint(comparison)
 
