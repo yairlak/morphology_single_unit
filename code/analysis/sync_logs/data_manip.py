@@ -52,6 +52,7 @@ def read_events(args):
                 reader = io.BlackrockIO(nev_file)
                 #time0, timeend = reader._seg_t_starts[0], reader._seg_t_stops[0]
                 sfreq = reader.header['unit_channels'][0][-1] # FROM FILE
+                #sfreq = reader.header['spike_channels'][0][-1] # FROM FILE
                 events = reader.nev_data['NonNeural'][0]
                 events_times = duration_prev_nevs + np.asarray([float(e[0]/sfreq) for e in events])
                 time_stamps.extend(events_times)
@@ -93,15 +94,16 @@ def read_events(args):
 def split_to_blocks(times_device,
                     event_ids,
                     IX_block_starts = None,
-                    event_id_block_starts = [[255]*4, [255]*13, [255]*13]):
-    
-    
+                    event_id_block_starts = [[255]*4, [255]*13, [255]*13],
+                    n_blocks=4):
+
+
     dict_device = {}
     if not IX_block_starts:
         # FIND BLOCK STARTS
         IX_block_starts = []
         i_event = 0
-        while len(IX_block_starts)<3:
+        while len(IX_block_starts)<n_blocks:
             for event_id_block_start in event_id_block_starts:
                 remaining_events_to_find = event_id_block_start
                 is_block_start = False
@@ -124,17 +126,17 @@ def split_to_blocks(times_device,
         st, ed = starts_ends
         dict_device[i_block] = {}
         dict_device[i_block]['times'] = times_device[st:ed]
+        print(i_block, times_device[st], times_device[ed])
         dict_device[i_block]['event_ids'] = event_ids[st:ed]
 
     return dict_device, IX_block_starts
-
 
 def extract_target_triggers(dict_device, target_triggers):
     for block_num in dict_device.keys():
         times_clean, ids_clean = [], []
         for t, event_id in zip(dict_device[block_num]['times'],
                                dict_device[block_num]['event_ids']):
-            if event_id in target_triggers:
+            if event_id in target_triggers[block_num]:
                 times_clean.append(t)
                 ids_clean.append(event_id)
         dict_device[block_num]['times_clean'] = times_clean
@@ -154,18 +156,26 @@ def read_logs(args):
     num_triggers_per_log = []
     for i_log, fn_log in enumerate(fns_logs):
         block_name = os.path.basename(fn_log).split('_')[2]
-        print(f'log {i_log+1}, {block_name}: {fn_log}')
+        block_type = os.path.basename(fn_log).split('_')[3]
+        if block_type not in ['visual', 'auditory']:
+            print('WARNING: CANNOT IDENTIFY BLOCK TYPE - "VISUAL" IS DEFAULT')
+            block_type = 'visual'
+        print(f'Reading log: {i_log+1}, {block_name} ({block_type}): {fn_log}')
         df_log = pd.read_csv(fn_log, delimiter='\t', index_col=False)
-        df_log_stim_on_off = df_log.loc[df_log['Event'].isin(['StimVisualOn', 'StimVisualOff', 'Fix'])]
+        df_log_stim_on_off = df_log.loc[df_log['Event'].isin(['StimVisualOn',
+                                                              'StimVisualOff',
+                                                              # 'StimAudioOn',
+                                                              'StimAudioOff',
+                                                              'Fix'])]
         df_log_keypress = df_log.loc[df_log['Event']=='KeyPress']
         
         num_triggers = len(df_log_stim_on_off['Time'].tolist())    
         if num_triggers>0:
-            dict_logs[block_name] = {}
-            dict_logs[block_name]['log_filename'] = fn_log
-            dict_logs[block_name]['df_log_keypress'] = df_log_keypress
-            dict_logs[block_name]['df_log_stim_on_of'] = df_log_stim_on_off
-            dict_logs[block_name]['num_triggers'] = num_triggers
+            dict_logs[f'{block_name}_{block_type}'] = {}
+            dict_logs[f'{block_name}_{block_type}']['log_filename'] = fn_log
+            dict_logs[f'{block_name}_{block_type}']['df_log_keypress'] = df_log_keypress
+            dict_logs[f'{block_name}_{block_type}']['df_log_stim_on_of'] = df_log_stim_on_off
+            dict_logs[f'{block_name}_{block_type}']['num_triggers'] = num_triggers
     return dict_logs
 
 

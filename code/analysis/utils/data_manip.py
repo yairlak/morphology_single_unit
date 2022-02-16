@@ -110,7 +110,8 @@ class DataHandler:
             
             
     def prepare_metadata(self,
-                         block_names=['unigrams', 'ngrams', 'pseudowords'],
+                         block_names=['unigrams_visual', 'ngrams_visual',
+                                      'pseudowords_visual', 'pseudowords_auditory'],
                          verbose=False):
         '''
         
@@ -127,7 +128,8 @@ class DataHandler:
         None.
 
         '''
-        name2block_num = {'unigrams':1, 'ngrams':2, 'pseudowords':3}
+        name2block_num = {'unigrams_visual':1, 'ngrams_visual':2,
+                          'pseudowords_visual':3, 'pseudowords_auditory':4}
         if verbose:
             print('Preparing metadata from logs...')
         path2log = os.path.join('..', '..', 
@@ -136,11 +138,16 @@ class DataHandler:
         df_logs = []
         for block_name in block_names:
             fn_log = f'log_morphology_{block_name}_pt_{self.patient[0].split("_")[1]}_synched.log'
+            if not os.path.isfile(os.path.join(path2log, fn_log)):
+                print('-'*100)
+                print(f'WARNING: MISSING LOG {fn_log}')
+                print('-'*100)
+                continue
             df_log = pd.read_csv(os.path.join(path2log, fn_log), delimiter='\t')
             df_log = df_log.rename({'Time':'event_time'}, axis=1)
             df_logs.append(df_log)
         metadata = pd.concat(df_logs)    
-        metadata = metadata.loc[metadata['Event']=='StimVisualOn']
+        metadata = metadata.loc[metadata['Event'].str.contains('|'.join(['StimVisualOn', 'StimAudioOn']))]
         metadata.sort_values(by='event_time')
         # ADD COLUMNS
         def check_case(row):
@@ -265,7 +272,8 @@ class DataHandler:
 
 
 def create_events_array(metadata, sfreq, verbose=False):
-    name2block_num = {'unigrams':1, 'ngrams':2, 'pseudowords':3}
+    name2block_num = {'unigrams_visual':1, 'ngrams_visual':2,
+                      'pseudowords_visual':3, 'pseudowords_auditory':4}
     
     # First column of events object
     times_in_sec = sorted(metadata['event_time'].values)
@@ -344,6 +352,7 @@ def get_data_from_combinato(path2data):
     
     CSC_folders = glob.glob(os.path.join(path2data, 'G??-*/'))
     
+   
     recording_system = identify_recording_system(path2data)
     if recording_system == 'Neuralynx':
         reader = neo.io.NeuralynxIO(os.path.join(path2data, '..', 'micro'))        
@@ -503,8 +512,8 @@ def get_data_from_ncs_or_ns(data_type, path2data, sfreq_down):
 
 
 def identify_recording_system(path2data):
-    print(os.getcwd())
-    print(path2data)
+    #print(os.getcwd())
+    #print(path2data)
     if len(glob.glob(os.path.join(path2data, '..', 'micro', '*.ncs'))):
         recording_system = 'Neuralynx'
         # assert neural_files[0][-3:] == 'ncs'

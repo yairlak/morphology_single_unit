@@ -13,7 +13,6 @@ path2stimuli = '../../stimuli/'
 elements = {}
 elements['prefixes'] = ['re', 'un', 'dis']
 elements['suffixes'] = ['er', 'ly', 'able']
-# elements['CVCs'] = ['maf', 'kag', 'tis', 'viv', 'cor', 'fod']
 elements['CVCs'] = ['kag', 'tis', 'viv']
 elements['affix_patterns'] = ['root', '1P', '1S', '2P', '1P1S', '2P1S']
 

@@ -18,27 +18,41 @@ from pprint import pprint
 from data_manip import read_events, read_logs, split_to_blocks, extract_target_triggers
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--patient', default = '544')
-parser.add_argument('--recording-system', choices=['Neuralynx', 'BlackRock'], default='BlackRock')
+parser.add_argument('--patient', default = '549')
+parser.add_argument('--recording-system', choices=['Neuralynx', 'BlackRock'], default='Neuralynx')
 parser.add_argument('--logs', default=['unigrams', 'ngrams', 'pseudowords'], help='Since there could be more cheetah logs than block, these indexes define the log indexes of interest')
 parser.add_argument('--merge-logs', action='store_true', default=True)
 parser.add_argument('-v', '--verbose', action='store_true', default=True)
 args = parser.parse_args()
 pprint(args)
 
-block_num2name = {0:'unigrams', 1:'ngrams', 2:'pseudowords'}
+block_num2name = {0:'unigrams_visual', 1:'ngrams_visual', 2:'pseudowords_visual', 3:'pseudowords_auditory'}
 
 logs_folder = os.path.join('..', '..', '..', 'data',
                            'patient_' + args.patient, 'logs')
 
 
+# GrandStart is marked with 9 triggers with id=255.
+# Run_visual_block and run_auditory_block are marked with 4 * '255'
+# unigrams has a single block
+# ngrams and pseudowords have each 3 blocks (so, (9+4), (4) (4) of 255)
+# check below with: np.where(np.asarray(event_ids) == 65535) 
+# or: np.where(np.asarray(event_ids) == 255) 
 
 if args.recording_system == 'BlackRock':
-    event_id_block_starts = [[65535]*4, [65535]*13, [65535]*13]
-    target_triggers = [65410, 65416, 65424]
+    event_id_block_starts = [[65535]*4, [65535]*13, [65535]*21, [65535]*21]
+    # event_id_block_starts = [[65535]*4, [65535]*13, [65535]*21]
+    # target_triggers = [65410, 65416, 65424]
+    target_triggers = {0:[65410, 65416, 65424], # dict: block_num -> target_event_ids
+                       1:[65410, 65416, 65424],
+                       2:[65410, 65416, 65424],
+                       3:[65410, 65425]}
 elif args.recording_system == 'Neuralynx':
-    event_id_block_starts = [[255]*4, [255]*13, [255]*13]
-    target_triggers = [2, 8, 16]
+    event_id_block_starts = [[255]*4, [255]*13, [255]*21]
+    target_triggers = {0:[2, 8, 16], # dict: block_num -> target_event_ids
+                       1:[2, 8, 16],
+                       2:[2, 8, 16],
+                       3:[2, 9, 17]}
 
 
 #################
@@ -50,7 +64,8 @@ print(f'sfreq = {sfreq}')
 
 # SPLIT TO BLOCKS
 dict_device, IX_block_starts = split_to_blocks(times_device, event_ids,
-                                               event_id_block_starts=event_id_block_starts)
+                                               event_id_block_starts=event_id_block_starts,
+                                               n_blocks=3)
 
 dict_device = extract_target_triggers(dict_device, target_triggers)
 
@@ -78,7 +93,11 @@ dict_logs = read_logs(args)
 ##################################
 # REGRESS EVENT ON CHEETAH TIMES #
 ##################################
-assert len(dict_logs.keys()) == len(dict_device.keys()) 
+assert len(dict_logs.keys()) == len(dict_device.keys()) # same number of blocks
+
+# dict_logs.pop('pseudowords_visual')
+# dict_device.pop(2)
+
 # RUN REGRESSION FIRST FOR ALL LOGS MERGED TOGETHER
 times_log_all_blocks, times_device_all_blocks = [], []
 for block_num in dict_device.keys():
@@ -93,7 +112,6 @@ model_all = LinearRegression()
 times_log_all_blocks = np.asarray(times_log_all_blocks).reshape(-1, 1)
 times_device_all_blocks= np.asarray(times_device_all_blocks).reshape(-1, 1)
 
-print(len(times_log_all_blocks), len(times_device_all_blocks))
 assert len(times_log_all_blocks) > 0 and len(times_device_all_blocks) > 0
 model_all.fit(times_log_all_blocks, times_device_all_blocks)
 r2score_all = model_all.score(times_log_all_blocks, times_device_all_blocks)
