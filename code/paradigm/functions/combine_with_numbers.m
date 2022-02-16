@@ -2,6 +2,9 @@ function stimuli_extended = combine_with_numbers(stimuli, params)
     
     %%
     numbers = {'1', '2', '3', '4', '5', '6', '7', '8', '9'};
+    if ismember(params.stimulus_type,{'realwords','pseudowords'})
+        numbers = {'eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen'};
+    end
     stimulus_set = union(stimuli(:, 1), stimuli(:, 1));
 %     letters = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', ...
 %                'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', ...

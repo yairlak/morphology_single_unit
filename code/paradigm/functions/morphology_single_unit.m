@@ -109,7 +109,9 @@ if strcmp(params.block_type, 'auditory')
   % Create a struct (dict) with field names that correspond to stimulus names
   % e.g., stimuli_wav.kag, stimuli_wav.unkag, etc. 
   % each field contains a vector of the audio waveform.
-  theseStimuli = [stimuli;{'one';'two';'three';'four';'five';'six';'seven';'eight';'nine'}];
+  
+  % theseStimuli = [stimuli;{'one';'two';'three';'four';'five';'six';'seven';'eight';'nine'}];
+  theseStimuli = [stimuli;{'eleven';'twelve';'thirteen';'fourteen';'fifteen';'sixteen';'seventeen';'eighteen';'nineteen'}];
   [stimuli_wavs, Fs] = load_audio_stimuli(theseStimuli, params);
 end
 stimuli = extend_stimuli(stimuli, params); % ADD CASE, FONT, POSITION
