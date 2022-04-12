@@ -138,12 +138,18 @@ class DataHandler:
         df_logs = []
         for block_name in block_names:
             fn_log = f'log_morphology_{block_name}_pt_{self.patient[0].split("_")[1]}_synched.log'
+            if not os.path.isfile(os.path.join(path2log, fn_log)):
+                print('-'*100)
+                print(f'WARNING: MISSING LOG {fn_log}')
+                print('-'*100)
+                continue
             df_log = pd.read_csv(os.path.join(path2log, fn_log), delimiter='\t')
             df_log = df_log.rename({'Time':'event_time'}, axis=1)
             df_logs.append(df_log)
         metadata = pd.concat(df_logs)    
         metadata = metadata.replace(['StimVisualOn', 'StimAudioOn'], 'StimOn')
         metadata = metadata.loc[(metadata['Event'] == 'StimOn') | (metadata['Event'] == 'StimAudioOff')]
+        #metadata = metadata.loc[metadata['Event'].str.contains('|'.join(['StimVisualOn', 'StimAudioOn']))]
         metadata.sort_values(by='event_time')
         # ADD COLUMNS
         def check_case(row):
@@ -352,6 +358,7 @@ def get_data_from_combinato(path2data):
     print('Loading spike cluster data')
     
     
+   
     recording_system = identify_recording_system(path2data)
     if recording_system == 'Neuralynx':
         reader = neo.io.NeuralynxIO(os.path.join(path2data, '..', 'micro'))        

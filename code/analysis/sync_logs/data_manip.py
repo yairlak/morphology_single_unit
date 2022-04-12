@@ -157,6 +157,9 @@ def read_logs(args):
     for i_log, fn_log in enumerate(fns_logs):
         block_name = os.path.basename(fn_log).split('_')[2]
         block_type = os.path.basename(fn_log).split('_')[3]
+        if block_type not in ['visual', 'auditory']:
+            print('WARNING: CANNOT IDENTIFY BLOCK TYPE - "VISUAL" IS DEFAULT')
+            block_type = 'visual'
         print(f'Reading log: {i_log+1}, {block_name} ({block_type}): {fn_log}')
         df_log = pd.read_csv(fn_log, delimiter='\t', index_col=False)
         df_log_stim_on_off = df_log.loc[df_log['Event'].isin(['StimVisualOn',

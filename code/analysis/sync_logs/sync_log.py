@@ -18,8 +18,8 @@ from pprint import pprint
 from data_manip import read_events, read_logs, split_to_blocks, extract_target_triggers
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--patient', default = '546')
-parser.add_argument('--recording-system', choices=['Neuralynx', 'BlackRock'], default='BlackRock')
+parser.add_argument('--patient', default = '551')
+parser.add_argument('--recording-system', choices=['Neuralynx', 'BlackRock'], default='Neuralynx')
 parser.add_argument('--logs', default=['unigrams', 'ngrams', 'pseudowords'], help='Since there could be more cheetah logs than block, these indexes define the log indexes of interest')
 parser.add_argument('--merge-logs', action='store_true', default=True)
 parser.add_argument('-v', '--verbose', action='store_true', default=True)
@@ -94,6 +94,9 @@ dict_logs = read_logs(args)
 # REGRESS EVENT ON CHEETAH TIMES #
 ##################################
 assert len(dict_logs.keys()) == len(dict_device.keys()) # same number of blocks
+
+# dict_logs.pop('pseudowords_visual')
+# dict_device.pop(2)
 
 # RUN REGRESSION FIRST FOR ALL LOGS MERGED TOGETHER
 times_log_all_blocks, times_device_all_blocks = [], []
